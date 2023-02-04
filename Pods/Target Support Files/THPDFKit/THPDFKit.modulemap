@@ -1,0 +1,6 @@
+framework module THPDFKit {
+  umbrella header "THPDFKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

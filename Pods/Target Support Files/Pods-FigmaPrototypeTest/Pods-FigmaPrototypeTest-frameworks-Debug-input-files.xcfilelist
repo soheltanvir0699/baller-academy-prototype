@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-FigmaPrototypeTest/Pods-FigmaPrototypeTest-frameworks.sh
+${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework
+${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
+${BUILT_PRODUCTS_DIR}/THPDFKit/THPDFKit.framework
+${BUILT_PRODUCTS_DIR}/VGPlayer/VGPlayer.framework

@@ -1,0 +1,34 @@
+PODS:
+  - CocoaLumberjack/Core (3.8.0)
+  - CocoaLumberjack/Swift (3.8.0):
+    - CocoaLumberjack/Core
+  - SnapKit (4.0.1)
+  - THPDFKit (0.3.2)
+  - UXCam (3.5.2)
+  - VGPlayer (0.2.0):
+    - SnapKit (~> 4.0.0)
+
+DEPENDENCIES:
+  - CocoaLumberjack/Swift (~> 3)
+  - THPDFKit
+  - UXCam (~> 3.5.1)
+  - VGPlayer
+
+SPEC REPOS:
+  trunk:
+    - CocoaLumberjack
+    - SnapKit
+    - THPDFKit
+    - UXCam
+    - VGPlayer
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: 78abfb691154e2a9df8ded4350d504ee19d90732
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+  THPDFKit: 48f962c5143d4d89e8eeca94559b96493881505a
+  UXCam: 05d2da703cc929baaba0df6cdfeb58124512d222
+  VGPlayer: a1787135559aa3b9201ebdc733ee283315492289
+
+PODFILE CHECKSUM: 1da43bef57a764163d1be52c8d6c1cacd66c526e
+
+COCOAPODS: 1.11.2

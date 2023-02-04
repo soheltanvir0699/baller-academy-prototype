@@ -1,0 +1,6 @@
+framework module Pods_FigmaPrototypeTest {
+  umbrella header "Pods-FigmaPrototypeTest-umbrella.h"
+
+  export *
+  module * { export * }
+}
