@@ -84,6 +84,11 @@ class HomeViewViewController: UIViewController {
         
     }
     
+    @IBAction func meetTeamAciton(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ProfileViewController") as? ProfileViewController
+        self.navigationController?.pushViewController(vc!, animated: true)
+        
+    }
     override func viewWillAppear(_ animated: Bool) {
         
         self.navigationController?.navigationBar.isHidden = true

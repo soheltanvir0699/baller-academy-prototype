@@ -177,12 +177,14 @@ code_sign_if_enabled() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Glideshow/Glideshow.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/THPDFKit/THPDFKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/VGPlayer/VGPlayer.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Glideshow/Glideshow.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/THPDFKit/THPDFKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/VGPlayer/VGPlayer.framework"

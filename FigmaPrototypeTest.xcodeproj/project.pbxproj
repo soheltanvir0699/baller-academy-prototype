@@ -20,7 +20,6 @@
 		375FBD70298D1D51000D820A /* NotificationToast in Frameworks */ = {isa = PBXBuildFile; productRef = 375FBD6F298D1D51000D820A /* NotificationToast */; };
 		375FBD72298D2034000D820A /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375FBD71298D2034000D820A /* ToastView.swift */; };
 		3789231B298E348E00D775FE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3789231A298E348E00D775FE /* ProfileViewController.swift */; };
-		378C78C7298E5C0700C97501 /* Glideshow in Frameworks */ = {isa = PBXBuildFile; productRef = 378C78C6298E5C0700C97501 /* Glideshow */; };
 		37CF371D298CDF0F00D493EB /* Transbutton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CF371C298CDF0F00D493EB /* Transbutton.swift */; };
 		37CF371F298CDF3200D493EB /* SniperLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CF371E298CDF3200D493EB /* SniperLayer.swift */; };
 		37DE1D61298BE8C40055921E /* SwiftyTrans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DE1D60298BE8C40055921E /* SwiftyTrans.swift */; };
@@ -63,7 +62,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8EC1A3FC2E21279692146F1 /* Pods_FigmaPrototypeTest.framework in Frameworks */,
-				378C78C7298E5C0700C97501 /* Glideshow in Frameworks */,
 				375FBD70298D1D51000D820A /* NotificationToast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,7 +151,6 @@
 			name = FigmaPrototypeTest;
 			packageProductDependencies = (
 				375FBD6F298D1D51000D820A /* NotificationToast */,
-				378C78C6298E5C0700C97501 /* Glideshow */,
 			);
 			productName = FigmaPrototypeTest;
 			productReference = 374BA1D6296D3EBE00E7677E /* FigmaPrototypeTest.app */;
@@ -185,7 +182,6 @@
 			mainGroup = 374BA1CD296D3EBE00E7677E;
 			packageReferences = (
 				375FBD6E298D1D51000D820A /* XCRemoteSwiftPackageReference "NotificationToast" */,
-				378C78C5298E5C0700C97501 /* XCRemoteSwiftPackageReference "Glideshow" */,
 			);
 			productRefGroup = 374BA1D7296D3EBE00E7677E /* Products */;
 			projectDirPath = "";
@@ -508,14 +504,6 @@
 				minimumVersion = 1.0.0;
 			};
 		};
-		378C78C5298E5C0700C97501 /* XCRemoteSwiftPackageReference "Glideshow" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/v15a1/Glideshow.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -523,11 +511,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 375FBD6E298D1D51000D820A /* XCRemoteSwiftPackageReference "NotificationToast" */;
 			productName = NotificationToast;
-		};
-		378C78C6298E5C0700C97501 /* Glideshow */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 378C78C5298E5C0700C97501 /* XCRemoteSwiftPackageReference "Glideshow" */;
-			productName = Glideshow;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

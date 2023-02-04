@@ -9,6 +9,7 @@ target 'FigmaPrototypeTest' do
   pod 'CocoaLumberjack/Swift', '~>3'
   pod 'VGPlayer'
   pod 'UXCam', "~> 3.5.1"
+  pod 'Glideshow'
   # Pods for FigmaPrototypeTest
 
 end

@@ -19,14 +19,14 @@ var openSmall = false
 
 class VideoViewController: UIViewController {
     var smallScreenView = UIView()
-
+    var videoUrl : URL?
     @IBOutlet weak var videoView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         let url = URL(fileURLWithPath: Bundle.main.path(forResource: "2", ofType: "mp4")!)
-        player.replaceVideo(url)
+        player.replaceVideo(videoUrl!)
         videoView.addSubview(player.displayView)
         player.play()
         player.backgroundMode = .suspend

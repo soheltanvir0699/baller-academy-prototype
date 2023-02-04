@@ -50,7 +50,7 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var galleryImgThree: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+//        self.navigationController?.navigationBar.isTranslucent = false
         DispatchQueue.main.asyncAfter(deadline: .now()+0.2) {
             self.nathanViewHeight = self.nathanView.frame.height
             
@@ -70,13 +70,24 @@ class ProfileViewController: UIViewController {
                 self.galleryImgThree.layer.cornerRadius = 5
                 self.galleryViewThree.layer.cornerRadius = 5
         }
-        
-        
+            
+            self.galleryView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.goVideoDetails)))
+            self.galleryViewTwo.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.goVideoDetails2)))
+            self.galleryViewThree.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.goVideoDetails3)))
         
         }
         sliderView.items = [
-            GlideItem(title : "Hello there", description: "General Kenobi!", backgroundImage: UIImage(named:  "elizeu-dias-2EGNqazbAMk-unsplash")),
-            GlideItem(description: "General Kenobi!", backgroundImage: UIImage(named:  "elizeu-dias-2EGNqazbAMk-unsplash"))
+            GlideItem(title : "", description: "", backgroundImage: UIImage(named:  "1")),
+            GlideItem(description: "", backgroundImage: UIImage(named:  "2")),
+            GlideItem(description: "", backgroundImage: UIImage(named:  "3")),
+            GlideItem(title : "", description: "", backgroundImage: UIImage(named:  "1")),
+            GlideItem(description: "", backgroundImage: UIImage(named:  "4")),
+            GlideItem(description: "", backgroundImage: UIImage(named:  "5")),
+            GlideItem(title : "", description: "", backgroundImage: UIImage(named:  "1")),
+            GlideItem(description: "", backgroundImage: UIImage(named:  "6")),
+            GlideItem(description: "", backgroundImage: UIImage(named:  "7")),
+            GlideItem(title : "", description: "", backgroundImage: UIImage(named:  "8")),
+            GlideItem(description: "", backgroundImage: UIImage(named:  "9"))
         ]
         sliderView.delegate = self
         sliderView.isCircular = true
@@ -87,6 +98,55 @@ class ProfileViewController: UIViewController {
         sliderView.gradientHeightFactor = 0.8
         sliderView.pageIndicatorPosition = .bottom
         sliderView.interval = 5
+    }
+    
+    @objc func goVideoDetails() {
+        
+       goDetailsVc(url: "https://baller-ac.s3.amazonaws.com/baller_unicef.mp4")
+    }
+    @objc func goVideoDetails2() {
+        
+        goDetailsVc(url: "https://baller-ac.s3.amazonaws.com/baller_highlights.mp4")
+    }
+    @objc func goVideoDetails3() {
+        goDetailsVc(url: "https://baller-ac.s3.amazonaws.com/baller_city_of_houston.mp4")
+        
+    }
+    func goDetailsVc(url: String) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "VideoViewController") as? VideoViewController
+        vc?.videoUrl = URL(string: url)
+        self.navigationController?.pushViewController(vc!, animated: true)
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = false
+        self.navigationController?.navigationBar.tintColor = .white
+        setNavigation()
+    }
+    func setNavigation() {
+        self.navigationController?.navigationBar.tintColor = .white
+        self.navigationController?.navigationBar.isTranslucent = true
+
+
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+
+    }
+
+
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+
+        var offset = scrollView.contentOffset.y / 1500
+
+
+        if offset >= 1 {
+            offset = 1
+            self.navigationController?.navigationBar.backgroundColor = UIColor.white.withAlphaComponent(offset)
+          //  self.navigationController?.navigationBar.alpha = offset
+          //  print(offset - 0.399)
+        } else {
+            self.navigationController?.navigationBar.backgroundColor = UIColor.white.withAlphaComponent(offset)
+        }
     }
     @IBAction func mujahidCollapseAction(_ sender: Any) {
         if shouldCollapseMujahid {

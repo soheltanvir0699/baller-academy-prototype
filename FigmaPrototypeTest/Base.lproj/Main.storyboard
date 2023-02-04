@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OT0-fQ-wHF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cgs-SL-RxL">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -71,7 +71,7 @@
                                 </constraints>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NzK-kd-Pm4">
-                                <rect key="frame" x="0.0" y="192" width="414" height="670"/>
+                                <rect key="frame" x="0.0" y="153" width="414" height="709"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="20f-No-9JU">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1435"/>
@@ -79,7 +79,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NWI-mh-NoH">
                                                 <rect key="frame" x="10" y="20" width="394" height="300"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="elizeu-dias-2EGNqazbAMk-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="mvO-95-Obi">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro" translatesAutoresizingMaskIntoConstraints="NO" id="mvO-95-Obi">
                                                         <rect key="frame" x="0.0" y="0.0" width="394" height="300"/>
                                                     </imageView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gQb-EM-D92">
@@ -280,7 +280,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bFT-gu-QxL">
                                                 <rect key="frame" x="10" y="965" width="394" height="300"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="elizeu-dias-2EGNqazbAMk-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="gLi-h4-I5z">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leadership" translatesAutoresizingMaskIntoConstraints="NO" id="gLi-h4-I5z">
                                                         <rect key="frame" x="0.0" y="0.0" width="394" height="300"/>
                                                     </imageView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Eg-1y-y6Z">
@@ -319,6 +319,9 @@
                                                                 <real key="value" value="5"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="meetTeamAciton:" destination="4Fz-zD-ST9" eventType="touchUpInside" id="trP-Cd-orB"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.1328490973" green="0.1488522887" blue="0.16141036149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -395,8 +398,8 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="cl6-a1-gQX"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="qtx-ob-hW2"/>
                             </scrollView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Baller Academy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3kj-2M-DhJ">
-                                <rect key="frame" x="20" y="153" width="200" height="18.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3kj-2M-DhJ">
+                                <rect key="frame" x="20" y="153" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -407,7 +410,7 @@
                         <constraints>
                             <constraint firstItem="NzK-kd-Pm4" firstAttribute="bottom" secondItem="005-LX-whi" secondAttribute="bottom" id="1bv-E6-DZb"/>
                             <constraint firstItem="gpn-Hn-lVq" firstAttribute="leading" secondItem="005-LX-whi" secondAttribute="leading" constant="20" id="ANt-b5-kTg"/>
-                            <constraint firstItem="NzK-kd-Pm4" firstAttribute="top" secondItem="3kj-2M-DhJ" secondAttribute="bottom" constant="20.5" id="BD9-ma-Bmw"/>
+                            <constraint firstItem="NzK-kd-Pm4" firstAttribute="top" secondItem="3kj-2M-DhJ" secondAttribute="bottom" id="BD9-ma-Bmw"/>
                             <constraint firstItem="NzK-kd-Pm4" firstAttribute="trailing" secondItem="005-LX-whi" secondAttribute="trailing" id="Mhp-FI-U6s"/>
                             <constraint firstItem="3kj-2M-DhJ" firstAttribute="top" secondItem="gpn-Hn-lVq" secondAttribute="bottom" constant="10" id="USX-NF-CyU"/>
                             <constraint firstItem="gpn-Hn-lVq" firstAttribute="top" secondItem="005-LX-whi" secondAttribute="top" constant="15" id="XaP-mV-iWq"/>
@@ -508,7 +511,7 @@
                     </constraints>
                 </view>
             </objects>
-            <point key="canvasLocation" x="931.88405797101461" y="-702.45535714285711"/>
+            <point key="canvasLocation" x="1842.0289855072465" y="-702.45535714285711"/>
         </scene>
         <!--View Controller Wrapper-->
         <scene sceneID="GJR-QR-EYE">
@@ -523,12 +526,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F8T-3s-3TG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1700.0000000000002" y="-702.45535714285711"/>
+            <point key="canvasLocation" x="2610.144927536232" y="-702.45535714285711"/>
         </scene>
         <!--Video View Controller-->
         <scene sceneID="DcP-NG-18h">
             <objects>
-                <viewController id="HII-nD-xlD" customClass="VideoViewController" customModule="FigmaPrototypeTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VideoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HII-nD-xlD" customClass="VideoViewController" customModule="FigmaPrototypeTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5gg-MU-2qA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -556,7 +559,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pWn-a3-ofD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2497.1014492753625" y="-702.45535714285711"/>
+            <point key="canvasLocation" x="3407.2463768115945" y="-702.45535714285711"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="CJN-Ol-Ecv">
@@ -576,17 +579,17 @@
                                                 <rect key="frame" x="0.0" y="55" width="414" height="3000"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wu7-3d-rYW">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2187.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2312.5"/>
                                                         <subviews>
                                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kzV-yD-B1j" customClass="Glideshow" customModule="Glideshow">
-                                                                <rect key="frame" x="0.0" y="0.0" width="414" height="220"/>
+                                                                <rect key="frame" x="0.0" y="5" width="414" height="220"/>
                                                                 <color key="backgroundColor" red="0.1328490973" green="0.1488522887" blue="0.16141036149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="220" id="qmB-cP-DbO"/>
                                                                 </constraints>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Retired soccer player Founder &amp; CEO " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ERK-hm-vgn">
-                                                                <rect key="frame" x="20" y="235" width="171" height="39.5"/>
+                                                                <rect key="frame" x="20" y="240" width="171" height="39.5"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="171" id="69d-R4-XZY"/>
                                                                 </constraints>
@@ -595,43 +598,43 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personal Information" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RfT-3w-M7P">
-                                                                <rect key="frame" x="20" y="322.5" width="384" height="20"/>
+                                                                <rect key="frame" x="20" y="327.5" width="384" height="20"/>
                                                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
                                                                 <color key="textColor" red="0.92362123730000001" green="0.25996106860000001" blue="0.20830270649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gallery" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HjU-Hv-5gy">
-                                                                <rect key="frame" x="20" y="858.5" width="374" height="20"/>
+                                                                <rect key="frame" x="20" y="863.5" width="374" height="20"/>
                                                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
                                                                 <color key="textColor" red="0.92362123730000001" green="0.25996106860000001" blue="0.20830270649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Atheletic Career" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Afj-4z-AEA">
-                                                                <rect key="frame" x="20" y="1268.5" width="374" height="20"/>
+                                                                <rect key="frame" x="20" y="1393.5" width="374" height="20"/>
                                                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
                                                                 <color key="textColor" red="0.92362123730000001" green="0.25996106860000001" blue="0.20830270649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Business &amp; Community" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="da5-dd-NAP">
-                                                                <rect key="frame" x="20" y="1484.5" width="374" height="20"/>
+                                                                <rect key="frame" x="20" y="1609.5" width="374" height="20"/>
                                                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
                                                                 <color key="textColor" red="0.92362123730000001" green="0.25996106860000001" blue="0.20830270649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Public Servant" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="THG-9c-xah">
-                                                                <rect key="frame" x="20" y="1855.5" width="374" height="20"/>
+                                                                <rect key="frame" x="20" y="1980.5" width="374" height="20"/>
                                                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
                                                                 <color key="textColor" red="0.92362123730000001" green="0.25996106860000001" blue="0.20830270649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote from Nathan" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xuf-YF-1Qz">
-                                                                <rect key="frame" x="20" y="1928" width="374" height="20"/>
+                                                                <rect key="frame" x="20" y="2053" width="374" height="20"/>
                                                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
                                                                 <color key="textColor" red="0.92362123730000001" green="0.25996106860000001" blue="0.20830270649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gIa-AZ-pOu">
-                                                                <rect key="frame" x="20" y="352.5" width="374" height="32.5"/>
+                                                                <rect key="frame" x="20" y="357.5" width="374" height="32.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zfz-6o-lJr">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -659,13 +662,13 @@
                                                                 </constraints>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nathan “Baller” Kouamou" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddS-yO-cQF">
-                                                                <rect key="frame" x="20" y="284.5" width="374" height="28"/>
+                                                                <rect key="frame" x="20" y="289.5" width="374" height="28"/>
                                                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="24"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KMg-9t-HMV">
-                                                                <rect key="frame" x="20" y="395" width="374" height="97"/>
+                                                                <rect key="frame" x="20" y="400" width="374" height="97"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ocW-48-XZn">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -694,7 +697,7 @@
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LuP-57-wE1">
-                                                                <rect key="frame" x="20" y="502" width="374" height="64.5"/>
+                                                                <rect key="frame" x="20" y="507" width="374" height="64.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4QA-4Z-eBo">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -723,7 +726,7 @@
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rqg-3c-EtC">
-                                                                <rect key="frame" x="20" y="576.5" width="374" height="80.5"/>
+                                                                <rect key="frame" x="20" y="581.5" width="374" height="80.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="GA1-Lc-eV1">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -752,7 +755,7 @@
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eL4-id-hYG">
-                                                                <rect key="frame" x="20" y="667" width="374" height="48.5"/>
+                                                                <rect key="frame" x="20" y="672" width="374" height="48.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="w91-6Z-Zdr">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -781,7 +784,7 @@
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GXk-GW-Jax">
-                                                                <rect key="frame" x="20" y="725.5" width="374" height="48.5"/>
+                                                                <rect key="frame" x="20" y="730.5" width="374" height="48.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kpt-ko-kuO">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -810,7 +813,7 @@
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="acR-IA-luU">
-                                                                <rect key="frame" x="20" y="784" width="374" height="64.5"/>
+                                                                <rect key="frame" x="20" y="789" width="374" height="64.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="y1E-qT-O1y">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -839,48 +842,48 @@
                                                                 </constraints>
                                                             </view>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Uyp-tD-zgw">
-                                                                <rect key="frame" x="20" y="888.5" width="374" height="370"/>
+                                                                <rect key="frame" x="20" y="893.5" width="374" height="490"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="z6O-aW-fi2">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="180"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="240"/>
                                                                         <subviews>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tWp-UD-hbV">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="182" height="180"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="182" height="240"/>
                                                                                 <subviews>
                                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unicef" translatesAutoresizingMaskIntoConstraints="NO" id="qyB-CP-6g0">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="182" height="180"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="182" height="240"/>
                                                                                     </imageView>
                                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SQS-Xt-Q3A">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="182" height="180"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="182" height="240"/>
                                                                                         <subviews>
                                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play" translatesAutoresizingMaskIntoConstraints="NO" id="Hyn-Ab-mWq">
-                                                                                                <rect key="frame" x="68.5" y="80" width="45" height="45"/>
+                                                                                                <rect key="frame" x="10" y="10" width="45" height="45"/>
                                                                                                 <constraints>
                                                                                                     <constraint firstAttribute="width" constant="45" id="fcm-nd-SYX"/>
                                                                                                     <constraint firstAttribute="height" constant="45" id="gyU-8l-lD7"/>
                                                                                                 </constraints>
                                                                                             </imageView>
-                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfh-6h-ULh">
-                                                                                                <rect key="frame" x="10" y="130" width="162" height="20"/>
-                                                                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UNICEF x Baller Academy" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfh-6h-ULh">
+                                                                                                <rect key="frame" x="10" y="150" width="162" height="37"/>
+                                                                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
                                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                 <nil key="highlightedColor"/>
                                                                                             </label>
-                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0vC-FZ-fwg">
-                                                                                                <rect key="frame" x="10" y="155" width="162" height="15"/>
-                                                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
+                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UNICEF and the City of Houston partner with Baller Academy to launch World Children’s Day." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0vC-FZ-fwg">
+                                                                                                <rect key="frame" x="10" y="192" width="162" height="38"/>
+                                                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="11"/>
                                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                 <nil key="highlightedColor"/>
                                                                                             </label>
                                                                                         </subviews>
                                                                                         <color key="backgroundColor" white="0.0" alpha="0.45000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                         <constraints>
+                                                                                            <constraint firstItem="Hyn-Ab-mWq" firstAttribute="leading" secondItem="SQS-Xt-Q3A" secondAttribute="leading" constant="10" id="7bA-pA-TrS"/>
                                                                                             <constraint firstItem="0vC-FZ-fwg" firstAttribute="top" secondItem="vfh-6h-ULh" secondAttribute="bottom" constant="5" id="GdL-2a-LEr"/>
                                                                                             <constraint firstItem="vfh-6h-ULh" firstAttribute="leading" secondItem="SQS-Xt-Q3A" secondAttribute="leading" constant="10" id="Lk3-hv-XzP"/>
+                                                                                            <constraint firstItem="Hyn-Ab-mWq" firstAttribute="top" secondItem="SQS-Xt-Q3A" secondAttribute="top" constant="10" id="S9U-2F-0OV"/>
                                                                                             <constraint firstAttribute="trailing" secondItem="0vC-FZ-fwg" secondAttribute="trailing" constant="10" id="Yas-t2-Kh6"/>
                                                                                             <constraint firstAttribute="bottom" secondItem="0vC-FZ-fwg" secondAttribute="bottom" constant="10" id="Ymr-3P-BPU"/>
-                                                                                            <constraint firstItem="vfh-6h-ULh" firstAttribute="top" secondItem="Hyn-Ab-mWq" secondAttribute="bottom" constant="5" id="gn5-4w-PaP"/>
-                                                                                            <constraint firstItem="Hyn-Ab-mWq" firstAttribute="centerX" secondItem="SQS-Xt-Q3A" secondAttribute="centerX" id="k2O-9t-dZi"/>
                                                                                             <constraint firstAttribute="trailing" secondItem="vfh-6h-ULh" secondAttribute="trailing" constant="10" id="kqR-AM-FiV"/>
                                                                                             <constraint firstItem="0vC-FZ-fwg" firstAttribute="leading" secondItem="SQS-Xt-Q3A" secondAttribute="leading" constant="10" id="tLB-rR-PQy"/>
                                                                                         </constraints>
@@ -899,42 +902,42 @@
                                                                                 </constraints>
                                                                             </view>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xbx-cg-VDZ">
-                                                                                <rect key="frame" x="192" y="0.0" width="182" height="180"/>
+                                                                                <rect key="frame" x="192" y="0.0" width="182" height="240"/>
                                                                                 <subviews>
                                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="highlights" translatesAutoresizingMaskIntoConstraints="NO" id="NQW-fw-3im">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="182" height="180"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="182" height="240"/>
                                                                                     </imageView>
                                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zju-un-ccl">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="182" height="180"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="182" height="240"/>
                                                                                         <subviews>
                                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play" translatesAutoresizingMaskIntoConstraints="NO" id="VCw-2c-mAi">
-                                                                                                <rect key="frame" x="68.5" y="80" width="45" height="45"/>
+                                                                                                <rect key="frame" x="10" y="10" width="45" height="45"/>
                                                                                                 <constraints>
                                                                                                     <constraint firstAttribute="height" constant="45" id="JII-cg-nLN"/>
                                                                                                     <constraint firstAttribute="width" constant="45" id="W4e-N5-xLB"/>
                                                                                                 </constraints>
                                                                                             </imageView>
-                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vs-TG-rmw">
-                                                                                                <rect key="frame" x="10" y="130" width="162" height="20"/>
-                                                                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Highlights Video" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vs-TG-rmw">
+                                                                                                <rect key="frame" x="10" y="137" width="162" height="37"/>
+                                                                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
                                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                 <nil key="highlightedColor"/>
                                                                                             </label>
-                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXY-1x-pVO">
-                                                                                                <rect key="frame" x="10" y="155" width="162" height="15"/>
-                                                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
+                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Baller Academy programs bring together families from different communities culminating in fun and competitive events in safe" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXY-1x-pVO">
+                                                                                                <rect key="frame" x="10" y="179" width="162" height="51"/>
+                                                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="11"/>
                                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                 <nil key="highlightedColor"/>
                                                                                             </label>
                                                                                         </subviews>
                                                                                         <color key="backgroundColor" white="0.0" alpha="0.45000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                         <constraints>
+                                                                                            <constraint firstItem="VCw-2c-mAi" firstAttribute="leading" secondItem="Zju-un-ccl" secondAttribute="leading" constant="10" id="0a5-oM-KGB"/>
                                                                                             <constraint firstItem="PXY-1x-pVO" firstAttribute="leading" secondItem="Zju-un-ccl" secondAttribute="leading" constant="10" id="1DO-A6-rjd"/>
                                                                                             <constraint firstAttribute="bottom" secondItem="PXY-1x-pVO" secondAttribute="bottom" constant="10" id="EGl-ce-0kV"/>
+                                                                                            <constraint firstItem="VCw-2c-mAi" firstAttribute="top" secondItem="Zju-un-ccl" secondAttribute="top" constant="10" id="FUP-js-oR2"/>
                                                                                             <constraint firstAttribute="trailing" secondItem="PXY-1x-pVO" secondAttribute="trailing" constant="10" id="Ifd-DQ-ug9"/>
-                                                                                            <constraint firstItem="9vs-TG-rmw" firstAttribute="top" secondItem="VCw-2c-mAi" secondAttribute="bottom" constant="5" id="KzE-q5-46h"/>
                                                                                             <constraint firstAttribute="trailing" secondItem="9vs-TG-rmw" secondAttribute="trailing" constant="10" id="Lvd-qq-Ier"/>
-                                                                                            <constraint firstItem="VCw-2c-mAi" firstAttribute="centerX" secondItem="Zju-un-ccl" secondAttribute="centerX" id="Nct-ky-8gv"/>
                                                                                             <constraint firstItem="9vs-TG-rmw" firstAttribute="leading" secondItem="Zju-un-ccl" secondAttribute="leading" constant="10" id="x1s-M2-K5Y"/>
                                                                                             <constraint firstItem="PXY-1x-pVO" firstAttribute="top" secondItem="9vs-TG-rmw" secondAttribute="bottom" constant="5" id="xLr-sk-TSO"/>
                                                                                         </constraints>
@@ -954,47 +957,48 @@
                                                                             </view>
                                                                         </subviews>
                                                                         <constraints>
-                                                                            <constraint firstAttribute="height" constant="180" id="0YU-RK-x9d"/>
+                                                                            <constraint firstAttribute="height" constant="240" id="0YU-RK-x9d"/>
                                                                         </constraints>
                                                                     </stackView>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Owz-Sm-amp">
-                                                                        <rect key="frame" x="0.0" y="190" width="374" height="180"/>
+                                                                        <rect key="frame" x="0.0" y="250" width="374" height="240"/>
                                                                         <subviews>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mPQ-Re-hlZ">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="182" height="180"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="182" height="240"/>
                                                                                 <subviews>
                                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="houston" translatesAutoresizingMaskIntoConstraints="NO" id="5wq-uT-9Hg">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="182" height="180"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="182" height="240"/>
                                                                                     </imageView>
                                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4eO-oO-QEP">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="182" height="180"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="182" height="240"/>
                                                                                         <subviews>
                                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play" translatesAutoresizingMaskIntoConstraints="NO" id="koO-2C-XP4">
-                                                                                                <rect key="frame" x="68.5" y="80" width="45" height="45"/>
+                                                                                                <rect key="frame" x="10" y="10" width="45" height="45"/>
                                                                                                 <constraints>
                                                                                                     <constraint firstAttribute="height" constant="45" id="I89-tj-xuc"/>
                                                                                                     <constraint firstAttribute="width" constant="45" id="aau-r8-6IE"/>
                                                                                                 </constraints>
                                                                                             </imageView>
-                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xH6-6f-Nkc">
-                                                                                                <rect key="frame" x="10" y="130" width="162" height="20"/>
-                                                                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Houston Sports Park Board Induction" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xH6-6f-Nkc">
+                                                                                                <rect key="frame" x="10" y="124.5" width="162" height="37"/>
+                                                                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
                                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                 <nil key="highlightedColor"/>
                                                                                             </label>
-                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIy-Ig-VkJ">
-                                                                                                <rect key="frame" x="10" y="155" width="162" height="15"/>
-                                                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
+                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIy-Ig-VkJ">
+                                                                                                <rect key="frame" x="10" y="166.5" width="162" height="63.5"/>
+                                                                                                <string key="text">Mayor Sylvester Turner and the city council appoint Baller Academy founder Nathan “Baller” Kouamou to the Board of Houston Sports Park.</string>
+                                                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="11"/>
                                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                 <nil key="highlightedColor"/>
                                                                                             </label>
                                                                                         </subviews>
                                                                                         <color key="backgroundColor" white="0.0" alpha="0.45000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                         <constraints>
-                                                                                            <constraint firstItem="xH6-6f-Nkc" firstAttribute="top" secondItem="koO-2C-XP4" secondAttribute="bottom" constant="5" id="68j-68-eGc"/>
+                                                                                            <constraint firstItem="koO-2C-XP4" firstAttribute="top" secondItem="4eO-oO-QEP" secondAttribute="top" constant="10" id="8Pa-Xi-f7F"/>
                                                                                             <constraint firstItem="fIy-Ig-VkJ" firstAttribute="top" secondItem="xH6-6f-Nkc" secondAttribute="bottom" constant="5" id="B43-gS-zi3"/>
                                                                                             <constraint firstAttribute="bottom" secondItem="fIy-Ig-VkJ" secondAttribute="bottom" constant="10" id="FHK-r6-Aoc"/>
-                                                                                            <constraint firstItem="koO-2C-XP4" firstAttribute="centerX" secondItem="4eO-oO-QEP" secondAttribute="centerX" id="LXr-hf-sdf"/>
+                                                                                            <constraint firstItem="koO-2C-XP4" firstAttribute="leading" secondItem="4eO-oO-QEP" secondAttribute="leading" constant="10" id="RrB-a8-N8s"/>
                                                                                             <constraint firstItem="xH6-6f-Nkc" firstAttribute="leading" secondItem="4eO-oO-QEP" secondAttribute="leading" constant="10" id="ZeS-qb-edX"/>
                                                                                             <constraint firstAttribute="trailing" secondItem="fIy-Ig-VkJ" secondAttribute="trailing" constant="10" id="ocq-zm-taJ"/>
                                                                                             <constraint firstItem="fIy-Ig-VkJ" firstAttribute="leading" secondItem="4eO-oO-QEP" secondAttribute="leading" constant="10" id="qHE-P9-MyH"/>
@@ -1015,18 +1019,18 @@
                                                                                 </constraints>
                                                                             </view>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uBa-gV-wWG">
-                                                                                <rect key="frame" x="192" y="0.0" width="182" height="180"/>
+                                                                                <rect key="frame" x="192" y="0.0" width="182" height="240"/>
                                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             </view>
                                                                         </subviews>
                                                                         <constraints>
-                                                                            <constraint firstAttribute="height" constant="180" id="RlX-UI-DWd"/>
+                                                                            <constraint firstAttribute="height" constant="240" id="RlX-UI-DWd"/>
                                                                         </constraints>
                                                                     </stackView>
                                                                 </subviews>
                                                             </stackView>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w0M-S2-4WN">
-                                                                <rect key="frame" x="20" y="1298.5" width="374" height="32.5"/>
+                                                                <rect key="frame" x="20" y="1423.5" width="374" height="32.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="JNL-LT-Mgg">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -1056,7 +1060,7 @@ Nathan Played in his</string>
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UGf-8O-KdJ">
-                                                                <rect key="frame" x="20" y="1458" width="374" height="16.5"/>
+                                                                <rect key="frame" x="20" y="1583" width="374" height="16.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2Dd-Jv-A9F">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -1084,7 +1088,7 @@ Nathan Played in his</string>
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qYV-2l-L7j">
-                                                                <rect key="frame" x="20" y="1514.5" width="374" height="145"/>
+                                                                <rect key="frame" x="20" y="1639.5" width="374" height="145"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="GIB-T8-cKY">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -1114,7 +1118,7 @@ Nathan started Baller Academy in May 2016 and grew it into one of the country's 
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I1H-qm-vE2">
-                                                                <rect key="frame" x="20" y="1669.5" width="374" height="32.5"/>
+                                                                <rect key="frame" x="20" y="1794.5" width="374" height="32.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ebm-eD-Oy0">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -1142,7 +1146,7 @@ Nathan started Baller Academy in May 2016 and grew it into one of the country's 
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WY3-ab-Z2z">
-                                                                <rect key="frame" x="20" y="1712" width="374" height="48.5"/>
+                                                                <rect key="frame" x="20" y="1837" width="374" height="48.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="YkI-1h-PCj">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -1171,7 +1175,7 @@ Nathan started Baller Academy in May 2016 and grew it into one of the country's 
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6jr-Lq-93Z">
-                                                                <rect key="frame" x="20" y="1770.5" width="374" height="32.5"/>
+                                                                <rect key="frame" x="20" y="1895.5" width="374" height="32.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="xRn-9s-U1v">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -1199,7 +1203,7 @@ Nathan started Baller Academy in May 2016 and grew it into one of the country's 
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8d0-Vj-bI3">
-                                                                <rect key="frame" x="20" y="1813" width="374" height="32.5"/>
+                                                                <rect key="frame" x="20" y="1938" width="374" height="32.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="s0c-VI-7Pk">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -1227,7 +1231,7 @@ Nathan started Baller Academy in May 2016 and grew it into one of the country's 
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jbP-zc-b1J">
-                                                                <rect key="frame" x="20" y="1885.5" width="374" height="32.5"/>
+                                                                <rect key="frame" x="20" y="2010.5" width="374" height="32.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6Gs-bl-VxT">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -1255,7 +1259,7 @@ Nathan started Baller Academy in May 2016 and grew it into one of the country's 
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ldf-Pp-bKr">
-                                                                <rect key="frame" x="20" y="1341" width="374" height="32.5"/>
+                                                                <rect key="frame" x="20" y="1466" width="374" height="32.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="c2z-zo-4Yg">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -1285,7 +1289,7 @@ Semi-professional soccer club in Houston, TX</string>
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nxx-xD-rbG">
-                                                                <rect key="frame" x="20" y="1383.5" width="374" height="64.5"/>
+                                                                <rect key="frame" x="20" y="1508.5" width="374" height="64.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fRP-wr-Sd1">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -1315,7 +1319,7 @@ Nathan was the only player selected to join the team in 2012 following a success
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uhS-zQ-vYU">
-                                                                <rect key="frame" x="20" y="1958" width="374" height="209.5"/>
+                                                                <rect key="frame" x="20" y="2083" width="374" height="209.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="8zL-Nj-2RW">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -1327,7 +1331,7 @@ Nathan was the only player selected to join the team in 2012 following a success
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ddt-54-Wx2">
                                                                         <rect key="frame" x="10" y="0.0" width="364" height="209.5"/>
-                                                                        <mutableString key="text">I learned English from children in less than six months because children never judged me for being an 18 years old man who couldn't speak English. Throughout my 20 years of coaching children, I realized that children do an outstanding job of creating safe environments for everyone around them to feel accepted, safe and vulnerable. I still learn a lot from children every day. Our concepts come from studying children's and senior citizens' behaviors. We firmly believe that Baller Academy being a safe platform for acceptance where everyone can be vulnerable, post with no filters, share their real self without overthinking, and not have a fear of judgment will fuel real growth and save lives.</mutableString>
+                                                                        <string key="text">I learned English from children in less than six months because children never judged me for being an 18 years old man who couldn't speak English. Throughout my 20 years of coaching children, I realized that children do an outstanding job of creating safe environments for everyone around them to feel accepted, safe and vulnerable. I still learn a lot from children every day. Our concepts come from studying children's and senior citizens' behaviors. We firmly believe that Baller Academy being a safe platform for acceptance where everyone can be vulnerable, post with no filters, share their real self without overthinking, and not have a fear of judgment will fuel real growth and save lives.</string>
                                                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
@@ -1418,7 +1422,7 @@ Nathan was the only player selected to join the team in 2012 following a success
                                                             <constraint firstItem="acR-IA-luU" firstAttribute="leading" secondItem="Wu7-3d-rYW" secondAttribute="leading" constant="20" id="or3-eC-xhe"/>
                                                             <constraint firstItem="KMg-9t-HMV" firstAttribute="leading" secondItem="Wu7-3d-rYW" secondAttribute="leading" constant="20" symbolic="YES" id="orJ-ca-hag"/>
                                                             <constraint firstItem="ddS-yO-cQF" firstAttribute="top" secondItem="ERK-hm-vgn" secondAttribute="bottom" constant="10" id="oyx-5e-JJk"/>
-                                                            <constraint firstItem="kzV-yD-B1j" firstAttribute="top" secondItem="Wu7-3d-rYW" secondAttribute="top" id="qVb-0z-s9z"/>
+                                                            <constraint firstItem="kzV-yD-B1j" firstAttribute="top" secondItem="Wu7-3d-rYW" secondAttribute="top" constant="5" id="qVb-0z-s9z"/>
                                                             <constraint firstItem="gIa-AZ-pOu" firstAttribute="top" secondItem="RfT-3w-M7P" secondAttribute="bottom" constant="10" id="qX0-MJ-g6T"/>
                                                             <constraint firstAttribute="trailing" secondItem="Afj-4z-AEA" secondAttribute="trailing" constant="20" symbolic="YES" id="rB4-56-EP9"/>
                                                             <constraint firstItem="acR-IA-luU" firstAttribute="top" secondItem="GXk-GW-Jax" secondAttribute="bottom" constant="10" id="sEK-tx-moi"/>
@@ -1463,8 +1467,18 @@ Nathan was the only player selected to join the team in 2012 following a success
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aKC-rQ-Fak">
                                                 <rect key="frame" x="0.0" y="3111" width="414" height="338"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coming Soon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ySg-UU-xM9">
+                                                        <rect key="frame" x="132" y="154.5" width="150" height="29"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                        <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
                                                 <color key="backgroundColor" red="0.1328490973" green="0.1488522887" blue="0.16141036149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
+                                                    <constraint firstItem="ySg-UU-xM9" firstAttribute="centerX" secondItem="aKC-rQ-Fak" secondAttribute="centerX" id="OgS-zz-TbB"/>
+                                                    <constraint firstItem="ySg-UU-xM9" firstAttribute="centerY" secondItem="aKC-rQ-Fak" secondAttribute="centerY" id="jeD-2h-v5f"/>
                                                     <constraint firstAttribute="height" constant="338" id="uTU-ag-kPD"/>
                                                 </constraints>
                                             </view>
@@ -1491,8 +1505,18 @@ Nathan was the only player selected to join the team in 2012 following a success
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TxR-5N-cKg">
                                                 <rect key="frame" x="0.0" y="3505" width="414" height="338"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coming Soon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8r-vR-f7d">
+                                                        <rect key="frame" x="132" y="154.5" width="150" height="29"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                        <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
                                                 <color key="backgroundColor" red="0.1328490973" green="0.1488522887" blue="0.16141036149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
+                                                    <constraint firstItem="b8r-vR-f7d" firstAttribute="centerX" secondItem="TxR-5N-cKg" secondAttribute="centerX" id="ZSE-Fs-sGU"/>
+                                                    <constraint firstItem="b8r-vR-f7d" firstAttribute="centerY" secondItem="TxR-5N-cKg" secondAttribute="centerY" id="gEk-Er-1EK"/>
                                                     <constraint firstAttribute="height" constant="338" id="hYp-cT-osp"/>
                                                 </constraints>
                                             </view>
@@ -1578,6 +1602,7 @@ Nathan was the only player selected to join the team in 2012 following a success
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="TJA-oY-zqU" firstAttribute="width" secondItem="uRr-yi-mKQ" secondAttribute="width" id="57W-t8-hJa"/>
                                     <constraint firstItem="TJA-oY-zqU" firstAttribute="leading" secondItem="uRr-yi-mKQ" secondAttribute="leading" id="7Ld-fz-Drm"/>
@@ -1598,6 +1623,7 @@ Nathan was the only player selected to join the team in 2012 following a success
                             <constraint firstItem="Qa7-dV-aLE" firstAttribute="bottom" secondItem="uRr-yi-mKQ" secondAttribute="bottom" id="ddM-zF-G0q"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Dxt-yv-J3Y"/>
                     <connections>
                         <outlet property="galleryImg" destination="qyB-CP-6g0" id="jpf-AS-xIp"/>
                         <outlet property="galleryImgThree" destination="5wq-uT-9Hg" id="aZp-hk-S9f"/>
@@ -1622,7 +1648,7 @@ Nathan was the only player selected to join the team in 2012 following a success
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vaa-bA-WYh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3276.811594202899" y="-702.45535714285711"/>
+            <point key="canvasLocation" x="4186.9565217391309" y="-702.45535714285711"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ra6-Ru-jtP">
@@ -1640,26 +1666,6 @@ Nathan was the only player selected to join the team in 2012 following a success
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J3F-fE-sPk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-26.086956521739133" y="63.616071428571423"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="H7O-st-YEJ">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AA2-wI-fzs" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2XQ-qT-W63">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="4Fz-zD-ST9" kind="relationship" relationship="rootViewController" id="l8h-RS-MkU"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OoM-dd-RYb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="21.739130434782609" y="-702.45535714285711"/>
         </scene>
         <!--Schedule View Controller-->
         <scene sceneID="pGI-Tu-sJA">
@@ -1696,6 +1702,26 @@ Nathan was the only player selected to join the team in 2012 following a success
             </objects>
             <point key="canvasLocation" x="1934.7826086956522" y="12.723214285714285"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="reY-e4-xpD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cgs-SL-RxL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aBP-rw-whV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4Fz-zD-ST9" kind="relationship" relationship="rootViewController" id="PNb-72-uEg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y0I-Xf-On9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="931.88405797101461" y="-702.45535714285711"/>
+        </scene>
     </scenes>
     <designables>
         <designable name="NPj-Ld-jz7">
@@ -1721,9 +1747,14 @@ Nathan was the only player selected to join the team in 2012 following a success
         <image name="gobackward.minus" catalog="system" width="121" height="128"/>
         <image name="highlights" width="2000" height="1238"/>
         <image name="houston" width="2000" height="1238"/>
+        <image name="intro" width="640" height="427"/>
+        <image name="leadership" width="640" height="427"/>
         <image name="play" width="128" height="128"/>
         <image name="unicef" width="2000" height="1238"/>
         <image name="white-appicon" width="200" height="66"/>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
