@@ -80,13 +80,11 @@ class ProfileViewController: UIViewController {
             GlideItem(title : "", description: "", backgroundImage: UIImage(named:  "1")),
             GlideItem(description: "", backgroundImage: UIImage(named:  "2")),
             GlideItem(description: "", backgroundImage: UIImage(named:  "3")),
-            GlideItem(title : "", description: "", backgroundImage: UIImage(named:  "1")),
-            GlideItem(description: "", backgroundImage: UIImage(named:  "4")),
+            GlideItem(title : "", description: "", backgroundImage: UIImage(named:  "4")),
             GlideItem(description: "", backgroundImage: UIImage(named:  "5")),
-            GlideItem(title : "", description: "", backgroundImage: UIImage(named:  "1")),
             GlideItem(description: "", backgroundImage: UIImage(named:  "6")),
-            GlideItem(description: "", backgroundImage: UIImage(named:  "7")),
-            GlideItem(title : "", description: "", backgroundImage: UIImage(named:  "8")),
+            GlideItem(title : "", description: "", backgroundImage: UIImage(named:  "7")),
+            GlideItem(description: "", backgroundImage: UIImage(named:  "8")),
             GlideItem(description: "", backgroundImage: UIImage(named:  "9"))
         ]
         sliderView.delegate = self
@@ -98,6 +96,28 @@ class ProfileViewController: UIViewController {
         sliderView.gradientHeightFactor = 0.8
         sliderView.pageIndicatorPosition = .bottom
         sliderView.interval = 5
+    }
+    
+    @IBAction func nathanLinkdinAction(_ sender: Any) {
+        openUrl(string: "https://www.linkedin.com/in/nathan-baller-586573189")
+    }
+    @IBAction func nathanTwitterAction(_ sender: Any) {
+        openUrl(string: "https://twitter.com/nathankouamou1")
+    }
+    @IBAction func nathanInstaAction(_ sender: Any) {
+        openUrl(string: "https://instagram.com/nathanballer_?igshid=YmMyMTA2M2Y=")
+    }
+    
+    func openUrl(string:String) {
+        guard let url = URL(string: string) else {
+          return //be safe
+        }
+
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url)
+        }
     }
     
     @objc func goVideoDetails() {

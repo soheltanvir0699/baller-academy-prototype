@@ -74,7 +74,7 @@
                                 <rect key="frame" x="0.0" y="153" width="414" height="709"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="20f-No-9JU">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1435"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1431"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NWI-mh-NoH">
                                                 <rect key="frame" x="10" y="20" width="394" height="300"/>
@@ -87,16 +87,16 @@
                                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.44734676942130586" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INTRODUCTION VIDEO" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hoN-0f-fFX">
-                                                        <rect key="frame" x="10" y="170.5" width="374" height="22"/>
+                                                        <rect key="frame" x="10" y="173" width="374" height="22"/>
                                                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                         <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <size key="shadowOffset" width="1" height="1"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get a brief introduction to the app, see its functioning, learn about our WHYs and the goal to reach 50m users by 2026." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VmW-f6-BVJ">
-                                                        <rect key="frame" x="10" y="202.5" width="374" height="32.5"/>
-                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get a brief introduction to our app, see its functioning, hear our WHYs and our goal to reach 50m users by 2026." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VmW-f6-BVJ">
+                                                        <rect key="frame" x="10" y="205" width="374" height="30"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -151,14 +151,14 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="394" height="300"/>
                                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.44734676940000001" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </view>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smart platform that utilizes the latest Algorithms of AI and its subsets to help communities grow, and businesses thrive" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LgE-a3-WBQ">
-                                                        <rect key="frame" x="10" y="202.5" width="374" height="32.5"/>
-                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smart platform that uses the latest Algorithms of AI and its subsets to help communities grow, and businesses thrive." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LgE-a3-WBQ">
+                                                        <rect key="frame" x="10" y="205" width="374" height="30"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APP PROTOTYPE" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5QP-Lc-tMu">
-                                                        <rect key="frame" x="10" y="170.5" width="374" height="22"/>
+                                                        <rect key="frame" x="10" y="173" width="374" height="22"/>
                                                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -220,16 +220,16 @@
                                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.44734676940000001" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INVESTOR DECK" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPK-y3-srS">
-                                                        <rect key="frame" x="10" y="154.5" width="374" height="22"/>
+                                                        <rect key="frame" x="10" y="173" width="374" height="22"/>
                                                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                         <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <size key="shadowOffset" width="1" height="1"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join us in our pre-seed funding round and be a part of our mission to bring together community building and innovation." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGP-9a-ddA">
-                                                        <rect key="frame" x="10" y="186.5" width="374" height="48.5"/>
-                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join our pre-seed funding round and be a part of our mission to bring together community building and innovation." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGP-9a-ddA">
+                                                        <rect key="frame" x="10" y="205" width="374" height="30"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -288,16 +288,16 @@
                                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.44734676940000001" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="World Class Leadership Team " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDO-XO-pI9">
-                                                        <rect key="frame" x="10" y="170.5" width="374" height="22"/>
+                                                        <rect key="frame" x="10" y="173" width="374" height="22"/>
                                                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="highlightedColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <size key="shadowOffset" width="1" height="1"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meet our world class leadership team with over 22 years merging community building, technology, and innovation." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRb-90-VjC">
-                                                        <rect key="frame" x="10" y="202.5" width="374" height="32.5"/>
-                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meet our world class leadership team with over 22 years merging community building, technology, and innovation." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRb-90-VjC">
+                                                        <rect key="frame" x="10" y="205" width="374" height="30"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -351,15 +351,21 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqQ-xi-dnH">
-                                                <rect key="frame" x="182.5" y="1366" width="49" height="49"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqQ-xi-dnH" customClass="TransitionButton" customModule="FigmaPrototypeTest" customModuleProvider="target">
+                                                <rect key="frame" x="92" y="1366" width="230" height="45"/>
+                                                <color key="backgroundColor" red="0.92362123730000001" green="0.25996106860000001" blue="0.20830270649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="49" id="P2J-F0-W0N"/>
-                                                    <constraint firstAttribute="height" constant="49" id="pOv-VP-lbw"/>
+                                                    <constraint firstAttribute="width" constant="230" id="P2J-F0-W0N"/>
+                                                    <constraint firstAttribute="height" constant="45" id="pOv-VP-lbw"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" image="cal"/>
+                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                                                <state key="normal" title="SCHEDULE A MEETING" image="cal"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="seeScheduleAction:" destination="4Fz-zD-ST9" eventType="touchUpInside" id="GRk-26-j4p"/>
                                                 </connections>
@@ -579,7 +585,7 @@
                                                 <rect key="frame" x="0.0" y="55" width="414" height="3000"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wu7-3d-rYW">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2312.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2357.5"/>
                                                         <subviews>
                                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kzV-yD-B1j" customClass="Glideshow" customModule="Glideshow">
                                                                 <rect key="frame" x="0.0" y="5" width="414" height="220"/>
@@ -1347,6 +1353,39 @@ Nathan was the only player selected to join the team in 2012 following a success
                                                                     <constraint firstAttribute="trailing" secondItem="Ddt-54-Wx2" secondAttribute="trailing" id="uov-c0-Rmc"/>
                                                                 </constraints>
                                                             </view>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="NYa-hy-8Xz">
+                                                                <rect key="frame" x="134.5" y="2312.5" width="145" height="35"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ba-rd-Ujs">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                        <state key="normal" image="instagram_g"/>
+                                                                        <connections>
+                                                                            <action selector="nathanInstaAction:" destination="OT0-fQ-wHF" eventType="touchUpInside" id="Dj6-OA-UUz"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIi-iB-Cm7">
+                                                                        <rect key="frame" x="55" y="0.0" width="35" height="35"/>
+                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                        <state key="normal" image="twitter"/>
+                                                                        <connections>
+                                                                            <action selector="nathanTwitterAction:" destination="OT0-fQ-wHF" eventType="touchUpInside" id="wXA-aW-KKe"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WbA-4a-Xqf">
+                                                                        <rect key="frame" x="110" y="0.0" width="35" height="35"/>
+                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                        <state key="normal" image="linkedin"/>
+                                                                        <connections>
+                                                                            <action selector="nathanLinkdinAction:" destination="OT0-fQ-wHF" eventType="touchUpInside" id="fwv-mJ-Rku"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="35" id="5yA-c0-des"/>
+                                                                    <constraint firstAttribute="width" constant="145" id="mpE-ga-Qry"/>
+                                                                </constraints>
+                                                            </stackView>
                                                         </subviews>
                                                         <color key="backgroundColor" red="0.1328490973" green="0.1488522887" blue="0.16141036149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -1354,6 +1393,7 @@ Nathan was the only player selected to join the team in 2012 following a success
                                                             <constraint firstItem="UGf-8O-KdJ" firstAttribute="top" secondItem="nxx-xD-rbG" secondAttribute="bottom" constant="10" id="1N5-vx-cds"/>
                                                             <constraint firstItem="THG-9c-xah" firstAttribute="top" secondItem="8d0-Vj-bI3" secondAttribute="bottom" constant="10" id="20S-9z-Ldh"/>
                                                             <constraint firstItem="LuP-57-wE1" firstAttribute="leading" secondItem="Wu7-3d-rYW" secondAttribute="leading" constant="20" symbolic="YES" id="2wk-uQ-Jl0"/>
+                                                            <constraint firstItem="NYa-hy-8Xz" firstAttribute="top" secondItem="uhS-zQ-vYU" secondAttribute="bottom" constant="20" id="3I2-hG-CUW"/>
                                                             <constraint firstItem="I1H-qm-vE2" firstAttribute="leading" secondItem="Wu7-3d-rYW" secondAttribute="leading" constant="20" id="3Ts-70-dKO"/>
                                                             <constraint firstItem="RfT-3w-M7P" firstAttribute="leading" secondItem="Wu7-3d-rYW" secondAttribute="leading" constant="20" id="3Xx-4R-xjY"/>
                                                             <constraint firstItem="WY3-ab-Z2z" firstAttribute="leading" secondItem="Wu7-3d-rYW" secondAttribute="leading" constant="20" id="3mI-Uq-USZ"/>
@@ -1366,6 +1406,7 @@ Nathan was the only player selected to join the team in 2012 following a success
                                                             <constraint firstAttribute="trailing" secondItem="uhS-zQ-vYU" secondAttribute="trailing" constant="20" symbolic="YES" id="72f-dg-2qf"/>
                                                             <constraint firstAttribute="trailing" secondItem="qYV-2l-L7j" secondAttribute="trailing" constant="20" symbolic="YES" id="7P4-uc-wwc"/>
                                                             <constraint firstItem="nxx-xD-rbG" firstAttribute="top" secondItem="ldf-Pp-bKr" secondAttribute="bottom" constant="10" id="A4x-Ah-9T5"/>
+                                                            <constraint firstAttribute="bottom" secondItem="NYa-hy-8Xz" secondAttribute="bottom" constant="10" id="AEa-BA-7cd"/>
                                                             <constraint firstItem="GXk-GW-Jax" firstAttribute="leading" secondItem="Wu7-3d-rYW" secondAttribute="leading" constant="20" id="AIk-H8-ktM"/>
                                                             <constraint firstItem="qYV-2l-L7j" firstAttribute="leading" secondItem="Wu7-3d-rYW" secondAttribute="leading" constant="20" symbolic="YES" id="BPF-vX-Pls"/>
                                                             <constraint firstAttribute="trailing" secondItem="eL4-id-hYG" secondAttribute="trailing" constant="20" id="CCJ-x7-ELE"/>
@@ -1384,7 +1425,6 @@ Nathan was the only player selected to join the team in 2012 following a success
                                                             <constraint firstItem="da5-dd-NAP" firstAttribute="leading" secondItem="Wu7-3d-rYW" secondAttribute="leading" constant="20" symbolic="YES" id="M2S-yw-Wcs"/>
                                                             <constraint firstItem="Uyp-tD-zgw" firstAttribute="top" secondItem="HjU-Hv-5gy" secondAttribute="bottom" constant="10" id="MOX-EX-j2k"/>
                                                             <constraint firstAttribute="trailing" secondItem="HjU-Hv-5gy" secondAttribute="trailing" constant="20" id="NLk-3b-8LB"/>
-                                                            <constraint firstAttribute="bottom" secondItem="uhS-zQ-vYU" secondAttribute="bottom" constant="20" id="NXa-p6-pXj"/>
                                                             <constraint firstItem="xuf-YF-1Qz" firstAttribute="top" secondItem="jbP-zc-b1J" secondAttribute="bottom" constant="10" id="NyA-IY-fKD"/>
                                                             <constraint firstAttribute="trailing" secondItem="RfT-3w-M7P" secondAttribute="trailing" constant="10" id="O4L-S9-qbT"/>
                                                             <constraint firstAttribute="trailing" secondItem="8d0-Vj-bI3" secondAttribute="trailing" constant="20" symbolic="YES" id="OeW-hC-PZQ"/>
@@ -1432,6 +1472,7 @@ Nathan was the only player selected to join the team in 2012 following a success
                                                             <constraint firstItem="6jr-Lq-93Z" firstAttribute="top" secondItem="WY3-ab-Z2z" secondAttribute="bottom" constant="10" id="wfy-Vc-Qig"/>
                                                             <constraint firstItem="8d0-Vj-bI3" firstAttribute="top" secondItem="6jr-Lq-93Z" secondAttribute="bottom" constant="10" id="wiS-Ld-cMs"/>
                                                             <constraint firstItem="KMg-9t-HMV" firstAttribute="top" secondItem="gIa-AZ-pOu" secondAttribute="bottom" constant="10" id="xWo-ye-gPW"/>
+                                                            <constraint firstItem="NYa-hy-8Xz" firstAttribute="centerX" secondItem="Wu7-3d-rYW" secondAttribute="centerX" id="zEc-Tb-yLn"/>
                                                             <constraint firstItem="ERK-hm-vgn" firstAttribute="leading" secondItem="Wu7-3d-rYW" secondAttribute="leading" constant="20" id="zL1-bk-wyk"/>
                                                             <constraint firstAttribute="trailing" secondItem="LuP-57-wE1" secondAttribute="trailing" constant="20" symbolic="YES" id="zLO-P9-643"/>
                                                         </constraints>
@@ -1498,7 +1539,7 @@ Nathan was the only player selected to join the team in 2012 following a success
                                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="Chif Community Officer"/>
+                                                <state key="normal" title="Chief Community Officer"/>
                                                 <connections>
                                                     <action selector="lourenCollapseAction:" destination="OT0-fQ-wHF" eventType="touchUpInside" id="FTp-SL-mYW"/>
                                                 </connections>
@@ -1536,7 +1577,7 @@ Nathan was the only player selected to join the team in 2012 following a success
                                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="Chif Technology Officer"/>
+                                                <state key="normal" title="Chief Technology Officer"/>
                                                 <connections>
                                                     <action selector="mujahidCollapseAction:" destination="OT0-fQ-wHF" eventType="touchUpInside" id="gWH-iY-Bn5"/>
                                                 </connections>
@@ -1736,20 +1777,26 @@ Nathan was the only player selected to join the team in 2012 following a success
         <designable name="v24-6q-bUi">
             <size key="intrinsicContentSize" width="130" height="29"/>
         </designable>
+        <designable name="wqQ-xi-dnH">
+            <size key="intrinsicContentSize" width="188" height="30"/>
+        </designable>
     </designables>
     <resources>
         <image name="Group 10" width="1220" height="700"/>
         <image name="Left" width="100" height="100"/>
-        <image name="cal" width="256" height="256"/>
+        <image name="cal" width="30" height="30"/>
         <image name="circle.fill" catalog="system" width="128" height="121"/>
         <image name="elizeu-dias-2EGNqazbAMk-unsplash" width="640" height="427"/>
         <image name="ezgif-3-50ad67f0e2" width="2000" height="1200"/>
         <image name="gobackward.minus" catalog="system" width="121" height="128"/>
         <image name="highlights" width="2000" height="1238"/>
         <image name="houston" width="2000" height="1238"/>
+        <image name="instagram_g" width="128" height="128"/>
         <image name="intro" width="640" height="427"/>
         <image name="leadership" width="640" height="427"/>
+        <image name="linkedin" width="128" height="128"/>
         <image name="play" width="128" height="128"/>
+        <image name="twitter" width="128" height="128"/>
         <image name="unicef" width="2000" height="1238"/>
         <image name="white-appicon" width="200" height="66"/>
         <systemColor name="secondarySystemGroupedBackgroundColor">
