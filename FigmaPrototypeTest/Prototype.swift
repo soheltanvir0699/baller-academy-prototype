@@ -8,28 +8,36 @@
 import UIKit
 import WebKit
 import NotificationToast
+import Speech
+import MediaPlayer
+import AVFoundation
 
-class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate, UIGestureRecognizerDelegate {
+class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate, UIGestureRecognizerDelegate,SFSpeechRecognizerDelegate {
 
     @IBOutlet weak var backImg: UIImageView!
     @IBOutlet weak var webView: WKWebView!
+    private var audioLevel : Float = 0.0
+    private var tapCout = 0
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.navigationController?.navigationBar.isHidden = true
+//        userAutorization()
+       
         // Do any additional setup after loading the view.
         let link = URL(string:"https://www.figma.com/proto/9af6kpJB18dEZGcRmcX18G/Prototype-Test?node-id=2309%3A20362&scaling=min-zoom&page-id=22%3A5297&starting-point-node-id=618%3A12289")!
         let request = URLRequest(url: link)
+        DispatchQueue.main.async {
+        
         self.webView!.isOpaque = true
         self.webView!.backgroundColor = UIColor.clear
         self.webView!.scrollView.backgroundColor = UIColor.clear
         if #available(iOS 14.0, *) {
-            webView.configuration.defaultWebpagePreferences.allowsContentJavaScript = true
+            self.webView.configuration.defaultWebpagePreferences.allowsContentJavaScript = true
         } else {
             // Fallback on earlier versions
         }
-        addLongPressGesture()
-        let recognizer = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPress(_:)))
-        recognizer.delegate = self
+        }
 //        self.webView!.scrollView.addGestureRecognizer(recognizer)
         webView.translatesAutoresizingMaskIntoConstraints = false
         webView.load(request)
@@ -38,48 +46,63 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate, UIGe
         webView.scrollView.contentInsetAdjustmentBehavior = .never
         self.backImg.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(backAction)))
         _ = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.update), userInfo: nil, repeats: true)
-        
-//        if #available(iOS 13.0, *) {
-//            let toast = ToastViewL(
-//                title: "Back to home",
-//                titleFont: .systemFont(ofSize: 13, weight: .regular),
-//                subtitle: "Long press on this page",
-//                subtitleFont: .systemFont(ofSize: 11, weight: .light),
-//                icon: UIImage(systemName: "gobackward.minus"),
-//                iconSpacing: 16,
-//                position: .bottom,
-//                onTap: { print("Tapped!") }
-//            )
-//            toast.show()
-//        } else {
-//            // Fallback on earlier versions
-//            let toast = ToastViewL(
-//                title: "Back to home",
-//                titleFont: .systemFont(ofSize: 13, weight: .regular),
-//                subtitle: "Long press on this page",
-//                subtitleFont: .systemFont(ofSize: 11, weight: .light),
-//                iconSpacing: 16,
-//                position: .bottom,
-//                onTap: { print("Tapped!") }
-//            )
-//            toast.show()
-//        }
-       
-        
+        listenVolumeButton()
     }
     
-    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
-        return true
-    }
-    func addLongPressGesture() {
+    
+    func listenVolumeButton(){
+        showToast(message: "tap (Volume button) to close the prototype.")
         
+         let audioSession = AVAudioSession.sharedInstance()
+         do {
+              try audioSession.setActive(true, options: [])
+         audioSession.addObserver(self, forKeyPath: "outputVolume",
+                                  options: NSKeyValueObservingOptions.new, context: nil)
+              audioLevel = audioSession.outputVolume
+         } catch {
+              print("Error")
+         }
     }
-
-    @objc
-    func handleLongPress(_ gestureRecognizer: UILongPressGestureRecognizer) {
-        if gestureRecognizer.state == .began {
-            // Perform your functionality here
-            backAction()
+   
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+         if keyPath == "outputVolume"{
+//              let audioSession = AVAudioSession.sharedInstance()
+//              if audioSession.outputVolume > audioLevel {
+//                   print("Hello")
+//              }
+//              if audioSession.outputVolume < audioLevel {
+//
+//              }
+             backAction()
+//              audioLevel = audioSession.outputVolume
+//              print(audioSession.outputVolume)
+         }
+    }
+    
+    func showToast(message: String) {
+        DispatchQueue.main.async {
+            if #available(iOS 13.0, *) {
+                let toast = ToastViewL(
+                    title: message,
+                    titleFont: .systemFont(ofSize: 13, weight: .regular),
+                    subtitleFont: .systemFont(ofSize: 11, weight: .light),
+                    backgroundColorView: .systemBlue, iconSpacing: 16,
+                    position: .bottom,
+                    onTap: { print("Tapped!") }
+                )
+                toast.show()
+            } else {
+                // Fallback on earlier versions
+                let toast = ToastViewL(
+                    title: message,
+                    titleFont: .systemFont(ofSize: 13, weight: .regular),
+                    subtitleFont: .systemFont(ofSize: 11, weight: .light),
+                    backgroundColorView: .systemBlue, iconSpacing: 16,
+                    position: .bottom,
+                    onTap: { print("Tapped!") }
+                )
+                toast.show()
+            }
         }
         
     }
@@ -97,6 +120,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate, UIGe
     }
     
     @objc func update() {
+        tapCout = 0
         webView.evaluateJavaScript("document.querySelector('.vjs-text-track-display vjs-hidden').style.display='none';", completionHandler: { (response, error) -> Void in
             })
         webView.evaluateJavaScript("document.querySelector('.vjs-text-track-display').style.display='none';", completionHandler: { (response, error) -> Void in
@@ -131,6 +155,27 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate, UIGe
     override var prefersStatusBarHidden: Bool {
         return true
     }
+    
+    
+    func userAutorization(){
+      SFSpeechRecognizer.requestAuthorization { (authStatus) in
+        var isButtonEnabled = false
+        switch authStatus {
+        case .authorized:
+          isButtonEnabled = true
+        case .denied:
+          isButtonEnabled = false
+          print("User denied access to speech recognition")
+        case .restricted:
+          isButtonEnabled = false
+          print("Speech recognition restricted on this device")
+        case .notDetermined:
+          isButtonEnabled = false
+          print("Speech recognition not yet authorized")
+        }
+      }
+    }
+
 
 }
 

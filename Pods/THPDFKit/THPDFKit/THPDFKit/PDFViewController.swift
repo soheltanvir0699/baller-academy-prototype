@@ -17,7 +17,6 @@ import UIKit
     var url: URL? { get set }
     func go(to page:Int)
 }
-
 open class PDFViewControllerWrapper: UIViewController, PDFViewController {
     
     let configuration: PDFViewControllerConfiguration?
@@ -29,6 +28,8 @@ open class PDFViewControllerWrapper: UIViewController, PDFViewController {
             }
         }
     }
+    
+    
     
     static func factory(with configuration: PDFViewControllerConfiguration? = nil) -> PDFViewController {
         if #available(iOS 11.0, *) {

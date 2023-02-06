@@ -25,7 +25,7 @@
                                     <wkPreferences key="preferences" javaScriptCanOpenWindowsAutomatically="YES"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
-                            <imageView clipsSubviews="YES" alpha="0.40000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gobackward.minus" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="3Hb-3K-4St">
+                            <imageView hidden="YES" clipsSubviews="YES" alpha="0.40000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gobackward.minus" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="3Hb-3K-4St">
                                 <rect key="frame" x="360" y="428" width="44" height="38"/>
                                 <color key="tintColor" systemColor="systemRedColor"/>
                                 <constraints>
@@ -144,7 +144,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Abu-Tf-wqU">
                                                 <rect key="frame" x="10" y="335" width="394" height="300"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ezgif-3-50ad67f0e2" translatesAutoresizingMaskIntoConstraints="NO" id="Lvy-Cs-mBT">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 10" translatesAutoresizingMaskIntoConstraints="NO" id="Lvy-Cs-mBT">
                                                         <rect key="frame" x="0.0" y="0.0" width="394" height="300"/>
                                                     </imageView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CWu-iS-pO8">
@@ -212,7 +212,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EwQ-xB-oi4">
                                                 <rect key="frame" x="10" y="650" width="394" height="300"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 10" translatesAutoresizingMaskIntoConstraints="NO" id="ZeO-XQ-g0S">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="deck" translatesAutoresizingMaskIntoConstraints="NO" id="ZeO-XQ-g0S">
                                                         <rect key="frame" x="0.0" y="0.0" width="394" height="300"/>
                                                     </imageView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cJG-qW-Bhj">
@@ -542,7 +542,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N6U-fv-s2w">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N6U-fv-s2w">
                                 <rect key="frame" x="0.0" y="320.5" width="414" height="255"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -585,7 +585,7 @@
                                                 <rect key="frame" x="0.0" y="55" width="414" height="3000"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wu7-3d-rYW">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2357.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1990.5"/>
                                                         <subviews>
                                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kzV-yD-B1j" customClass="Glideshow" customModule="Glideshow">
                                                                 <rect key="frame" x="0.0" y="5" width="414" height="220"/>
@@ -603,38 +603,38 @@
                                                                 <color key="textColor" red="0.92362123730000001" green="0.25996106860000001" blue="0.20830270649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personal Information" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RfT-3w-M7P">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personal information &amp; Education" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RfT-3w-M7P">
                                                                 <rect key="frame" x="20" y="327.5" width="384" height="20"/>
                                                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
                                                                 <color key="textColor" red="0.92362123730000001" green="0.25996106860000001" blue="0.20830270649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gallery" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HjU-Hv-5gy">
-                                                                <rect key="frame" x="20" y="863.5" width="374" height="20"/>
+                                                                <rect key="frame" x="20" y="804.5" width="374" height="20"/>
                                                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
                                                                 <color key="textColor" red="0.92362123730000001" green="0.25996106860000001" blue="0.20830270649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Atheletic Career" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Afj-4z-AEA">
-                                                                <rect key="frame" x="20" y="1393.5" width="374" height="20"/>
+                                                                <rect key="frame" x="20" y="1334.5" width="374" height="20"/>
                                                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
                                                                 <color key="textColor" red="0.92362123730000001" green="0.25996106860000001" blue="0.20830270649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Business &amp; Community" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="da5-dd-NAP">
-                                                                <rect key="frame" x="20" y="1609.5" width="374" height="20"/>
+                                                                <rect key="frame" x="20" y="1534.5" width="374" height="20"/>
                                                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
                                                                 <color key="textColor" red="0.92362123730000001" green="0.25996106860000001" blue="0.20830270649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Public Servant" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="THG-9c-xah">
-                                                                <rect key="frame" x="20" y="1980.5" width="374" height="20"/>
+                                                                <rect key="frame" x="20" y="1863" width="374" height="20"/>
                                                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
                                                                 <color key="textColor" red="0.92362123730000001" green="0.25996106860000001" blue="0.20830270649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote from Nathan" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xuf-YF-1Qz">
-                                                                <rect key="frame" x="20" y="2053" width="374" height="20"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xuf-YF-1Qz">
+                                                                <rect key="frame" x="20" y="1925.5" width="374" height="0.0"/>
                                                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
                                                                 <color key="textColor" red="0.92362123730000001" green="0.25996106860000001" blue="0.20830270649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -650,7 +650,7 @@
                                                                             <constraint firstAttribute="height" constant="13" id="SAL-zI-ZBL"/>
                                                                         </constraints>
                                                                     </imageView>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Born in Yaounde, Cameroon, to a banker &amp; retired soccer player father and an entrepreneurial mother." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k55-Lh-k0N">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nathan was born in Yaounde, Cameroon to a banker father and an entrepreneurial mother." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k55-Lh-k0N">
                                                                         <rect key="frame" x="10" y="0.0" width="364" height="32.5"/>
                                                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -674,7 +674,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KMg-9t-HMV">
-                                                                <rect key="frame" x="20" y="400" width="374" height="97"/>
+                                                                <rect key="frame" x="20" y="400" width="374" height="80.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ocW-48-XZn">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -685,8 +685,8 @@
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="id8-Ob-d84">
-                                                                        <rect key="frame" x="10" y="0.0" width="364" height="97"/>
-                                                                        <string key="text">At around 11 years old, Nathan moved to a different city with his father. He quickly became very independent and started his entrepreneurial journey by buying and selling products such as phones, gadgets, and cards and hosting soccer leagues, games, and social events in his community.</string>
+                                                                        <rect key="frame" x="10" y="0.0" width="364" height="80.5"/>
+                                                                        <string key="text">At the age of 11, Nathan learned how to be self-sufficient and started his entrepreneurial journey. He began buying and selling various electronic products, as well as organizing social events and soccer activities in his community.</string>
                                                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
@@ -703,7 +703,7 @@
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LuP-57-wE1">
-                                                                <rect key="frame" x="20" y="507" width="374" height="64.5"/>
+                                                                <rect key="frame" x="20" y="490.5" width="374" height="64.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4QA-4Z-eBo">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -715,7 +715,7 @@
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKp-Vp-dMr">
                                                                         <rect key="frame" x="10" y="0.0" width="364" height="64.5"/>
-                                                                        <string key="text">By 15, Nathan was considered the country's most affluent self-made, and influential child. He gained the nickname "911" and "Baller" due to his influence and passion for helping others.</string>
+                                                                        <string key="text">By 15 years old, Nathan was considered as one of the wealthiest self made and most influential children in the country. Gaining the nickname “911” and “Baller” due to his influence and for his passion for helping others.</string>
                                                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
@@ -732,7 +732,7 @@
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rqg-3c-EtC">
-                                                                <rect key="frame" x="20" y="581.5" width="374" height="80.5"/>
+                                                                <rect key="frame" x="20" y="565" width="374" height="64.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="GA1-Lc-eV1">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -743,8 +743,8 @@
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eoN-Yt-ynl">
-                                                                        <rect key="frame" x="10" y="0.0" width="364" height="80.5"/>
-                                                                        <string key="text">By 16 years old, Nathan had been inspired by many American stories and photos from his oldest sister living in America. His mind was set on moving to America to chase the "American Dream" and create a bigger platform that would allow him to help more people.</string>
+                                                                        <rect key="frame" x="10" y="0.0" width="364" height="64.5"/>
+                                                                        <string key="text">At 16, Nathan was inspired by American stories and photos from his sister in the US. He set his mind on moving to America to pursue the "American Dream" and create a larger platform to help others.</string>
                                                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
@@ -761,7 +761,7 @@
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eL4-id-hYG">
-                                                                <rect key="frame" x="20" y="672" width="374" height="48.5"/>
+                                                                <rect key="frame" x="20" y="639.5" width="374" height="64.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="w91-6Z-Zdr">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -772,8 +772,8 @@
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6a-cm-wca">
-                                                                        <rect key="frame" x="10" y="0.0" width="364" height="48.5"/>
-                                                                        <string key="text">At 18 years old, Nathan moved to Houston, Texas, USA, to attend Christian Life Center Academy (CLCA) Prep School as a graduated senior.</string>
+                                                                        <rect key="frame" x="10" y="0.0" width="364" height="64.5"/>
+                                                                        <string key="text">At 18 years old, Nathan moved to Houston, Texas in the United States to attend Christian Life Center Academy (CLCA) as a graduating senior. He learnt English from children at CLCA and graduated with honors. </string>
                                                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
@@ -790,7 +790,7 @@
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GXk-GW-Jax">
-                                                                <rect key="frame" x="20" y="730.5" width="374" height="48.5"/>
+                                                                <rect key="frame" x="20" y="714" width="374" height="80.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kpt-ko-kuO">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -801,8 +801,8 @@
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7J-hE-dYj">
-                                                                        <rect key="frame" x="10" y="0.0" width="364" height="48.5"/>
-                                                                        <string key="text">Nathan learned English from children, graduated with honors, and was one of the best English writers in his class at CLCA, all within six months.</string>
+                                                                        <rect key="frame" x="10" y="0.0" width="364" height="80.5"/>
+                                                                        <string key="text">Nathan received an Associate of Science degree from North Harris College in Houston, Texas and simultaneously enrolled in the online Software Engineering program at Arizona State University while pursuing his soccer career.</string>
                                                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
@@ -818,37 +818,8 @@
                                                                     <constraint firstItem="kpt-ko-kuO" firstAttribute="leading" secondItem="GXk-GW-Jax" secondAttribute="leading" id="l95-nV-gR0"/>
                                                                 </constraints>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="acR-IA-luU">
-                                                                <rect key="frame" x="20" y="789" width="374" height="64.5"/>
-                                                                <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="y1E-qT-O1y">
-                                                                        <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
-                                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="height" constant="13" id="MNs-aY-fNk"/>
-                                                                            <constraint firstAttribute="width" constant="5" id="dT6-H6-AoW"/>
-                                                                        </constraints>
-                                                                    </imageView>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d6u-Yj-1bk">
-                                                                        <rect key="frame" x="10" y="0.0" width="364" height="64.5"/>
-                                                                        <string key="text">Nathan received an Associate of Science from North Harris College, Houston, TX, and enrolled in the Software Engineering program at Arizona State University Online while pursuing his soccer career. </string>
-                                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                </subviews>
-                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <constraints>
-                                                                    <constraint firstItem="d6u-Yj-1bk" firstAttribute="leading" secondItem="y1E-qT-O1y" secondAttribute="trailing" constant="5" id="0QL-a2-NiT"/>
-                                                                    <constraint firstAttribute="bottom" secondItem="d6u-Yj-1bk" secondAttribute="bottom" id="K8T-Ez-Amc"/>
-                                                                    <constraint firstItem="d6u-Yj-1bk" firstAttribute="top" secondItem="acR-IA-luU" secondAttribute="top" id="ZaQ-46-cTa"/>
-                                                                    <constraint firstAttribute="trailing" secondItem="d6u-Yj-1bk" secondAttribute="trailing" id="e2T-Cp-yOS"/>
-                                                                    <constraint firstItem="y1E-qT-O1y" firstAttribute="top" secondItem="acR-IA-luU" secondAttribute="top" id="poO-tE-qos"/>
-                                                                    <constraint firstItem="y1E-qT-O1y" firstAttribute="leading" secondItem="acR-IA-luU" secondAttribute="leading" id="vSu-Un-o10"/>
-                                                                </constraints>
-                                                            </view>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Uyp-tD-zgw">
-                                                                <rect key="frame" x="20" y="893.5" width="374" height="490"/>
+                                                                <rect key="frame" x="20" y="834.5" width="374" height="490"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="z6O-aW-fi2">
                                                                         <rect key="frame" x="0.0" y="0.0" width="374" height="240"/>
@@ -1036,7 +1007,7 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w0M-S2-4WN">
-                                                                <rect key="frame" x="20" y="1423.5" width="374" height="32.5"/>
+                                                                <rect key="frame" x="20" y="1364.5" width="374" height="16.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="JNL-LT-Mgg">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -1046,10 +1017,8 @@
                                                                             <constraint firstAttribute="width" constant="5" id="Uj3-az-zjk"/>
                                                                         </constraints>
                                                                     </imageView>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bG-Bs-wRU">
-                                                                        <rect key="frame" x="10" y="0.0" width="364" height="32.5"/>
-                                                                        <string key="text">Christian Life Center Academy American Football, 2009
-Nathan Played in his</string>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Christian Life Center Academy American Football, 2009" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bG-Bs-wRU">
+                                                                        <rect key="frame" x="10" y="0.0" width="364" height="16.5"/>
                                                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
@@ -1066,7 +1035,7 @@ Nathan Played in his</string>
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UGf-8O-KdJ">
-                                                                <rect key="frame" x="20" y="1583" width="374" height="16.5"/>
+                                                                <rect key="frame" x="20" y="1508" width="374" height="16.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2Dd-Jv-A9F">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -1076,7 +1045,7 @@ Nathan Played in his</string>
                                                                             <constraint firstAttribute="height" constant="13" id="BYn-m2-ZlE"/>
                                                                         </constraints>
                                                                     </imageView>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="San Jose Earthquakes' Burlingame Dragons, 2015" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9IT-f2-IEa">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="San Jose Earthquakes’ Burlingame Dragons, 2015" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9IT-f2-IEa">
                                                                         <rect key="frame" x="10" y="0.0" width="364" height="16.5"/>
                                                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1094,7 +1063,7 @@ Nathan Played in his</string>
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qYV-2l-L7j">
-                                                                <rect key="frame" x="20" y="1639.5" width="374" height="145"/>
+                                                                <rect key="frame" x="20" y="1564.5" width="374" height="161"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="GIB-T8-cKY">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -1105,9 +1074,9 @@ Nathan Played in his</string>
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eaN-vp-XMM">
-                                                                        <rect key="frame" x="10" y="0.0" width="364" height="145"/>
-                                                                        <string key="text">Baller Academy After-school programs, May 2016
-Nathan started Baller Academy in May 2016 and grew it into one of the country's most effective after-school soccer programs, with over 3,000 participating children by 2020. Working with partners such as Walmart, Popeye Chicken, Burger King, Kroger, Academy Sports, Outdoors, Cricket Wireless, Raising Cane's, and many more to bring leadership and educational lessons to children no matter where they live.</string>
+                                                                        <rect key="frame" x="10" y="0.0" width="364" height="161"/>
+                                                                        <string key="text">Baller Academy After-School Programs, May 2016 - December 2021
+Nathan started Baller Academy After-School Programs in May 2016, which grew to be a highly influential after-school soccer program for over 3,000 kids by 2020, through partnerships with organizations such as Walmart, Popeye Chicken, Burger King, Kroger, Academy Sports and Outdoors, Cricket Wireless, Raising Cane’s, and others, providing leadership programs to children in communities across the Greater Houston Area. </string>
                                                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
@@ -1124,7 +1093,7 @@ Nathan started Baller Academy in May 2016 and grew it into one of the country's 
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I1H-qm-vE2">
-                                                                <rect key="frame" x="20" y="1794.5" width="374" height="32.5"/>
+                                                                <rect key="frame" x="20" y="1735.5" width="374" height="32.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ebm-eD-Oy0">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -1134,7 +1103,7 @@ Nathan started Baller Academy in May 2016 and grew it into one of the country's 
                                                                             <constraint firstAttribute="height" constant="13" id="xJ4-jE-J5i"/>
                                                                         </constraints>
                                                                     </imageView>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="December 13th is declared &quot;Baller Academy Day&quot; in the 18th Congressional District Of Texas." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRA-2T-tpC">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="December 13th is declared “Baller Academy Day” in the 18th Congressional District Of Texas." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRA-2T-tpC">
                                                                         <rect key="frame" x="10" y="0.0" width="364" height="32.5"/>
                                                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1152,7 +1121,7 @@ Nathan started Baller Academy in May 2016 and grew it into one of the country's 
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WY3-ab-Z2z">
-                                                                <rect key="frame" x="20" y="1837" width="374" height="48.5"/>
+                                                                <rect key="frame" x="20" y="1778" width="374" height="32.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="YkI-1h-PCj">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -1162,9 +1131,8 @@ Nathan started Baller Academy in May 2016 and grew it into one of the country's 
                                                                             <constraint firstAttribute="height" constant="13" id="EE4-iU-U59"/>
                                                                         </constraints>
                                                                     </imageView>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6jr-Sd-h0i">
-                                                                        <rect key="frame" x="10" y="0.0" width="364" height="48.5"/>
-                                                                        <string key="text">Nathan works with Harris County, the City Of Houston, and local communities to engage children and their families with programs that help them learn and thrive.</string>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nathan collaborated with UNICEF and the City of Houston to introduce World Children's Day in Houston, Texas." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6jr-Sd-h0i">
+                                                                        <rect key="frame" x="10" y="0.0" width="364" height="32.5"/>
                                                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
@@ -1181,7 +1149,7 @@ Nathan started Baller Academy in May 2016 and grew it into one of the country's 
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6jr-Lq-93Z">
-                                                                <rect key="frame" x="20" y="1895.5" width="374" height="32.5"/>
+                                                                <rect key="frame" x="20" y="1820.5" width="374" height="32.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="xRn-9s-U1v">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -1191,7 +1159,7 @@ Nathan started Baller Academy in May 2016 and grew it into one of the country's 
                                                                             <constraint firstAttribute="height" constant="13" id="ZTv-ai-VbO"/>
                                                                         </constraints>
                                                                     </imageView>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nathan worked with UNICEF and the City Of Houston to introduce World Children's Day in Houston, Texas" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8Z-2p-kwg">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nathan serves on various Local Organizing Committees for events in the Greater Houston Area." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8Z-2p-kwg">
                                                                         <rect key="frame" x="10" y="0.0" width="364" height="32.5"/>
                                                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1208,36 +1176,8 @@ Nathan started Baller Academy in May 2016 and grew it into one of the country's 
                                                                     <constraint firstItem="o8Z-2p-kwg" firstAttribute="leading" secondItem="xRn-9s-U1v" secondAttribute="trailing" constant="5" id="oUI-na-pxN"/>
                                                                 </constraints>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8d0-Vj-bI3">
-                                                                <rect key="frame" x="20" y="1938" width="374" height="32.5"/>
-                                                                <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="s0c-VI-7Pk">
-                                                                        <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
-                                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="height" constant="13" id="hQ0-rt-Ran"/>
-                                                                            <constraint firstAttribute="width" constant="5" id="yDY-bg-tr7"/>
-                                                                        </constraints>
-                                                                    </imageView>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nathan serves on various Local Organizing Committees and Boards of Organizations" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4LS-VU-clv">
-                                                                        <rect key="frame" x="10" y="0.0" width="364" height="32.5"/>
-                                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                </subviews>
-                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <constraints>
-                                                                    <constraint firstItem="4LS-VU-clv" firstAttribute="leading" secondItem="s0c-VI-7Pk" secondAttribute="trailing" constant="5" id="8yx-FI-5N1"/>
-                                                                    <constraint firstItem="s0c-VI-7Pk" firstAttribute="leading" secondItem="8d0-Vj-bI3" secondAttribute="leading" id="PHw-jW-3nc"/>
-                                                                    <constraint firstAttribute="bottom" secondItem="4LS-VU-clv" secondAttribute="bottom" id="dTL-j8-PzS"/>
-                                                                    <constraint firstItem="s0c-VI-7Pk" firstAttribute="top" secondItem="8d0-Vj-bI3" secondAttribute="top" id="ht3-ka-4zf"/>
-                                                                    <constraint firstAttribute="trailing" secondItem="4LS-VU-clv" secondAttribute="trailing" id="pEF-si-dmP"/>
-                                                                    <constraint firstItem="4LS-VU-clv" firstAttribute="top" secondItem="8d0-Vj-bI3" secondAttribute="top" id="xEx-Zf-A7H"/>
-                                                                </constraints>
-                                                            </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jbP-zc-b1J">
-                                                                <rect key="frame" x="20" y="2010.5" width="374" height="32.5"/>
+                                                                <rect key="frame" x="20" y="1893" width="374" height="32.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6Gs-bl-VxT">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -1265,7 +1205,7 @@ Nathan started Baller Academy in May 2016 and grew it into one of the country's 
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ldf-Pp-bKr">
-                                                                <rect key="frame" x="20" y="1466" width="374" height="32.5"/>
+                                                                <rect key="frame" x="20" y="1391" width="374" height="32.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="c2z-zo-4Yg">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -1278,7 +1218,7 @@ Nathan started Baller Academy in May 2016 and grew it into one of the country's 
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7PP-rF-UhG">
                                                                         <rect key="frame" x="10" y="0.0" width="364" height="32.5"/>
                                                                         <string key="text">Houston Regals, 2011 - 2012
-Semi-professional soccer club in Houston, TX</string>
+Semi-professional soccer club in Houston, TX </string>
                                                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
@@ -1295,7 +1235,7 @@ Semi-professional soccer club in Houston, TX</string>
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nxx-xD-rbG">
-                                                                <rect key="frame" x="20" y="1508.5" width="374" height="64.5"/>
+                                                                <rect key="frame" x="20" y="1433.5" width="374" height="64.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fRP-wr-Sd1">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -1308,7 +1248,7 @@ Semi-professional soccer club in Houston, TX</string>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jn1-K8-VEr">
                                                                         <rect key="frame" x="10" y="0.0" width="364" height="64.5"/>
                                                                         <string key="text">Houston Dynamo, Reserves, 2012 – 2014
-Nathan was the only player selected to join the team in 2012 following a successful showcase at an open tryout for over 600 trialists</string>
+Nathan was selected as the only player to join the team in 2012, following a successful showcase at an open tryout with over 600 participants.</string>
                                                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
@@ -1325,19 +1265,17 @@ Nathan was the only player selected to join the team in 2012 following a success
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uhS-zQ-vYU">
-                                                                <rect key="frame" x="20" y="2083" width="374" height="209.5"/>
+                                                                <rect key="frame" x="20" y="1925.5" width="374" height="0.0"/>
                                                                 <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="8zL-Nj-2RW">
-                                                                        <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
+                                                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8zL-Nj-2RW">
+                                                                        <rect key="frame" x="0.0" y="0.5" width="5" height="19"/>
                                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="5" id="6VZ-k7-Q42"/>
-                                                                            <constraint firstAttribute="height" constant="13" id="Cp0-ul-DNz"/>
                                                                         </constraints>
                                                                     </imageView>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ddt-54-Wx2">
-                                                                        <rect key="frame" x="10" y="0.0" width="364" height="209.5"/>
-                                                                        <string key="text">I learned English from children in less than six months because children never judged me for being an 18 years old man who couldn't speak English. Throughout my 20 years of coaching children, I realized that children do an outstanding job of creating safe environments for everyone around them to feel accepted, safe and vulnerable. I still learn a lot from children every day. Our concepts come from studying children's and senior citizens' behaviors. We firmly believe that Baller Academy being a safe platform for acceptance where everyone can be vulnerable, post with no filters, share their real self without overthinking, and not have a fear of judgment will fuel real growth and save lives.</string>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ddt-54-Wx2">
+                                                                        <rect key="frame" x="10" y="0.0" width="364" height="0.0"/>
                                                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
@@ -1354,7 +1292,7 @@ Nathan was the only player selected to join the team in 2012 following a success
                                                                 </constraints>
                                                             </view>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="NYa-hy-8Xz">
-                                                                <rect key="frame" x="134.5" y="2312.5" width="145" height="35"/>
+                                                                <rect key="frame" x="134.5" y="1945.5" width="145" height="35"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ba-rd-Ujs">
                                                                         <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
@@ -1391,7 +1329,7 @@ Nathan was the only player selected to join the team in 2012 following a success
                                                         <constraints>
                                                             <constraint firstItem="da5-dd-NAP" firstAttribute="top" secondItem="UGf-8O-KdJ" secondAttribute="bottom" constant="10" id="0SB-uu-qI2"/>
                                                             <constraint firstItem="UGf-8O-KdJ" firstAttribute="top" secondItem="nxx-xD-rbG" secondAttribute="bottom" constant="10" id="1N5-vx-cds"/>
-                                                            <constraint firstItem="THG-9c-xah" firstAttribute="top" secondItem="8d0-Vj-bI3" secondAttribute="bottom" constant="10" id="20S-9z-Ldh"/>
+                                                            <constraint firstItem="THG-9c-xah" firstAttribute="top" secondItem="6jr-Lq-93Z" secondAttribute="bottom" constant="10" id="2VK-Fa-ywA"/>
                                                             <constraint firstItem="LuP-57-wE1" firstAttribute="leading" secondItem="Wu7-3d-rYW" secondAttribute="leading" constant="20" symbolic="YES" id="2wk-uQ-Jl0"/>
                                                             <constraint firstItem="NYa-hy-8Xz" firstAttribute="top" secondItem="uhS-zQ-vYU" secondAttribute="bottom" constant="20" id="3I2-hG-CUW"/>
                                                             <constraint firstItem="I1H-qm-vE2" firstAttribute="leading" secondItem="Wu7-3d-rYW" secondAttribute="leading" constant="20" id="3Ts-70-dKO"/>
@@ -1410,6 +1348,7 @@ Nathan was the only player selected to join the team in 2012 following a success
                                                             <constraint firstItem="GXk-GW-Jax" firstAttribute="leading" secondItem="Wu7-3d-rYW" secondAttribute="leading" constant="20" id="AIk-H8-ktM"/>
                                                             <constraint firstItem="qYV-2l-L7j" firstAttribute="leading" secondItem="Wu7-3d-rYW" secondAttribute="leading" constant="20" symbolic="YES" id="BPF-vX-Pls"/>
                                                             <constraint firstAttribute="trailing" secondItem="eL4-id-hYG" secondAttribute="trailing" constant="20" id="CCJ-x7-ELE"/>
+                                                            <constraint firstItem="HjU-Hv-5gy" firstAttribute="top" secondItem="GXk-GW-Jax" secondAttribute="bottom" constant="10" id="CLP-ef-pRp"/>
                                                             <constraint firstItem="GXk-GW-Jax" firstAttribute="top" secondItem="eL4-id-hYG" secondAttribute="bottom" constant="10" id="CrR-cS-Oqf"/>
                                                             <constraint firstItem="jbP-zc-b1J" firstAttribute="top" secondItem="THG-9c-xah" secondAttribute="bottom" constant="10" id="D9Q-JW-UzZ"/>
                                                             <constraint firstAttribute="trailing" secondItem="nxx-xD-rbG" secondAttribute="trailing" constant="20" symbolic="YES" id="DDC-LC-Yrf"/>
@@ -1418,23 +1357,20 @@ Nathan was the only player selected to join the team in 2012 following a success
                                                             <constraint firstAttribute="trailing" secondItem="gIa-AZ-pOu" secondAttribute="trailing" constant="20" id="Fx3-lj-h6V"/>
                                                             <constraint firstAttribute="trailing" secondItem="I1H-qm-vE2" secondAttribute="trailing" constant="20" id="GrV-pQ-R2Q"/>
                                                             <constraint firstItem="LuP-57-wE1" firstAttribute="top" secondItem="KMg-9t-HMV" secondAttribute="bottom" constant="10" id="ID5-Nz-wBV"/>
-                                                            <constraint firstItem="HjU-Hv-5gy" firstAttribute="top" secondItem="acR-IA-luU" secondAttribute="bottom" constant="10" id="KH3-V5-w4r"/>
                                                             <constraint firstItem="kzV-yD-B1j" firstAttribute="leading" secondItem="Wu7-3d-rYW" secondAttribute="leading" id="KKi-ix-BR1"/>
                                                             <constraint firstItem="6jr-Lq-93Z" firstAttribute="leading" secondItem="Wu7-3d-rYW" secondAttribute="leading" constant="20" id="LKV-cN-wAr"/>
-                                                            <constraint firstItem="8d0-Vj-bI3" firstAttribute="leading" secondItem="Wu7-3d-rYW" secondAttribute="leading" constant="20" symbolic="YES" id="LVr-ai-JVE"/>
                                                             <constraint firstItem="da5-dd-NAP" firstAttribute="leading" secondItem="Wu7-3d-rYW" secondAttribute="leading" constant="20" symbolic="YES" id="M2S-yw-Wcs"/>
                                                             <constraint firstItem="Uyp-tD-zgw" firstAttribute="top" secondItem="HjU-Hv-5gy" secondAttribute="bottom" constant="10" id="MOX-EX-j2k"/>
                                                             <constraint firstAttribute="trailing" secondItem="HjU-Hv-5gy" secondAttribute="trailing" constant="20" id="NLk-3b-8LB"/>
-                                                            <constraint firstItem="xuf-YF-1Qz" firstAttribute="top" secondItem="jbP-zc-b1J" secondAttribute="bottom" constant="10" id="NyA-IY-fKD"/>
+                                                            <constraint firstItem="xuf-YF-1Qz" firstAttribute="top" secondItem="jbP-zc-b1J" secondAttribute="bottom" id="NyA-IY-fKD"/>
                                                             <constraint firstAttribute="trailing" secondItem="RfT-3w-M7P" secondAttribute="trailing" constant="10" id="O4L-S9-qbT"/>
-                                                            <constraint firstAttribute="trailing" secondItem="8d0-Vj-bI3" secondAttribute="trailing" constant="20" symbolic="YES" id="OeW-hC-PZQ"/>
                                                             <constraint firstItem="ddS-yO-cQF" firstAttribute="leading" secondItem="Wu7-3d-rYW" secondAttribute="leading" constant="20" id="Ohc-5f-1JF"/>
                                                             <constraint firstAttribute="trailing" secondItem="UGf-8O-KdJ" secondAttribute="trailing" constant="20" symbolic="YES" id="Pe0-0a-sOg"/>
                                                             <constraint firstAttribute="trailing" secondItem="6jr-Lq-93Z" secondAttribute="trailing" constant="20" id="PpA-cJ-UTq"/>
                                                             <constraint firstItem="eL4-id-hYG" firstAttribute="top" secondItem="rqg-3c-EtC" secondAttribute="bottom" constant="10" id="R6p-Yf-W4I"/>
                                                             <constraint firstAttribute="trailing" secondItem="w0M-S2-4WN" secondAttribute="trailing" constant="20" id="RIO-ZG-t0Z"/>
                                                             <constraint firstAttribute="trailing" secondItem="da5-dd-NAP" secondAttribute="trailing" constant="20" symbolic="YES" id="Rd7-1y-Nqc"/>
-                                                            <constraint firstItem="uhS-zQ-vYU" firstAttribute="top" secondItem="xuf-YF-1Qz" secondAttribute="bottom" constant="10" id="ReX-RP-5m2"/>
+                                                            <constraint firstItem="uhS-zQ-vYU" firstAttribute="top" secondItem="xuf-YF-1Qz" secondAttribute="bottom" id="ReX-RP-5m2"/>
                                                             <constraint firstAttribute="trailing" secondItem="jbP-zc-b1J" secondAttribute="trailing" constant="20" symbolic="YES" id="Shx-ix-dfD"/>
                                                             <constraint firstAttribute="trailing" secondItem="Uyp-tD-zgw" secondAttribute="trailing" constant="20" symbolic="YES" id="TLs-IB-tqz"/>
                                                             <constraint firstItem="Uyp-tD-zgw" firstAttribute="leading" secondItem="Wu7-3d-rYW" secondAttribute="leading" constant="20" symbolic="YES" id="TUm-wT-Wpp"/>
@@ -1457,20 +1393,16 @@ Nathan was the only player selected to join the team in 2012 following a success
                                                             <constraint firstAttribute="trailing" secondItem="KMg-9t-HMV" secondAttribute="trailing" constant="20" symbolic="YES" id="kB3-Td-ACB"/>
                                                             <constraint firstItem="UGf-8O-KdJ" firstAttribute="leading" secondItem="Wu7-3d-rYW" secondAttribute="leading" constant="20" symbolic="YES" id="kUC-We-gxS"/>
                                                             <constraint firstItem="w0M-S2-4WN" firstAttribute="top" secondItem="Afj-4z-AEA" secondAttribute="bottom" constant="10" id="nkD-va-IdP"/>
-                                                            <constraint firstAttribute="trailing" secondItem="acR-IA-luU" secondAttribute="trailing" constant="20" id="o4G-7u-X8c"/>
                                                             <constraint firstAttribute="trailing" secondItem="xuf-YF-1Qz" secondAttribute="trailing" constant="20" symbolic="YES" id="oQ9-dW-aMq"/>
-                                                            <constraint firstItem="acR-IA-luU" firstAttribute="leading" secondItem="Wu7-3d-rYW" secondAttribute="leading" constant="20" id="or3-eC-xhe"/>
                                                             <constraint firstItem="KMg-9t-HMV" firstAttribute="leading" secondItem="Wu7-3d-rYW" secondAttribute="leading" constant="20" symbolic="YES" id="orJ-ca-hag"/>
                                                             <constraint firstItem="ddS-yO-cQF" firstAttribute="top" secondItem="ERK-hm-vgn" secondAttribute="bottom" constant="10" id="oyx-5e-JJk"/>
                                                             <constraint firstItem="kzV-yD-B1j" firstAttribute="top" secondItem="Wu7-3d-rYW" secondAttribute="top" constant="5" id="qVb-0z-s9z"/>
                                                             <constraint firstItem="gIa-AZ-pOu" firstAttribute="top" secondItem="RfT-3w-M7P" secondAttribute="bottom" constant="10" id="qX0-MJ-g6T"/>
                                                             <constraint firstAttribute="trailing" secondItem="Afj-4z-AEA" secondAttribute="trailing" constant="20" symbolic="YES" id="rB4-56-EP9"/>
-                                                            <constraint firstItem="acR-IA-luU" firstAttribute="top" secondItem="GXk-GW-Jax" secondAttribute="bottom" constant="10" id="sEK-tx-moi"/>
                                                             <constraint firstItem="nxx-xD-rbG" firstAttribute="leading" secondItem="Wu7-3d-rYW" secondAttribute="leading" constant="20" symbolic="YES" id="t0m-2A-DVf"/>
                                                             <constraint firstAttribute="trailing" secondItem="WY3-ab-Z2z" secondAttribute="trailing" constant="20" id="vHa-Gx-Px7"/>
                                                             <constraint firstItem="I1H-qm-vE2" firstAttribute="top" secondItem="qYV-2l-L7j" secondAttribute="bottom" constant="10" id="wGm-c6-9Lc"/>
                                                             <constraint firstItem="6jr-Lq-93Z" firstAttribute="top" secondItem="WY3-ab-Z2z" secondAttribute="bottom" constant="10" id="wfy-Vc-Qig"/>
-                                                            <constraint firstItem="8d0-Vj-bI3" firstAttribute="top" secondItem="6jr-Lq-93Z" secondAttribute="bottom" constant="10" id="wiS-Ld-cMs"/>
                                                             <constraint firstItem="KMg-9t-HMV" firstAttribute="top" secondItem="gIa-AZ-pOu" secondAttribute="bottom" constant="10" id="xWo-ye-gPW"/>
                                                             <constraint firstItem="NYa-hy-8Xz" firstAttribute="centerX" secondItem="Wu7-3d-rYW" secondAttribute="centerX" id="zEc-Tb-yLn"/>
                                                             <constraint firstItem="ERK-hm-vgn" firstAttribute="leading" secondItem="Wu7-3d-rYW" secondAttribute="leading" constant="20" id="zL1-bk-wyk"/>
@@ -1743,6 +1675,53 @@ Nathan was the only player selected to join the team in 2012 following a success
             </objects>
             <point key="canvasLocation" x="1934.7826086956522" y="12.723214285714285"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="HFw-Yw-mix">
+            <objects>
+                <viewController storyboardIdentifier="PDFViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jeb-Zu-VBK" customClass="PDFViewController" customModule="FigmaPrototypeTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hdm-og-O4q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EyD-15-jqq">
+                                <rect key="frame" x="20" y="0.0" width="374" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jl-Ga-PPy">
+                                <rect key="frame" x="0.0" y="54" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="8WC-PO-FPf"/>
+                                    <constraint firstAttribute="height" constant="20" id="iu2-iX-bed"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="left-arrow">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="backAction:" destination="jeb-Zu-VBK" eventType="touchUpInside" id="t32-Dy-CqG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FyV-rq-Ly2"/>
+                        <color key="backgroundColor" red="0.11689815670000001" green="0.14095595480000001" blue="0.15770080689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8jl-Ga-PPy" firstAttribute="top" secondItem="FyV-rq-Ly2" secondAttribute="top" constant="10" id="9kW-ST-RDX"/>
+                            <constraint firstItem="FyV-rq-Ly2" firstAttribute="trailing" secondItem="EyD-15-jqq" secondAttribute="trailing" constant="20" id="P6f-bC-wHq"/>
+                            <constraint firstItem="EyD-15-jqq" firstAttribute="leading" secondItem="FyV-rq-Ly2" secondAttribute="leading" constant="20" id="Ppb-x5-RHt"/>
+                            <constraint firstAttribute="bottom" secondItem="EyD-15-jqq" secondAttribute="bottom" id="Ty3-gL-93A"/>
+                            <constraint firstItem="EyD-15-jqq" firstAttribute="top" secondItem="hdm-og-O4q" secondAttribute="top" id="WwT-s2-fkK"/>
+                            <constraint firstItem="8jl-Ga-PPy" firstAttribute="leading" secondItem="FyV-rq-Ly2" secondAttribute="leading" id="XJA-JI-8en"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pdfVieww" destination="EyD-15-jqq" id="xJx-Ta-uOe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vq7-yj-xNM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2737.68115942029" y="-38.169642857142854"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="reY-e4-xpD">
             <objects>
@@ -1786,14 +1765,15 @@ Nathan was the only player selected to join the team in 2012 following a success
         <image name="Left" width="100" height="100"/>
         <image name="cal" width="30" height="30"/>
         <image name="circle.fill" catalog="system" width="128" height="121"/>
+        <image name="deck" width="2000" height="1200"/>
         <image name="elizeu-dias-2EGNqazbAMk-unsplash" width="640" height="427"/>
-        <image name="ezgif-3-50ad67f0e2" width="2000" height="1200"/>
         <image name="gobackward.minus" catalog="system" width="121" height="128"/>
         <image name="highlights" width="2000" height="1238"/>
         <image name="houston" width="2000" height="1238"/>
         <image name="instagram_g" width="128" height="128"/>
         <image name="intro" width="640" height="427"/>
         <image name="leadership" width="640" height="427"/>
+        <image name="left-arrow" width="64" height="64"/>
         <image name="linkedin" width="128" height="128"/>
         <image name="play" width="128" height="128"/>
         <image name="twitter" width="128" height="128"/>

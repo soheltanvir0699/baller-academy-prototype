@@ -9,39 +9,37 @@ import UIKit
 import VGPlayer
 import SnapKit
 
-var player : VGPlayer = {
-    let playeView = VGCustomPlayerView()
-    let playe = VGPlayer(playerView: playeView)
-    return playe
-}()
-var url : URL?
-var openSmall = false
+
 
 class VideoViewController: UIViewController {
+//    var player : VGPlayer = {
+//        let playeView = VGCustomPlayerView()
+//        let playe = VGPlayer(playerView: playeView)
+//        return playe
+//    }()
+//    var url : URL?
+    var player : VGPlayer?
+    var openSmall = false
     var smallScreenView = UIView()
     var videoUrl : URL?
     @IBOutlet weak var videoView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        let url = URL(fileURLWithPath: Bundle.main.path(forResource: "2", ofType: "mp4")!)
-        player.replaceVideo(videoUrl!)
-        videoView.addSubview(player.displayView)
-        player.play()
-        player.backgroundMode = .suspend
-        player.delegate = self
         
-        player.displayView.delegate = self
-        player.displayView.snp.makeConstraints { [weak self] (make) in
-            guard let strongSelf = self else { return }
-            make.top.equalTo(strongSelf.videoView.snp.top)
-            make.left.equalTo(strongSelf.videoView.snp.left)
-            make.right.equalTo(strongSelf.videoView.snp.right)
-            make.height.equalTo(strongSelf.videoView.snp.width).multipliedBy(9.0/16.0) // you can 9.0/16.0
+        if videoUrl != nil {
+            player = VGPlayer(URL: videoUrl!)
         }
-        
-//        addSmallScreenView()
+//        player.replaceVideo(videoUrl!)
+        self.view.addSubview(player!.displayView)
+        player!.play()
+        player?.backgroundMode = .suspend
+        player?.delegate = self
+        player?.displayView.titleLabel.text = ""
+        player?.displayView.delegate = self
+        player?.displayView.snp.makeConstraints { [weak self] (make) in
+            guard let strongSelf = self else { return }
+            make.edges.equalTo(strongSelf.view)
+        }
         
     }
     
@@ -50,11 +48,11 @@ class VideoViewController: UIViewController {
         self.navigationController?.navigationBar.isHidden = false
 //        self.navigationController?.setNavigationBarHidden(true, animated: true)
 //        UIApplication.shared.setStatusBarStyle(UIStatusBarStyle.lightContent, animated: false)
-        player.play()
-        if openSmall == true {
-            smallScreenView.removeFromSuperview()
-            openSmall = false
-        }
+//        player.play()
+//        if openSmall == true {
+//            smallScreenView.removeFromSuperview()
+//            openSmall = false
+//        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -62,7 +60,7 @@ class VideoViewController: UIViewController {
 //        self.navigationController?.setNavigationBarHidden(false, animated: true)
 //        UIApplication.shared.setStatusBarStyle(UIStatusBarStyle.default, animated: false)
 //        UIApplication.shared.setStatusBarHidden(false, with: .none)
-        player.pause()
+        player!.pause()
 //        addSmallScreenView()
     }
     
@@ -70,7 +68,7 @@ class VideoViewController: UIViewController {
 //            player.displayView.removeFromSuperview()
 //            smallScreenView.removeFromSuperview()
 //            playerView.isSmallMode = true
-        UIApplication.shared.keyWindow?.addSubview(smallScreenView)
+//        UIApplication.shared.keyWindow?.addSubview(smallScreenView)
 //            let smallScreenWidth = (playerViewSize?.width)! / 2
 //            let smallScreenHeight = (playerViewSize?.height)! / 2
 //        smallScreenView.snp.remakeConstraints {
@@ -79,13 +77,13 @@ class VideoViewController: UIViewController {
 //            $0.width.equalTo(150)
 //            $0.height.equalTo(70)
 //        }
-        openSmall = true
-        smallScreenView.frame = CGRect(x: self.view.frame.width-200, y: self.view.frame.height-100, width: 200, height: 100)
-        smallScreenView.backgroundColor = .white
-            smallScreenView.addSubview(player.displayView)
-            player.displayView.snp.remakeConstraints {
-                $0.edges.equalTo(smallScreenView)
-            }
+//        openSmall = true
+//        smallScreenView.frame = CGRect(x: self.view.frame.width-200, y: self.view.frame.height-100, width: 200, height: 100)
+//        smallScreenView.backgroundColor = .white
+//            smallScreenView.addSubview(player.displayView)
+//            player.displayView.snp.remakeConstraints {
+//                $0.edges.equalTo(smallScreenView)
+//            }
     }
     /*
     // MARK: - Navigation

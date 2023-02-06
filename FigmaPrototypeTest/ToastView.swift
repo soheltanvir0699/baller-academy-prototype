@@ -61,13 +61,7 @@ public class ToastViewL: UIView {
         return label
     }()
 
-    private var viewBackgroundColor: UIColor? {
-        if #available(iOS 12.0, *) {
-            return UIColor.red.withAlphaComponent(0.5)
-        } else {
-            return UIColor.red.withAlphaComponent(0.5)
-        }
-    }
+    private var viewBackgroundColor: UIColor? = .red
 
     private var vStackAlignment: UIStackView.Alignment {
         switch textAlignment {
@@ -129,8 +123,9 @@ public class ToastViewL: UIView {
 
     public init(title: String, titleFont: UIFont = .systemFont(ofSize: 13, weight: .regular),
                 subtitle: String? = nil, subtitleFont: UIFont = .systemFont(ofSize: 11, weight: .light),
-                icon: UIImage? = nil, iconSpacing: CGFloat = 16, position: Position = .top, onTap: (() -> ())? = nil) {
+                icon: UIImage? = nil, backgroundColorView: UIColor? = .red, iconSpacing: CGFloat = 16, position: Position = .top, onTap: (() -> ())? = nil) {
         self.position = position
+        self.viewBackgroundColor = backgroundColorView
 
         super.init(frame: .zero)
 

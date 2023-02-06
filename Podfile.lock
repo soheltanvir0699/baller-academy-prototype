@@ -1,4 +1,5 @@
 PODS:
+  - ANLoader (2.0.0)
   - CocoaLumberjack/Core (3.8.0)
   - CocoaLumberjack/Swift (3.8.0):
     - CocoaLumberjack/Core
@@ -10,6 +11,7 @@ PODS:
     - SnapKit (~> 4.0.0)
 
 DEPENDENCIES:
+  - ANLoader (from `https://github.com/ANSCoder/ANLoader.git`)
   - CocoaLumberjack/Swift (~> 3)
   - Glideshow
   - THPDFKit
@@ -25,7 +27,17 @@ SPEC REPOS:
     - UXCam
     - VGPlayer
 
+EXTERNAL SOURCES:
+  ANLoader:
+    :git: https://github.com/ANSCoder/ANLoader.git
+
+CHECKOUT OPTIONS:
+  ANLoader:
+    :commit: b45b12600a4dc693b83d88640e24ca0bb545fa79
+    :git: https://github.com/ANSCoder/ANLoader.git
+
 SPEC CHECKSUMS:
+  ANLoader: 25f4ed93f5d13678eb72a38c2f674acfcaba8205
   CocoaLumberjack: 78abfb691154e2a9df8ded4350d504ee19d90732
   Glideshow: 18fc1e06af4381db3fd66138727e4a768b231ca8
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
@@ -33,6 +45,6 @@ SPEC CHECKSUMS:
   UXCam: 05d2da703cc929baaba0df6cdfeb58124512d222
   VGPlayer: a1787135559aa3b9201ebdc733ee283315492289
 
-PODFILE CHECKSUM: f543d621d49a98d1a831535c6e410a1806691976
+PODFILE CHECKSUM: e6654c5094e9b64dad7af08cc9dc5d998c712af4
 
 COCOAPODS: 1.11.2

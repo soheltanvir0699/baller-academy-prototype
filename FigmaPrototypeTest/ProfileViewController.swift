@@ -77,15 +77,21 @@ class ProfileViewController: UIViewController {
         
         }
         sliderView.items = [
-            GlideItem(title : "", description: "", backgroundImage: UIImage(named:  "1")),
+            GlideItem(description: "", backgroundImage: UIImage(named:  "1")),
             GlideItem(description: "", backgroundImage: UIImage(named:  "2")),
             GlideItem(description: "", backgroundImage: UIImage(named:  "3")),
-            GlideItem(title : "", description: "", backgroundImage: UIImage(named:  "4")),
+            GlideItem(description: "", backgroundImage: UIImage(named:  "4")),
             GlideItem(description: "", backgroundImage: UIImage(named:  "5")),
             GlideItem(description: "", backgroundImage: UIImage(named:  "6")),
-            GlideItem(title : "", description: "", backgroundImage: UIImage(named:  "7")),
+            GlideItem(description: "", backgroundImage: UIImage(named:  "7")),
             GlideItem(description: "", backgroundImage: UIImage(named:  "8")),
-            GlideItem(description: "", backgroundImage: UIImage(named:  "9"))
+            GlideItem(description: "", backgroundImage: UIImage(named:  "9")),
+            GlideItem(description: "", backgroundImage: UIImage(named:  "10")),
+            GlideItem(description: "", backgroundImage: UIImage(named:  "11")),
+            GlideItem(description: "", backgroundImage: UIImage(named:  "12")),
+            GlideItem(description: "", backgroundImage: UIImage(named:  "13")),
+            GlideItem(description: "", backgroundImage: UIImage(named:  "14")),
+            GlideItem(description: "", backgroundImage: UIImage(named:  "15"))
         ]
         sliderView.delegate = self
         sliderView.isCircular = true

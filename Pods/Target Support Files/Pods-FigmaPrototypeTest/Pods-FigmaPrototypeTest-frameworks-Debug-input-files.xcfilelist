@@ -1,4 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-FigmaPrototypeTest/Pods-FigmaPrototypeTest-frameworks.sh
+${BUILT_PRODUCTS_DIR}/ANLoader/ANLoader.framework
 ${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework
 ${BUILT_PRODUCTS_DIR}/Glideshow/Glideshow.framework
 ${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework

@@ -1,0 +1,36 @@
+{
+  "name": "PDFXKit",
+  "version": "0.1.0",
+  "summary": "Apple PDFKit source-compatible wrapper for PSPDFKit.",
+  "documentation_url": "https://pspdfkit.com/guides/ios/current/migration-guides/migrating-from-apple-pdfkit/",
+  "description": "PDFXKit is a drop-in replacement giving you the same API as PDFKit while\nusing PSPDFKit under the hood — only a few tweaks required. PDFXKit gives\nyou full access to the underlying PSPDFKit allowing you take take advantage\nof all PSPDFKit features, components, and tools if and when you need them.",
+  "homepage": "http://github.com/PSPDFKit/PDFXKit",
+  "license": {
+    "type": "BSD (modified)",
+    "file": "LICENSE.md"
+  },
+  "authors": {
+    "PSPDFKit GmbH": "info@pspdfkit.com"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "source": {
+    "git": "git@github.com:PSPDFKit/PDFXKit.git",
+    "branch": "master"
+  },
+  "source_files": [
+    "Sources",
+    "Sources/**/*.{h,m,swift}"
+  ],
+  "public_header_files": "Sources/**/*.h",
+  "requires_arc": true,
+  "swift_versions": "5.0",
+  "frameworks": "PDFKit",
+  "dependencies": {
+    "PSPDFKit": [
+
+    ]
+  },
+  "swift_version": "5.0"
+}

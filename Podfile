@@ -10,6 +10,7 @@ target 'FigmaPrototypeTest' do
   pod 'VGPlayer'
   pod 'UXCam', "~> 3.5.1"
   pod 'Glideshow'
+  pod 'ANLoader', :git => 'https://github.com/ANSCoder/ANLoader.git'
   # Pods for FigmaPrototypeTest
 
 end
