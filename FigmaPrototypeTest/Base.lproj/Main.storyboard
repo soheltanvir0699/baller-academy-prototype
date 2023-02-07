@@ -118,6 +118,9 @@
                                                                 <real key="value" value="5"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="introductionVideo:" destination="4Fz-zD-ST9" eventType="touchUpInside" id="b2i-SW-rxu"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.1328490973" green="0.1488522887" blue="0.16141036149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -686,7 +689,7 @@
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="id8-Ob-d84">
                                                                         <rect key="frame" x="10" y="0.0" width="364" height="80.5"/>
-                                                                        <string key="text">At the age of 11, Nathan learned how to be self-sufficient and started his entrepreneurial journey. He began buying and selling various electronic products, as well as organizing social events and soccer activities in his community.</string>
+                                                                        <string key="text">At the age of 11, Nathan learned how to be self-sufficient and started his entrepreneurial journey. He began buying and selling various electronic products, as well as organizing community events and soccer activities in his community.</string>
                                                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
@@ -997,7 +1000,58 @@
                                                                             </view>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uBa-gV-wWG">
                                                                                 <rect key="frame" x="192" y="0.0" width="182" height="240"/>
+                                                                                <subviews>
+                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="walmart" translatesAutoresizingMaskIntoConstraints="NO" id="PDs-kL-Eb0">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="182" height="240"/>
+                                                                                    </imageView>
+                                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kDQ-36-hqB">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="182" height="240"/>
+                                                                                        <subviews>
+                                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play" translatesAutoresizingMaskIntoConstraints="NO" id="QzJ-Le-rdr">
+                                                                                                <rect key="frame" x="10" y="10" width="45" height="45"/>
+                                                                                                <constraints>
+                                                                                                    <constraint firstAttribute="width" constant="45" id="hsP-vi-Qfm"/>
+                                                                                                    <constraint firstAttribute="height" constant="45" id="oCf-tY-EPX"/>
+                                                                                                </constraints>
+                                                                                            </imageView>
+                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Walmart x Baller Academy Reception" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uN1-pZ-6cb">
+                                                                                                <rect key="frame" x="10" y="124.5" width="162" height="37"/>
+                                                                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                                                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                <nil key="highlightedColor"/>
+                                                                                            </label>
+                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLN-JZ-TT7">
+                                                                                                <rect key="frame" x="10" y="166.5" width="162" height="63.5"/>
+                                                                                                <string key="text">Walmart teams up with Baller Academy to host a spectacular reception for children, school leaders, community partners, elected officials, and families.</string>
+                                                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="11"/>
+                                                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                <nil key="highlightedColor"/>
+                                                                                            </label>
+                                                                                        </subviews>
+                                                                                        <color key="backgroundColor" white="0.0" alpha="0.45000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="bottom" secondItem="gLN-JZ-TT7" secondAttribute="bottom" constant="10" id="JBl-A5-5Bc"/>
+                                                                                            <constraint firstItem="uN1-pZ-6cb" firstAttribute="leading" secondItem="kDQ-36-hqB" secondAttribute="leading" constant="10" id="NJW-Z1-69S"/>
+                                                                                            <constraint firstItem="gLN-JZ-TT7" firstAttribute="top" secondItem="uN1-pZ-6cb" secondAttribute="bottom" constant="5" id="NV6-d8-XoY"/>
+                                                                                            <constraint firstAttribute="trailing" secondItem="gLN-JZ-TT7" secondAttribute="trailing" constant="10" id="YXh-bu-kpD"/>
+                                                                                            <constraint firstAttribute="trailing" secondItem="uN1-pZ-6cb" secondAttribute="trailing" constant="10" id="bL0-BX-HYk"/>
+                                                                                            <constraint firstItem="QzJ-Le-rdr" firstAttribute="leading" secondItem="kDQ-36-hqB" secondAttribute="leading" constant="10" id="m2A-ye-jMs"/>
+                                                                                            <constraint firstItem="QzJ-Le-rdr" firstAttribute="top" secondItem="kDQ-36-hqB" secondAttribute="top" constant="10" id="oBj-qD-c2C"/>
+                                                                                            <constraint firstItem="gLN-JZ-TT7" firstAttribute="leading" secondItem="kDQ-36-hqB" secondAttribute="leading" constant="10" id="zGH-j3-1Ke"/>
+                                                                                        </constraints>
+                                                                                    </view>
+                                                                                </subviews>
                                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="bottom" secondItem="PDs-kL-Eb0" secondAttribute="bottom" id="993-g5-91P"/>
+                                                                                    <constraint firstAttribute="trailing" secondItem="PDs-kL-Eb0" secondAttribute="trailing" id="E28-Rp-nmM"/>
+                                                                                    <constraint firstItem="PDs-kL-Eb0" firstAttribute="leading" secondItem="uBa-gV-wWG" secondAttribute="leading" id="SZR-uV-iND"/>
+                                                                                    <constraint firstItem="kDQ-36-hqB" firstAttribute="top" secondItem="uBa-gV-wWG" secondAttribute="top" id="dc1-7Y-m9k"/>
+                                                                                    <constraint firstItem="PDs-kL-Eb0" firstAttribute="top" secondItem="uBa-gV-wWG" secondAttribute="top" id="hBM-JZ-TDU"/>
+                                                                                    <constraint firstAttribute="trailing" secondItem="kDQ-36-hqB" secondAttribute="trailing" id="rVX-BS-pYY"/>
+                                                                                    <constraint firstItem="kDQ-36-hqB" firstAttribute="leading" secondItem="uBa-gV-wWG" secondAttribute="leading" id="uRz-zp-rY5"/>
+                                                                                    <constraint firstAttribute="bottom" secondItem="kDQ-36-hqB" secondAttribute="bottom" id="yCi-oH-4UT"/>
+                                                                                </constraints>
                                                                             </view>
                                                                         </subviews>
                                                                         <constraints>
@@ -1599,9 +1653,11 @@ Nathan was selected as the only player to join the team in 2012, following a suc
                     <navigationItem key="navigationItem" id="Dxt-yv-J3Y"/>
                     <connections>
                         <outlet property="galleryImg" destination="qyB-CP-6g0" id="jpf-AS-xIp"/>
+                        <outlet property="galleryImgFour" destination="PDs-kL-Eb0" id="68a-Ht-XVG"/>
                         <outlet property="galleryImgThree" destination="5wq-uT-9Hg" id="aZp-hk-S9f"/>
                         <outlet property="galleryImgTwo" destination="NQW-fw-3im" id="Z2O-A2-Zf2"/>
                         <outlet property="galleryView" destination="SQS-Xt-Q3A" id="HCY-dg-VXN"/>
+                        <outlet property="galleryViewFour" destination="kDQ-36-hqB" id="wvH-LH-OTj"/>
                         <outlet property="galleryViewThree" destination="4eO-oO-QEP" id="H8T-oX-PGK"/>
                         <outlet property="galleryViewTwo" destination="Zju-un-ccl" id="bVN-SK-gJL"/>
                         <outlet property="louremArrow" destination="2DK-SV-SnR" id="acs-Hx-edw"/>
@@ -1778,6 +1834,7 @@ Nathan was selected as the only player to join the team in 2012, following a suc
         <image name="play" width="128" height="128"/>
         <image name="twitter" width="128" height="128"/>
         <image name="unicef" width="2000" height="1238"/>
+        <image name="walmart" width="748" height="464"/>
         <image name="white-appicon" width="200" height="66"/>
         <systemColor name="secondarySystemGroupedBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

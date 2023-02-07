@@ -21,12 +21,12 @@
 		3789231B298E348E00D775FE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3789231A298E348E00D775FE /* ProfileViewController.swift */; };
 		37927A2A299105D80074204B /* NotificationToast in Frameworks */ = {isa = PBXBuildFile; productRef = 37927A29299105D80074204B /* NotificationToast */; };
 		37927A2C299115000074204B /* NetworkConnectionChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37927A2B299115000074204B /* NetworkConnectionChecker.swift */; };
+		37AF6BFF299221C0007A4454 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AF6BFE299221C0007A4454 /* UIView+Extension.swift */; };
 		37CF371D298CDF0F00D493EB /* Transbutton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CF371C298CDF0F00D493EB /* Transbutton.swift */; };
 		37CF371F298CDF3200D493EB /* SniperLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CF371E298CDF3200D493EB /* SniperLayer.swift */; };
 		37DE1D61298BE8C40055921E /* SwiftyTrans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DE1D60298BE8C40055921E /* SwiftyTrans.swift */; };
 		37F7105029891D7A00D26919 /* HomeViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7104F29891D7A00D26919 /* HomeViewViewController.swift */; };
 		37F7105229891DB600D26919 /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7105129891DB500D26919 /* PDFViewController.swift */; };
-		37F7105829892D8400D26919 /* Academy.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 37F7105729892D8400D26919 /* Academy.pdf */; };
 		D8EC1A3FC2E21279692146F1 /* Pods_FigmaPrototypeTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0767AEFE2B2E4CD455D90B8F /* Pods_FigmaPrototypeTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,13 +48,13 @@
 		3764308E2990249700E52D1D /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		3789231A298E348E00D775FE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		37927A2B299115000074204B /* NetworkConnectionChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConnectionChecker.swift; sourceTree = "<group>"; };
+		37AF6BFE299221C0007A4454 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		37CF371C298CDF0F00D493EB /* Transbutton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transbutton.swift; sourceTree = "<group>"; };
 		37CF371E298CDF3200D493EB /* SniperLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SniperLayer.swift; sourceTree = "<group>"; };
 		37DE1D60298BE8C40055921E /* SwiftyTrans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyTrans.swift; sourceTree = "<group>"; };
 		37E294C7297E9C7900899620 /* FigmaPrototypeTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FigmaPrototypeTest.entitlements; sourceTree = "<group>"; };
 		37F7104F29891D7A00D26919 /* HomeViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewViewController.swift; sourceTree = "<group>"; };
 		37F7105129891DB500D26919 /* PDFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
-		37F7105729892D8400D26919 /* Academy.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Academy.pdf; sourceTree = "<group>"; };
 		3C46E452A4D2A4DDE8ADE4B6 /* Pods-FigmaPrototypeTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FigmaPrototypeTest.debug.xcconfig"; path = "Target Support Files/Pods-FigmaPrototypeTest/Pods-FigmaPrototypeTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,6 +99,7 @@
 				374BA1DD296D3EBF00E7677E /* Prototype.swift */,
 				375FBD6C298D17B4000D820A /* ScheduleViewController.swift */,
 				37927A2B299115000074204B /* NetworkConnectionChecker.swift */,
+				37AF6BFE299221C0007A4454 /* UIView+Extension.swift */,
 				37F7104F29891D7A00D26919 /* HomeViewViewController.swift */,
 				3764308E2990249700E52D1D /* Constant.swift */,
 				37DE1D60298BE8C40055921E /* SwiftyTrans.swift */,
@@ -108,7 +109,6 @@
 				37F7105129891DB500D26919 /* PDFViewController.swift */,
 				375FBD71298D2034000D820A /* ToastView.swift */,
 				371236FC298A248800AB006F /* VideoViewController.swift */,
-				37F7105729892D8400D26919 /* Academy.pdf */,
 				374BA1DF296D3EBF00E7677E /* Main.storyboard */,
 				374BA1E2296D3EC100E7677E /* Assets.xcassets */,
 				374BA1E4296D3EC100E7677E /* LaunchScreen.storyboard */,
@@ -201,7 +201,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				374BA1E6296D3EC100E7677E /* LaunchScreen.storyboard in Resources */,
-				37F7105829892D8400D26919 /* Academy.pdf in Resources */,
 				374BA1E3296D3EC100E7677E /* Assets.xcassets in Resources */,
 				374BA1E1296D3EBF00E7677E /* Main.storyboard in Resources */,
 			);
@@ -268,6 +267,7 @@
 				37F7105029891D7A00D26919 /* HomeViewViewController.swift in Sources */,
 				37CF371D298CDF0F00D493EB /* Transbutton.swift in Sources */,
 				37927A2C299115000074204B /* NetworkConnectionChecker.swift in Sources */,
+				37AF6BFF299221C0007A4454 /* UIView+Extension.swift in Sources */,
 				3789231B298E348E00D775FE /* ProfileViewController.swift in Sources */,
 				375FBD6D298D17B4000D820A /* ScheduleViewController.swift in Sources */,
 				374BA1DC296D3EBF00E7677E /* SceneDelegate.swift in Sources */,
@@ -418,7 +418,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = FigmaPrototypeTest/FigmaPrototypeTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = X758GPAUX4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FigmaPrototypeTest/Info.plist;
@@ -453,7 +453,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = FigmaPrototypeTest/FigmaPrototypeTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = X758GPAUX4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FigmaPrototypeTest/Info.plist;

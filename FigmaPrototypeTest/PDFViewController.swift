@@ -16,13 +16,9 @@ class PDFViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         pdfView.backgroundColor = .clear
-            let value = UIInterfaceOrientation.landscapeRight.rawValue
-            UIDevice.current.setValue(value, forKey: "orientation")
-        DispatchQueue.main.asyncAfter(deadline: .now()+0.1) {
-            ANLoader.showLoading("Deck Loading...", disableUI: true)
-        }
+        ANLoader.showLoading("Deck Loading...", disableUI: false)
            
-            DispatchQueue.main.asyncAfter(deadline: .now()+0.3) {
+            DispatchQueue.main.asyncAfter(deadline: .now()+0.5) {
             
             self.pdfView.translatesAutoresizingMaskIntoConstraints = false
             self.pdfVieww.addSubview(self.pdfView)
@@ -41,6 +37,8 @@ class PDFViewController: UIViewController {
 
             self.pdfView.document = sampleDocument
                 ANLoader.hide()
+                let value = UIInterfaceOrientation.landscapeRight.rawValue
+                UIDevice.current.setValue(value, forKey: "orientation")
         }
         
         // Do any additional setup after loading the view.

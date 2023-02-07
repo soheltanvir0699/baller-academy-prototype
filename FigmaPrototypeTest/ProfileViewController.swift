@@ -48,13 +48,15 @@ class ProfileViewController: UIViewController {
     
     @IBOutlet weak var galleryViewThree: UIView!
     @IBOutlet weak var galleryImgThree: UIImageView!
+    
+    @IBOutlet weak var galleryViewFour: UIView!
+    @IBOutlet weak var galleryImgFour: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.navigationController?.navigationBar.isTranslucent = false
         DispatchQueue.main.asyncAfter(deadline: .now()+0.2) {
             self.nathanViewHeight = self.nathanView.frame.height
-            
-            
             
             DispatchQueue.main.async {
                 self.lourenHeight.constant = 0
@@ -69,13 +71,17 @@ class ProfileViewController: UIViewController {
                 self.galleryViewTwo.layer.cornerRadius = 5
                 self.galleryImgThree.layer.cornerRadius = 5
                 self.galleryViewThree.layer.cornerRadius = 5
+                self.galleryImgFour.layer.cornerRadius = 5
+                self.galleryViewFour.layer.cornerRadius = 5
         }
             
             self.galleryView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.goVideoDetails)))
             self.galleryViewTwo.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.goVideoDetails2)))
             self.galleryViewThree.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.goVideoDetails3)))
+            self.galleryViewFour.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.goVideoDetails4)))
         
         }
+        
         sliderView.items = [
             GlideItem(description: "", backgroundImage: UIImage(named:  "1")),
             GlideItem(description: "", backgroundImage: UIImage(named:  "2")),
@@ -136,6 +142,10 @@ class ProfileViewController: UIViewController {
     }
     @objc func goVideoDetails3() {
         goDetailsVc(url: "https://baller-ac.s3.amazonaws.com/baller_city_of_houston.mp4")
+        
+    }
+    @objc func goVideoDetails4() {
+        goDetailsVc(url: "https://baller-ac.s3.amazonaws.com/baller_walmart.mp4")
         
     }
     func goDetailsVc(url: String) {

@@ -20,7 +20,6 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate, UIGe
     private var tapCout = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.navigationController?.navigationBar.isHidden = true
 //        userAutorization()
        
@@ -51,7 +50,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate, UIGe
     
     
     func listenVolumeButton(){
-        showToast(message: "tap (Volume button) to close the prototype.")
+        showToast(message: "Press volume down button to exit prototype")
         
          let audioSession = AVAudioSession.sharedInstance()
          do {
@@ -66,16 +65,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate, UIGe
    
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
          if keyPath == "outputVolume"{
-//              let audioSession = AVAudioSession.sharedInstance()
-//              if audioSession.outputVolume > audioLevel {
-//                   print("Hello")
-//              }
-//              if audioSession.outputVolume < audioLevel {
-//
-//              }
              backAction()
-//              audioLevel = audioSession.outputVolume
-//              print(audioSession.outputVolume)
          }
     }
     
@@ -112,6 +102,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate, UIGe
     }
     
     override func viewDidDisappear(_ animated: Bool) {
+        showToast(message: "Thanks for your visit!")
         self.navigationController?.navigationBar.isHidden = false
     }
     

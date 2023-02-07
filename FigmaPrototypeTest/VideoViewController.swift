@@ -25,11 +25,9 @@ class VideoViewController: UIViewController {
     @IBOutlet weak var videoView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         if videoUrl != nil {
             player = VGPlayer(URL: videoUrl!)
         }
-//        player.replaceVideo(videoUrl!)
         self.view.addSubview(player!.displayView)
         player!.play()
         player?.backgroundMode = .suspend
@@ -85,15 +83,6 @@ class VideoViewController: UIViewController {
 //                $0.edges.equalTo(smallScreenView)
 //            }
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 
