@@ -843,9 +843,11 @@
                                                                                                     <constraint firstAttribute="height" constant="45" id="gyU-8l-lD7"/>
                                                                                                 </constraints>
                                                                                             </imageView>
-                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UNICEF x Baller Academy" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfh-6h-ULh">
-                                                                                                <rect key="frame" x="10" y="150" width="162" height="37"/>
-                                                                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfh-6h-ULh">
+                                                                                                <rect key="frame" x="10" y="154.5" width="162" height="32.5"/>
+                                                                                                <string key="text">UNICEF x 
+Baller Academy</string>
+                                                                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
                                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                 <nil key="highlightedColor"/>
                                                                                             </label>
@@ -897,9 +899,11 @@
                                                                                                     <constraint firstAttribute="width" constant="45" id="W4e-N5-xLB"/>
                                                                                                 </constraints>
                                                                                             </imageView>
-                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Highlights Video" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vs-TG-rmw">
-                                                                                                <rect key="frame" x="10" y="137" width="162" height="37"/>
-                                                                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vs-TG-rmw">
+                                                                                                <rect key="frame" x="10" y="141.5" width="162" height="32.5"/>
+                                                                                                <string key="text">Game Highlights
+Video</string>
+                                                                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
                                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                 <nil key="highlightedColor"/>
                                                                                             </label>
@@ -959,9 +963,11 @@
                                                                                                     <constraint firstAttribute="width" constant="45" id="aau-r8-6IE"/>
                                                                                                 </constraints>
                                                                                             </imageView>
-                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Houston Sports Park Board Induction" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xH6-6f-Nkc">
-                                                                                                <rect key="frame" x="10" y="124.5" width="162" height="37"/>
-                                                                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xH6-6f-Nkc">
+                                                                                                <rect key="frame" x="10" y="129" width="162" height="32.5"/>
+                                                                                                <string key="text">Houston Sports Park 
+Board Induction</string>
+                                                                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
                                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                 <nil key="highlightedColor"/>
                                                                                             </label>
@@ -1014,9 +1020,11 @@
                                                                                                     <constraint firstAttribute="height" constant="45" id="oCf-tY-EPX"/>
                                                                                                 </constraints>
                                                                                             </imageView>
-                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Walmart x Baller Academy Reception" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uN1-pZ-6cb">
-                                                                                                <rect key="frame" x="10" y="124.5" width="162" height="37"/>
-                                                                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uN1-pZ-6cb">
+                                                                                                <rect key="frame" x="10" y="129" width="162" height="32.5"/>
+                                                                                                <string key="text">Walmart x Baller 
+Academy Reception</string>
+                                                                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
                                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                 <nil key="highlightedColor"/>
                                                                                             </label>
@@ -1534,7 +1542,7 @@ Nathan was selected as the only player to join the team in 2012, following a suc
                                                 <rect key="frame" x="0.0" y="3005" width="414" height="2000"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JYd-ax-VUe">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1929"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1988.5"/>
                                                         <subviews>
                                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d1y-o5-sYo" customClass="Glideshow" customModule="Glideshow">
                                                                 <rect key="frame" x="0.0" y="5" width="414" height="220"/>
@@ -1577,13 +1585,13 @@ Nathan was selected as the only player to join the team in 2012, following a suc
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project and Contributions" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XmZ-17-ddw">
-                                                                <rect key="frame" x="20" y="1398" width="374" height="20"/>
+                                                                <rect key="frame" x="20" y="1457.5" width="374" height="20"/>
                                                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
                                                                 <color key="textColor" red="0.92362123730000001" green="0.25996106860000001" blue="0.20830270649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="slH-k6-IpY">
-                                                                <rect key="frame" x="20" y="1460.5" width="374" height="0.0"/>
+                                                                <rect key="frame" x="20" y="1520" width="374" height="0.0"/>
                                                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
                                                                 <color key="textColor" red="0.92362123730000001" green="0.25996106860000001" blue="0.20830270649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -1647,9 +1655,11 @@ Mujahid has a track record of success, including being awarded for his software 
                                                                                                     <constraint firstAttribute="width" constant="45" id="Fs2-Sq-1We"/>
                                                                                                 </constraints>
                                                                                             </imageView>
-                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Low Cost Active Noise cancellation" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1c-oW-F0X">
-                                                                                                <rect key="frame" x="10" y="124.5" width="162" height="37"/>
-                                                                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1c-oW-F0X">
+                                                                                                <rect key="frame" x="10" y="129" width="162" height="32.5"/>
+                                                                                                <string key="text">Low Cost Active Noise 
+cancellation - DIY</string>
+                                                                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
                                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                 <nil key="highlightedColor"/>
                                                                                             </label>
@@ -1702,9 +1712,11 @@ Mujahid has a track record of success, including being awarded for his software 
                                                                                                     <constraint firstAttribute="width" constant="45" id="pl6-vq-xtQ"/>
                                                                                                 </constraints>
                                                                                             </imageView>
-                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Android Auto Validation" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xHO-zQ-qbI">
-                                                                                                <rect key="frame" x="10" y="137" width="162" height="37"/>
-                                                                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xHO-zQ-qbI">
+                                                                                                <rect key="frame" x="10" y="141.5" width="162" height="32.5"/>
+                                                                                                <string key="text">Android Auto 
+Input Validation</string>
+                                                                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
                                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                 <nil key="highlightedColor"/>
                                                                                             </label>
@@ -1764,14 +1776,17 @@ Mujahid has a track record of success, including being awarded for his software 
                                                                                                     <constraint firstAttribute="height" constant="45" id="yxw-qN-tCb"/>
                                                                                                 </constraints>
                                                                                             </imageView>
-                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message Alarm Innovation" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWN-Hc-hOm">
-                                                                                                <rect key="frame" x="10" y="124.5" width="162" height="37"/>
-                                                                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWN-Hc-hOm">
+                                                                                                <rect key="frame" x="10" y="129" width="162" height="32.5"/>
+                                                                                                <string key="text">Message Alarm 
+Innovation</string>
+                                                                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
                                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                 <nil key="highlightedColor"/>
                                                                                             </label>
-                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Successfully addressed the key development challenge through the creation of the NotificationServiceLister class in Kotlin." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3wQ-nW-JCh">
+                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3wQ-nW-JCh">
                                                                                                 <rect key="frame" x="10" y="166.5" width="162" height="63.5"/>
+                                                                                                <string key="text">Testing advanced noise cancelling technology with the innovative FxLMS algorithm and omnidirectional microphone integration on an ESP32 board.</string>
                                                                                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="11"/>
                                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                 <nil key="highlightedColor"/>
@@ -1843,7 +1858,7 @@ Mujahid has a track record of success, including being awarded for his software 
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y9n-MD-kby">
-                                                                <rect key="frame" x="20" y="1338" width="374" height="0.0"/>
+                                                                <rect key="frame" x="20" y="1338" width="374" height="16.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="mll-CH-O2p">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -1853,8 +1868,8 @@ Mujahid has a track record of success, including being awarded for his software 
                                                                             <constraint firstAttribute="width" constant="5" id="uWz-pF-c1d"/>
                                                                         </constraints>
                                                                     </imageView>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IqA-TN-vWG">
-                                                                        <rect key="frame" x="10" y="0.0" width="364" height="0.0"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dss" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IqA-TN-vWG">
+                                                                        <rect key="frame" x="10" y="0.0" width="364" height="16.5"/>
                                                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
@@ -1870,8 +1885,36 @@ Mujahid has a track record of success, including being awarded for his software 
                                                                     <constraint firstItem="mll-CH-O2p" firstAttribute="top" secondItem="Y9n-MD-kby" secondAttribute="top" id="wbj-pA-cO4"/>
                                                                 </constraints>
                                                             </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="anB-7w-4r2">
+                                                                <rect key="frame" x="20" y="1364.5" width="374" height="16.5"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="d1Z-O8-vww">
+                                                                        <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
+                                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="5" id="6uc-08-fPP"/>
+                                                                            <constraint firstAttribute="height" constant="13" id="uRl-jp-fEW"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dss" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMA-Kc-mUK">
+                                                                        <rect key="frame" x="10" y="0.0" width="364" height="16.5"/>
+                                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="eMA-Kc-mUK" firstAttribute="top" secondItem="anB-7w-4r2" secondAttribute="top" id="Oht-A4-yBc"/>
+                                                                    <constraint firstItem="d1Z-O8-vww" firstAttribute="leading" secondItem="anB-7w-4r2" secondAttribute="leading" id="g4W-tT-5Xe"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="eMA-Kc-mUK" secondAttribute="trailing" id="hWg-si-J1K"/>
+                                                                    <constraint firstItem="eMA-Kc-mUK" firstAttribute="leading" secondItem="d1Z-O8-vww" secondAttribute="trailing" constant="5" id="huc-PD-ibP"/>
+                                                                    <constraint firstItem="d1Z-O8-vww" firstAttribute="top" secondItem="anB-7w-4r2" secondAttribute="top" id="maL-Ee-3y0"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="eMA-Kc-mUK" secondAttribute="bottom" id="mlC-Ik-6fd"/>
+                                                                </constraints>
+                                                            </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Gr-Ua-P13">
-                                                                <rect key="frame" x="20" y="1348" width="374" height="0.0"/>
+                                                                <rect key="frame" x="20" y="1391" width="374" height="16.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="W1Z-eA-dHj">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -1881,8 +1924,8 @@ Mujahid has a track record of success, including being awarded for his software 
                                                                             <constraint firstAttribute="width" constant="5" id="XVe-zP-SnW"/>
                                                                         </constraints>
                                                                     </imageView>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lsv-Xx-f1S">
-                                                                        <rect key="frame" x="10" y="0.0" width="364" height="0.0"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sd" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lsv-Xx-f1S">
+                                                                        <rect key="frame" x="10" y="0.0" width="364" height="16.5"/>
                                                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
@@ -1899,7 +1942,7 @@ Mujahid has a track record of success, including being awarded for his software 
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ug9-uC-nDz">
-                                                                <rect key="frame" x="20" y="1358" width="374" height="0.0"/>
+                                                                <rect key="frame" x="20" y="1417.5" width="374" height="0.0"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="3bk-Mi-aI0">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -1927,7 +1970,7 @@ Mujahid has a track record of success, including being awarded for his software 
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dJp-67-3qa">
-                                                                <rect key="frame" x="20" y="1368" width="374" height="0.0"/>
+                                                                <rect key="frame" x="20" y="1427.5" width="374" height="0.0"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="pxq-vf-UTk">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -1955,7 +1998,7 @@ Mujahid has a track record of success, including being awarded for his software 
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NbD-9d-Dxw">
-                                                                <rect key="frame" x="20" y="1378" width="374" height="0.0"/>
+                                                                <rect key="frame" x="20" y="1437.5" width="374" height="0.0"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="czw-5g-nBu">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -1983,7 +2026,7 @@ Mujahid has a track record of success, including being awarded for his software 
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9po-z9-Z9j">
-                                                                <rect key="frame" x="20" y="1428" width="374" height="32.5"/>
+                                                                <rect key="frame" x="20" y="1487.5" width="374" height="32.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="JWc-We-Cur">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -2011,7 +2054,7 @@ Mujahid has a track record of success, including being awarded for his software 
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dT3-zQ-xKT">
-                                                                <rect key="frame" x="20" y="1805" width="374" height="16.5"/>
+                                                                <rect key="frame" x="20" y="1864.5" width="374" height="16.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ut0-e1-ths">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -2039,7 +2082,7 @@ Mujahid has a track record of success, including being awarded for his software 
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MiZ-Si-SYE">
-                                                                <rect key="frame" x="20" y="1762.5" width="374" height="32.5"/>
+                                                                <rect key="frame" x="20" y="1822" width="374" height="32.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="5ll-Pr-6vZ">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -2067,7 +2110,7 @@ Mujahid has a track record of success, including being awarded for his software 
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SA9-lb-psr">
-                                                                <rect key="frame" x="20" y="1736" width="374" height="16.5"/>
+                                                                <rect key="frame" x="20" y="1795.5" width="374" height="16.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Lx7-l4-KxD">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -2095,7 +2138,7 @@ Mujahid has a track record of success, including being awarded for his software 
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="liU-qr-RHM">
-                                                                <rect key="frame" x="20" y="1709.5" width="374" height="16.5"/>
+                                                                <rect key="frame" x="20" y="1769" width="374" height="16.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="dfq-P0-Kt6">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -2123,7 +2166,7 @@ Mujahid has a track record of success, including being awarded for his software 
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TUL-em-NFX">
-                                                                <rect key="frame" x="20" y="1683" width="374" height="16.5"/>
+                                                                <rect key="frame" x="20" y="1742.5" width="374" height="16.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Mgq-mW-0qR">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -2151,7 +2194,7 @@ Mujahid has a track record of success, including being awarded for his software 
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3r4-Ic-CRZ">
-                                                                <rect key="frame" x="20" y="1640.5" width="374" height="32.5"/>
+                                                                <rect key="frame" x="20" y="1700" width="374" height="32.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="pK4-aw-YpQ">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -2179,7 +2222,7 @@ Mujahid has a track record of success, including being awarded for his software 
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VRK-aB-eie">
-                                                                <rect key="frame" x="20" y="1582" width="374" height="48.5"/>
+                                                                <rect key="frame" x="20" y="1641.5" width="374" height="48.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="a1u-Jj-Pgs">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -2209,7 +2252,7 @@ Colombia, Losdebuho, Colombia</string>
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yIV-qa-Skz">
-                                                                <rect key="frame" x="20" y="1555.5" width="374" height="16.5"/>
+                                                                <rect key="frame" x="20" y="1615" width="374" height="16.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="x7z-dp-d4S">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -2237,7 +2280,7 @@ Colombia, Losdebuho, Colombia</string>
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YbP-9C-Wc4">
-                                                                <rect key="frame" x="20" y="1513" width="374" height="32.5"/>
+                                                                <rect key="frame" x="20" y="1572.5" width="374" height="32.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="eTQ-Mo-id0">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -2265,7 +2308,7 @@ Colombia, Losdebuho, Colombia</string>
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ov6-gr-SeA">
-                                                                <rect key="frame" x="20" y="1470.5" width="374" height="32.5"/>
+                                                                <rect key="frame" x="20" y="1530" width="374" height="32.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="YP0-FV-AX7">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -2293,7 +2336,7 @@ Colombia, Losdebuho, Colombia</string>
                                                                 </constraints>
                                                             </view>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cNJ-uJ-JMv">
-                                                                <rect key="frame" x="162" y="1884" width="90" height="35"/>
+                                                                <rect key="frame" x="162" y="1943.5" width="90" height="35"/>
                                                                 <subviews>
                                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kuO-z7-4CF">
                                                                         <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
@@ -2318,7 +2361,7 @@ Colombia, Losdebuho, Colombia</string>
                                                                 </constraints>
                                                             </stackView>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yXn-3k-dLP">
-                                                                <rect key="frame" x="20" y="1388" width="374" height="0.0"/>
+                                                                <rect key="frame" x="20" y="1447.5" width="374" height="0.0"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="OqX-Fz-KyU">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -2346,7 +2389,7 @@ Colombia, Losdebuho, Colombia</string>
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gjW-KH-fYs">
-                                                                <rect key="frame" x="20" y="1831.5" width="374" height="32.5"/>
+                                                                <rect key="frame" x="20" y="1891" width="374" height="32.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4nU-Mq-reX">
                                                                         <rect key="frame" x="0.0" y="0.5" width="5" height="12"/>
@@ -2405,6 +2448,7 @@ Colombia, Losdebuho, Colombia</string>
                                                             <constraint firstItem="ov6-gr-SeA" firstAttribute="leading" secondItem="JYd-ax-VUe" secondAttribute="leading" constant="20" symbolic="YES" id="HX0-Qi-0j0"/>
                                                             <constraint firstItem="yXn-3k-dLP" firstAttribute="leading" secondItem="JYd-ax-VUe" secondAttribute="leading" constant="20" id="I93-r8-MKb"/>
                                                             <constraint firstItem="xPc-bF-yNI" firstAttribute="top" secondItem="d1y-o5-sYo" secondAttribute="bottom" constant="15" id="JFc-N4-RRy"/>
+                                                            <constraint firstItem="anB-7w-4r2" firstAttribute="top" secondItem="Y9n-MD-kby" secondAttribute="bottom" constant="10" id="JnU-nY-7b9"/>
                                                             <constraint firstAttribute="trailing" secondItem="9kD-Po-5Bl" secondAttribute="trailing" constant="20" symbolic="YES" id="KHq-cC-oxW"/>
                                                             <constraint firstItem="yIV-qa-Skz" firstAttribute="leading" secondItem="JYd-ax-VUe" secondAttribute="leading" constant="20" symbolic="YES" id="KOr-at-QXc"/>
                                                             <constraint firstAttribute="trailing" secondItem="dJp-67-3qa" secondAttribute="trailing" constant="20" id="Kd1-yp-xNb"/>
@@ -2442,7 +2486,6 @@ Colombia, Losdebuho, Colombia</string>
                                                             <constraint firstItem="MiZ-Si-SYE" firstAttribute="top" secondItem="SA9-lb-psr" secondAttribute="bottom" constant="10" id="ckM-3F-cBy"/>
                                                             <constraint firstAttribute="trailing" secondItem="yIV-qa-Skz" secondAttribute="trailing" constant="20" symbolic="YES" id="faB-EK-6zr"/>
                                                             <constraint firstItem="d1y-o5-sYo" firstAttribute="leading" secondItem="JYd-ax-VUe" secondAttribute="leading" id="faD-il-0PD"/>
-                                                            <constraint firstItem="6Gr-Ua-P13" firstAttribute="top" secondItem="Y9n-MD-kby" secondAttribute="bottom" constant="10" id="gQA-l4-npP"/>
                                                             <constraint firstItem="YbP-9C-Wc4" firstAttribute="top" secondItem="ov6-gr-SeA" secondAttribute="bottom" constant="10" id="gRR-uK-M7p"/>
                                                             <constraint firstItem="yIV-qa-Skz" firstAttribute="top" secondItem="YbP-9C-Wc4" secondAttribute="bottom" constant="10" id="gem-AA-LRN"/>
                                                             <constraint firstAttribute="trailing" secondItem="gjW-KH-fYs" secondAttribute="trailing" constant="20" symbolic="YES" id="glR-Wv-3sO"/>
@@ -2454,9 +2497,12 @@ Colombia, Losdebuho, Colombia</string>
                                                             <constraint firstItem="slH-k6-IpY" firstAttribute="top" secondItem="9po-z9-Z9j" secondAttribute="bottom" id="mWC-AX-keO"/>
                                                             <constraint firstAttribute="trailing" secondItem="liU-qr-RHM" secondAttribute="trailing" constant="20" symbolic="YES" id="nJZ-hY-6p6"/>
                                                             <constraint firstAttribute="trailing" secondItem="TUL-em-NFX" secondAttribute="trailing" constant="20" symbolic="YES" id="r7Q-3k-r1F"/>
+                                                            <constraint firstItem="6Gr-Ua-P13" firstAttribute="top" secondItem="anB-7w-4r2" secondAttribute="bottom" constant="10" id="rKp-zF-M4z"/>
                                                             <constraint firstItem="dT3-zQ-xKT" firstAttribute="top" secondItem="MiZ-Si-SYE" secondAttribute="bottom" constant="10" id="rWb-OD-tVO"/>
                                                             <constraint firstItem="dJp-67-3qa" firstAttribute="top" secondItem="ug9-uC-nDz" secondAttribute="bottom" constant="10" id="tPR-ER-Yjw"/>
                                                             <constraint firstItem="cNJ-uJ-JMv" firstAttribute="centerX" secondItem="JYd-ax-VUe" secondAttribute="centerX" id="tUK-ts-g07"/>
+                                                            <constraint firstAttribute="trailing" secondItem="anB-7w-4r2" secondAttribute="trailing" constant="20" id="tZa-jB-B1U"/>
+                                                            <constraint firstItem="anB-7w-4r2" firstAttribute="leading" secondItem="JYd-ax-VUe" secondAttribute="leading" constant="20" id="tpT-9E-jUB"/>
                                                             <constraint firstItem="xPc-bF-yNI" firstAttribute="leading" secondItem="JYd-ax-VUe" secondAttribute="leading" constant="20" id="trP-uF-Lfa"/>
                                                             <constraint firstAttribute="trailing" secondItem="HKe-Iq-6Pd" secondAttribute="trailing" constant="20" symbolic="YES" id="u7b-vU-Sgj"/>
                                                             <constraint firstAttribute="trailing" secondItem="XmZ-17-ddw" secondAttribute="trailing" constant="20" symbolic="YES" id="uDs-2k-Ei8"/>
@@ -2590,6 +2636,7 @@ Colombia, Losdebuho, Colombia</string>
                         <outlet property="careerFiveLbl" destination="1g3-cU-5ad" id="cI3-je-smL"/>
                         <outlet property="careerFourLbl" destination="Jai-Di-KUd" id="aV6-7k-Bmf"/>
                         <outlet property="careerOneLbl" destination="IqA-TN-vWG" id="ArM-DP-N9Z"/>
+                        <outlet property="careerSecondLbl" destination="eMA-Kc-mUK" id="jbp-jA-f4W"/>
                         <outlet property="careerSixLbl" destination="NIw-Ip-CtA" id="K51-Cc-FN0"/>
                         <outlet property="careerThreeLbl" destination="CMh-Hd-J2e" id="Rng-Su-y0d"/>
                         <outlet property="careerTwoLbl" destination="Lsv-Xx-f1S" id="zNP-ga-BCc"/>

@@ -67,6 +67,7 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var careerFourLbl: UILabel!
     @IBOutlet weak var careerFiveLbl: UILabel!
     @IBOutlet weak var careerSixLbl: UILabel!
+    @IBOutlet weak var careerSecondLbl: UILabel!
     
     func setText(label:UILabel, textRegular:String, textBold: String) {
         let regularFont = UIFont(name: "Helvetica", size: 14)
@@ -81,11 +82,11 @@ class ProfileViewController: UIViewController {
 
         label.attributedText = attributedText
     }
-    let boldArray = ["Chief Technology Officer","Chief Technology Officer &amp; Co - Founder","Senior Software Engineer","Executive Software Engineer","Android Development - Trainer","Freelance Android &amp; Web developer"]
-    let regularArray = ["Baller Academy , Houston, Texas (Jan 2022 - Current)","Mk7Lab, Khulna (Dec 2021 -  Jan 2022)","Ruhof Corporation , New York (Jan 2019 - Dec 2021)","ItechSoftSolution, Khulna (Dec 2017 -  Jan 2019)","Digicon Technologies, Dhaka (Jan 2016 -  Dec 2017)","Upwork &amp; Fiverr (Jan 2013 -  Dec 2015)"]
+    let boldArray = ["Chief Technology Officer","Lead Software Engineer","Chief Technology Officer & Co - Founder","Senior Software Engineer","Executive Software Engineer","Android Development - Trainer","Freelance Android & Web developer"]
+    let regularArray = ["Baller Academy, United States (Feb 2023 - Current)","Baller Academy, United States (Jan 2022 - Jan 2023)","Mk7Lab, Khulna (Dec 2021 -  Jan 2022)","Ruhof Corporation , New York (Jan 2019 - Dec 2021)","ItechSoftSolution, Khulna (Dec 2017 -  Jan 2019)","Digicon Technologies, Dhaka (Jan 2016 -  Dec 2017)","Upwork &amp; Fiverr (Jan 2013 -  Dec 2015)"]
     override func viewDidLoad() {
         super.viewDidLoad()
-        let labels = [self.careerOneLbl, self.careerTwoLbl, self.careerThreeLbl, self.careerFourLbl,self.careerFiveLbl,self.careerSixLbl]
+        let labels = [self.careerOneLbl, self.careerSecondLbl, self.careerTwoLbl, self.careerThreeLbl, self.careerFourLbl,self.careerFiveLbl,self.careerSixLbl]
         for (index,lab) in labels.enumerated() {
             setText(label: lab!, textRegular: regularArray[index], textBold: boldArray[index])
         }
@@ -122,8 +123,8 @@ class ProfileViewController: UIViewController {
         }
         
         mujahidSlider.items = [
-            GlideItem(description: "", backgroundImage: UIImage(named:  "mujahid_two")),
             GlideItem(description: "", backgroundImage: UIImage(named:  "mujahid_one")),
+            GlideItem(description: "", backgroundImage: UIImage(named:  "mujahid_two")),
             ]
         
         sliderView.items = [
