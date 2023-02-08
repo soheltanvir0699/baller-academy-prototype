@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 /**
-Stop animation style of the `TransitionButton`.
+ Stop animation style of the `TransitionButton`.
  
  - normal: just revert the button to the original state.
  - expand: expand the button and cover all the screen, useful to do transit animation.
@@ -25,7 +25,7 @@ public enum StopAnimationStyle {
 
 
 /// UIButton sublass for loading and transition animation. Useful for network based application or where you need to animate an action button while doing background tasks.
- 
+
 open class TransitionButton : UIButton, UIViewControllerTransitioningDelegate, CAAnimationDelegate {
     
     /// the color of the spinner while animating the button
@@ -156,11 +156,11 @@ open class TransitionButton : UIButton, UIViewControllerTransitioningDelegate, C
         self.spiner.stopAnimation()
         self.setTitle(self.cachedTitle, for: .normal)
         self.setImage(self.cachedImage, for: .normal)
-//        self.setBackgroundImage(self.cachedImage, for: .normal)
+        //        self.setBackgroundImage(self.cachedImage, for: .normal)
         self.isUserInteractionEnabled = true // enable again the user interaction
         self.layer.cornerRadius = self.cornerRadius
     }
- 
+    
     private func animateToOriginalWidth() {
         let shrinkAnim = CABasicAnimation(keyPath: "bounds.size.width")
         shrinkAnim.fromValue = (self.bounds.height)

@@ -31,61 +31,45 @@ class HomeViewViewController: UIViewController{
     @IBOutlet weak var pdfBackView: UIView!
     @IBOutlet weak var prototypeView: UIView!
     @IBOutlet weak var videoView: UIView!
+    
     let reachability = try! Reachability()
     var isNetworkAvailable = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        backShadowView.layer.cornerRadius = 8
-        backShadowView2.layer.cornerRadius = 8
-        backShadowView3.layer.cornerRadius = 8
-        backShadowView4.layer.cornerRadius = 8
         
-        prototypeView.layer.cornerRadius = 8
-        prototypeView.layer.shadowOffset = CGSize(width: 1, height: 2)
-        prototypeView.layer.shadowRadius = 2
-        prototypeView.layer.shadowColor = UIColor.black.cgColor
+        let shadowViews = [backShadowView, backShadowView2, backShadowView3, backShadowView4]
+            let shadowImages = [pdfImg, prototypeImg, videoImg, meetTeamImg]
+            let cornerRadius: CGFloat = 8
+            let shadowRadius: CGFloat = 2
+            let shadowOffset = CGSize(width: 1, height: 2)
+            let shadowColor = UIColor.black.cgColor
+            
+            for shadowView in shadowViews {
+                shadowView!.layer.cornerRadius = cornerRadius
+                shadowView!.layer.shadowOffset = shadowOffset
+                shadowView!.layer.shadowRadius = shadowRadius
+                shadowView!.layer.shadowColor = shadowColor
+            }
+            
+            for shadowImage in shadowImages {
+                shadowImage!.layer.cornerRadius = cornerRadius
+                shadowImage!.layer.masksToBounds = true
+                shadowImage!.clipsToBounds = true
+            }
         
-        videoView.layer.cornerRadius = 8
-        videoView.layer.shadowOffset = CGSize(width: 1, height: 2)
-        videoView.layer.shadowRadius = 2
-        videoView.layer.shadowColor = UIColor.black.cgColor
-        
-        pdfBackView.layer.cornerRadius = 8
-        pdfBackView.layer.shadowOffset = CGSize(width: 1, height: 2)
-        pdfBackView.layer.shadowRadius = 2
-        pdfBackView.layer.shadowColor = UIColor.black.cgColor
-        
-        meetTeamView.layer.cornerRadius = 8
-        meetTeamView.layer.shadowOffset = CGSize(width: 1, height: 2)
-        meetTeamView.layer.shadowRadius = 2
-        meetTeamView.layer.shadowColor = UIColor.black.cgColor
-        
-        pdfImg.layer.cornerRadius = 8
-        prototypeImg.layer.cornerRadius = 8
-        videoImg.layer.cornerRadius = 8
-        meetTeamImg.layer.cornerRadius = 8
-        
-        self.pdfImg.layer.masksToBounds = true
-        self.pdfImg.clipsToBounds = true
-        
-        //        SwiftyTranslate.translate(text: "my name is sohel", from: "en", to: "bn") { result in
-        //            switch result {
-        //                case .success(let translation):
-        //                    print("Translated: \(translation.translated)")
-        //                case .failure(let error):
-        //                    print("Error: \(error)")
-        //                }
-        //        }
         startReachability()
     }
     
     func startReachability() {
+        
         NotificationCenter.default.addObserver(self, selector: #selector(reachabilityChanged(note:)), name: .reachabilityChanged, object: reachability)
         do{
             try reachability.startNotifier()
         }catch{
             print("could not start reachability notifier")
         }
+        
     }
     
     @objc func reachabilityChanged(note: Notification) {
@@ -105,10 +89,13 @@ class HomeViewViewController: UIViewController{
         case .none:
             print("skdslkd")
         }
+        
     }
     
     @IBAction func introductionVideo(_ sender: Any) {
+        
         showToastSuccess(message: "Introduction video will be available soon!")
+        
     }
     
     func checkNetwork() -> Bool {
@@ -131,40 +118,35 @@ class HomeViewViewController: UIViewController{
     }
     
     fileprivate func goPrototype() {
-        if self.checkNetwork() {
+        if checkNetwork() {
             DispatchQueue.main.async {
                 self.navigationController?.navigationBar.isHidden = false
                 let vc = self.storyboard?.instantiateViewController(withIdentifier: "ViewController")
                 self.navigationController?.pushViewController(vc!, animated: true)
             }
-        }else {
-            self.showToast(message: "Connection: error.")
+        } else {
+            showToast(message: "No internet connection.")
         }
-        
     }
     
     @IBAction func seePrototype(_ sender: Any) {
-        if constant.isVerify {
-            goPrototype()
-        }else {
+        let isVerified = constant.isVerify
+        guard isVerified else {
             openAlert(isPrototype: "Prototype")
+            return
         }
-        
+        goPrototype()
     }
     
     func openAlert(isPrototype: String) {
+        
         let alertController = UIAlertController (title: "Hello there!", message: "Please enter the code that you have got from Baller Academy", preferredStyle: .alert)
         alertController.addTextField { (textField : UITextField!) -> Void in
         }
         alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: { _ in
             let firstTextField = alertController.textFields![0] as UITextField
-            
-            guard firstTextField.text != nil else {
-                self.showToast(message: "Insert 6-digit code")
-                return
-            }
-            
-            guard firstTextField.text != "" else {
+    
+            guard let code = firstTextField.text, !code.isEmpty else {
                 self.showToast(message: "Insert 6-digit code")
                 return
             }
@@ -173,7 +155,7 @@ class HomeViewViewController: UIViewController{
                 return
             }
             if self.checkNetwork() {
-                self.apiCall(isPrototype: isPrototype, otpText: firstTextField.text!)
+                self.apiCall(isPrototype: isPrototype, otpText: code)
             }else {
                 self.showToast(message: "Connection: error.")
             }
@@ -183,17 +165,21 @@ class HomeViewViewController: UIViewController{
         alertController.addAction(cancelAction)
         
         present(alertController, animated: true, completion: nil)
+        
     }
     
     fileprivate func handleDeck() {
+        
         do {
             try self.goDeckVC()
         } catch _ {
             self.showToast(message: "Something went wrong. Please try again")
         }
+        
     }
     
     func showToastSuccess(message: String) {
+        
         DispatchQueue.main.async {
             if #available(iOS 13.0, *) {
                 let toast = ToastViewL(
@@ -221,56 +207,69 @@ class HomeViewViewController: UIViewController{
         
     }
     
-    func apiCall(isPrototype:String, otpText: String) {
-        let Url = String(format: "https://messagealarm.app/api/otp_check/")
-        guard let serviceUrl = URL(string: Url) else { return }
-        let parameters: [String: Any] = [
+    
+    func apiCall(isPrototype: String, otpText: String) {
+        
+        let urlString = "https://messagealarm.app/api/otp_check/"
+        guard let url = URL(string: urlString) else { return }
+        
+        let parameters = [
             "otp": otpText
         ]
-        var request = URLRequest(url: serviceUrl)
+        
+        var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.setValue("Application/json", forHTTPHeaderField: "Content-Type")
-        guard let httpBody = try? JSONSerialization.data(withJSONObject: parameters, options: []) else {
+        request.timeoutInterval = 20
+        
+        do {
+            request.httpBody = try JSONSerialization.data(withJSONObject: parameters, options: [])
+        } catch {
+            self.showToast(message: "Error creating request body")
             return
         }
-        request.httpBody = httpBody
-        request.timeoutInterval = 20
+        
         let session = URLSession.shared
         session.dataTask(with: request) { (data, response, error) in
-            guard data != nil else {
-                self.showToast(message: "Connection: error.")
-                return
-            }
-            guard let response = response as? HTTPURLResponse, 200...299 ~= response.statusCode else {
-                self.showToast(message: "Please try again.")
+            if let error = error {
+                self.showToast(message: "Connection error: \(error.localizedDescription)")
                 return
             }
             
+            guard let httpResponse = response as? HTTPURLResponse,
+                200...299 ~= httpResponse.statusCode,
+                let data = data else {
+                    self.showToast(message: "Please try again.")
+                    return
+            }
+            
             do {
-                let products = try JSONDecoder().decode(otpVerModel.self, from: data!)
-                print(products)
+                let products = try JSONDecoder().decode(otpVerModel.self, from: data)
                 if products.success {
                     self.showToastSuccess(message: "Thanks for verifying, You can now see everything")
                     constant.isVerify = true
-                    if isPrototype == "Prototype" {
+                    switch isPrototype {
+                    case "Prototype":
                         self.goPrototype()
-                    }else if isPrototype == "Deck" {
+                    case "Deck":
                         self.handleDeck()
-                    }else if isPrototype == "meetTeam" {
+                    case "meetTeam":
                         self.goMeetTheTeamVC()
-                    }else{
+                    default:
                         self.goScheduleVC()
                     }
-                }else {
+                } else {
                     self.showToast(message: "This code is either invalid or expired or already used!")
                 }
-            }catch {
+            } catch {
                 self.showToast(message: "This code is either invalid or expired or already used!")
             }
         }.resume()
     }
+
     
     func showToast(message: String) {
+        
         DispatchQueue.main.async {
             if #available(iOS 13.0, *) {
                 let toast = ToastViewL(
@@ -301,6 +300,7 @@ class HomeViewViewController: UIViewController{
     }
     
     @IBAction func meetTeamAciton(_ sender: Any) {
+        
         if constant.isVerify {
             goMeetTheTeamVC()
         }else {
@@ -310,6 +310,7 @@ class HomeViewViewController: UIViewController{
         
     }
     func goMeetTheTeamVC() {
+        
         DispatchQueue.main.async {
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "ProfileViewController") as? ProfileViewController
             self.navigationController?.pushViewController(vc!, animated: true)
@@ -324,6 +325,7 @@ class HomeViewViewController: UIViewController{
     }
     
     fileprivate func goDeckVC() throws {
+        
         DispatchQueue.main.async {
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "PDFViewController") as? PDFViewController
             self.navigationController?.pushViewController(vc!, animated: true)
@@ -332,6 +334,7 @@ class HomeViewViewController: UIViewController{
     }
     
     @IBAction func seePdfAction(_ sender: Any) {
+        
         if constant.isVerify {
             self.handleDeck()
         }else {
@@ -341,26 +344,28 @@ class HomeViewViewController: UIViewController{
     }
     
     @IBAction func seeScheduleAction(_ sender: Any) {
+        
         if constant.isVerify {
             self.goScheduleVC()
         }else {
             openAlert(isPrototype: "schedule")
         }
         
-        
     }
     
     func goScheduleVC() {
+        
         DispatchQueue.main.async {
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "ScheduleViewController") as? ScheduleViewController
             self.navigationController?.pushViewController(vc!, animated: true)
         }
-        
     }
+    
 }
 
 
 extension UIImageView {
+    
     public func roundCorners(_ corners: UIRectCorner, radius: CGFloat) {
         let maskPath = UIBezierPath(roundedRect: bounds,
                                     byRoundingCorners: corners,
@@ -372,5 +377,8 @@ extension UIImageView {
 }
 
 struct otpVerModel: Codable {
+    
     let success : Bool
+    
 }
+

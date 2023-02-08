@@ -13,7 +13,7 @@ import MediaPlayer
 import AVFoundation
 
 class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate, UIGestureRecognizerDelegate,SFSpeechRecognizerDelegate {
-
+    
     @IBOutlet weak var backImg: UIImageView!
     @IBOutlet weak var webView: WKWebView!
     private var audioLevel : Float = 0.0
@@ -21,23 +21,23 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate, UIGe
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = true
-//        userAutorization()
-       
+        //        userAutorization()
+        
         // Do any additional setup after loading the view.
         let link = URL(string:"https://www.figma.com/proto/9af6kpJB18dEZGcRmcX18G/Prototype-Test?node-id=2309%3A20362&scaling=min-zoom&page-id=22%3A5297&starting-point-node-id=618%3A12289")!
         let request = URLRequest(url: link)
         DispatchQueue.main.async {
-        
-        self.webView!.isOpaque = true
-        self.webView!.backgroundColor = UIColor.clear
-        self.webView!.scrollView.backgroundColor = UIColor.clear
-        if #available(iOS 14.0, *) {
-            self.webView.configuration.defaultWebpagePreferences.allowsContentJavaScript = true
-        } else {
-            // Fallback on earlier versions
+            
+            self.webView!.isOpaque = true
+            self.webView!.backgroundColor = UIColor.clear
+            self.webView!.scrollView.backgroundColor = UIColor.clear
+            if #available(iOS 14.0, *) {
+                self.webView.configuration.defaultWebpagePreferences.allowsContentJavaScript = true
+            } else {
+                // Fallback on earlier versions
+            }
         }
-        }
-//        self.webView!.scrollView.addGestureRecognizer(recognizer)
+        //        self.webView!.scrollView.addGestureRecognizer(recognizer)
         webView.translatesAutoresizingMaskIntoConstraints = false
         webView.load(request)
         webView.navigationDelegate = self
@@ -51,22 +51,23 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate, UIGe
     
     func listenVolumeButton(){
         showToast(message: "Press volume down button to exit prototype")
+        let audioSession = AVAudioSession.sharedInstance()
         
-         let audioSession = AVAudioSession.sharedInstance()
-         do {
-              try audioSession.setActive(true, options: [])
-         audioSession.addObserver(self, forKeyPath: "outputVolume",
-                                  options: NSKeyValueObservingOptions.new, context: nil)
-              audioLevel = audioSession.outputVolume
-         } catch {
-              print("Error")
-         }
+            do {
+                try audioSession.setActive(true, options: [])
+            } catch {
+                print("Error setting audio session active: \(error)")
+                return
+            }
+            
+        audioSession.addObserver(self, forKeyPath: "outputVolume", options: NSKeyValueObservingOptions.new, context: nil)
+        audioLevel = audioSession.outputVolume
     }
-   
+    
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-         if keyPath == "outputVolume"{
-             backAction()
-         }
+        if keyPath == "outputVolume"{
+            backAction()
+        }
     }
     
     func showToast(message: String) {
@@ -113,27 +114,27 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate, UIGe
     @objc func update() {
         tapCout = 0
         webView.evaluateJavaScript("document.querySelector('.vjs-text-track-display vjs-hidden').style.display='none';", completionHandler: { (response, error) -> Void in
-            })
+        })
         webView.evaluateJavaScript("document.querySelector('.vjs-text-track-display').style.display='none';", completionHandler: { (response, error) -> Void in
-            })
+        })
         webView.evaluateJavaScript("document.querySelector('.vjs-hidden').style.display='none';", completionHandler: { (response, error) -> Void in
-            })
-
+        })
+        
         webView.evaluateJavaScript("document.querySelector('.prototype--footerContainer--G2XHU').remove();", completionHandler: { (response, error) -> Void in
-            })
+        })
         webView.evaluateJavaScript("document.querySelector('.header--header--7nw-A').remove();", completionHandler: { (response, error) -> Void in
-            })
+        })
         webView.evaluateJavaScript("document.querySelector('.header--header--7nw-A header--headerHidden--ML9n5').remove();", completionHandler: { (response, error) -> Void in
-            })
+        })
     }
-
+    
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         webView.evaluateJavaScript("document.querySelector('.prototype--footerContainer--G2XHU').remove();", completionHandler: { (response, error) -> Void in
-
-            })
+            
+        })
         webView.evaluateJavaScript("document.querySelector('.header--header--7nw-A header--headerHidden--ML9n5').remove();", completionHandler: { (response, error) -> Void in
-
-            })
+            
+        })
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -149,24 +150,24 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate, UIGe
     
     
     func userAutorization(){
-      SFSpeechRecognizer.requestAuthorization { (authStatus) in
-        var isButtonEnabled = false
-        switch authStatus {
-        case .authorized:
-          isButtonEnabled = true
-        case .denied:
-          isButtonEnabled = false
-          print("User denied access to speech recognition")
-        case .restricted:
-          isButtonEnabled = false
-          print("Speech recognition restricted on this device")
-        case .notDetermined:
-          isButtonEnabled = false
-          print("Speech recognition not yet authorized")
+        SFSpeechRecognizer.requestAuthorization { (authStatus) in
+            var isButtonEnabled = false
+            switch authStatus {
+            case .authorized:
+                isButtonEnabled = true
+            case .denied:
+                isButtonEnabled = false
+                print("User denied access to speech recognition")
+            case .restricted:
+                isButtonEnabled = false
+                print("Speech recognition restricted on this device")
+            case .notDetermined:
+                isButtonEnabled = false
+                print("Speech recognition not yet authorized")
+            }
         }
-      }
     }
-
-
+    
+    
 }
 

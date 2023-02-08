@@ -66,8 +66,6 @@ public struct SwiftyTranslate {
                 return
             }
 
-            // extract result
-            // strings seperated by \n are seperated in the array
             var originParts: [String]?
             var resultParts: [String]?
             for sectionInSecondArray in secondArray {

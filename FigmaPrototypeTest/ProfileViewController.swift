@@ -11,20 +11,20 @@ import Glideshow
 class ProfileViewController: UIViewController {
     
     private var shouldCollapse = false
-    var buttonTitle: String {
-    return shouldCollapse ? "0" : "1"
-    }
-    
     private var shouldCollapseLouren = false
-    var buttonLourenTitle: String {
-    return shouldCollapseLouren ? "0" : "1"
-    }
-    
     private var shouldCollapseMujahid = false
-    var buttonMujahidTitle: String {
-    return shouldCollapseMujahid ? "0" : "1"
-    }
     var nathanViewHeight = 0.0
+    var mujahidViewHeight = 0.0
+    
+    var buttonMujahidTitle: String {
+        return shouldCollapseMujahid ? "0" : "1"
+    }
+    var buttonLourenTitle: String {
+        return shouldCollapseLouren ? "0" : "1"
+    }
+    var buttonTitle: String {
+        return shouldCollapse ? "0" : "1"
+    }
     
     @IBOutlet weak var mujahidView: UIView!
     @IBOutlet weak var louremView: UIView!
@@ -39,6 +39,7 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var sliderView: Glideshow!
     @IBOutlet weak var mujahidHeight: NSLayoutConstraint!
     
+    @IBOutlet weak var mujahidSlider: Glideshow!
     @IBOutlet weak var nathanHeight: NSLayoutConstraint!
     @IBOutlet weak var galleryImg: UIImageView!
     @IBOutlet weak var galleryView: UIView!
@@ -52,11 +53,46 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var galleryViewFour: UIView!
     @IBOutlet weak var galleryImgFour: UIImageView!
     
+    @IBOutlet weak var mujaGalleryViewOne: UIView!
+    @IBOutlet weak var mujaGalleryViewTwo: UIView!
+    @IBOutlet weak var mujaGalleryViewThree: UIView!
     
+    @IBOutlet weak var MujaGalleryImgOne: UIImageView!
+    @IBOutlet weak var MujaGalleryImgTwo: UIImageView!
+    @IBOutlet weak var MujaGalleryImgThree: UIImageView!
+    
+    @IBOutlet weak var careerOneLbl: UILabel!
+    @IBOutlet weak var careerTwoLbl: UILabel!
+    @IBOutlet weak var careerThreeLbl: UILabel!
+    @IBOutlet weak var careerFourLbl: UILabel!
+    @IBOutlet weak var careerFiveLbl: UILabel!
+    @IBOutlet weak var careerSixLbl: UILabel!
+    
+    func setText(label:UILabel, textRegular:String, textBold: String) {
+        let regularFont = UIFont(name: "Helvetica", size: 14)
+        let boldFont = UIFont(name: "Helvetica-Bold", size: 14)
+
+        let regularAttributes = [NSAttributedString.Key.font: regularFont]
+        let boldAttributes = [NSAttributedString.Key.font: boldFont]
+
+        let attributedText = NSMutableAttributedString(string: textBold, attributes: boldAttributes as [NSAttributedString.Key : Any])
+
+        attributedText.append(NSAttributedString(string: "\n" + textRegular, attributes: regularAttributes as [NSAttributedString.Key : Any]))
+
+        label.attributedText = attributedText
+    }
+    let boldArray = ["Chief Technology Officer","Chief Technology Officer &amp; Co - Founder","Senior Software Engineer","Executive Software Engineer","Android Development - Trainer","Freelance Android &amp; Web developer"]
+    let regularArray = ["Baller Academy , Houston, Texas (Jan 2022 - Current)","Mk7Lab, Khulna (Dec 2021 -  Jan 2022)","Ruhof Corporation , New York (Jan 2019 - Dec 2021)","ItechSoftSolution, Khulna (Dec 2017 -  Jan 2019)","Digicon Technologies, Dhaka (Jan 2016 -  Dec 2017)","Upwork &amp; Fiverr (Jan 2013 -  Dec 2015)"]
     override func viewDidLoad() {
         super.viewDidLoad()
+        let labels = [self.careerOneLbl, self.careerTwoLbl, self.careerThreeLbl, self.careerFourLbl,self.careerFiveLbl,self.careerSixLbl]
+        for (index,lab) in labels.enumerated() {
+            setText(label: lab!, textRegular: regularArray[index], textBold: boldArray[index])
+        }
+        
         DispatchQueue.main.asyncAfter(deadline: .now()+0.2) {
             self.nathanViewHeight = self.nathanView.frame.height
+            self.mujahidViewHeight = self.mujahidView.frame.height
             
             DispatchQueue.main.async {
                 self.lourenHeight.constant = 0
@@ -65,22 +101,30 @@ class ProfileViewController: UIViewController {
                 self.mujahidView.isHidden = true
                 self.louremView.isHidden = true
                 self.nathanView.isHidden = true
-                self.galleryImg.layer.cornerRadius = 5
-                self.galleryView.layer.cornerRadius = 5
-                self.galleryImgTwo.layer.cornerRadius = 5
-                self.galleryViewTwo.layer.cornerRadius = 5
-                self.galleryImgThree.layer.cornerRadius = 5
-                self.galleryViewThree.layer.cornerRadius = 5
-                self.galleryImgFour.layer.cornerRadius = 5
-                self.galleryViewFour.layer.cornerRadius = 5
-        }
+                let images = [self.galleryImg, self.galleryImgTwo, self.galleryImgThree, self.galleryImgFour,self.MujaGalleryImgOne,self.MujaGalleryImgTwo,self.MujaGalleryImgThree]
+                let views = [self.galleryView, self.galleryViewTwo, self.galleryViewThree, self.galleryViewFour,self.mujaGalleryViewOne,self.mujaGalleryViewTwo,self.mujaGalleryViewThree]
+
+                    for i in 0..<images.count {
+                        images[i]!.layer.cornerRadius = 5
+                        views[i]!.layer.cornerRadius = 5
+                    }
+            }
             
             self.galleryView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.goVideoDetails)))
             self.galleryViewTwo.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.goVideoDetails2)))
             self.galleryViewThree.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.goVideoDetails3)))
             self.galleryViewFour.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.goVideoDetails4)))
-        
+            
+            self.mujaGalleryViewOne.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.goVideoDetailsMuja)))
+            self.mujaGalleryViewTwo.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.goVideoDetailsMuja2)))
+            self.mujaGalleryViewThree.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.goVideoDetailsMuja3)))
+            
         }
+        
+        mujahidSlider.items = [
+            GlideItem(description: "", backgroundImage: UIImage(named:  "mujahid_two")),
+            GlideItem(description: "", backgroundImage: UIImage(named:  "mujahid_one")),
+            ]
         
         sliderView.items = [
             GlideItem(description: "", backgroundImage: UIImage(named:  "1")),
@@ -99,203 +143,236 @@ class ProfileViewController: UIViewController {
             GlideItem(description: "", backgroundImage: UIImage(named:  "14")),
             GlideItem(description: "", backgroundImage: UIImage(named:  "15"))
         ]
-        sliderView.delegate = self
-        sliderView.isCircular = true
-        sliderView.gradientColor =
+        let slideViews = [sliderView, mujahidSlider]
+        for slide in slideViews {
+            slide!.delegate = self
+            slide!.isCircular = true
+            slide!.gradientColor =
             UIColor.black.withAlphaComponent(0.8)
-        sliderView.captionFont = UIFont.systemFont(ofSize: 16, weight: .light)
-        sliderView.titleFont = UIFont.systemFont(ofSize: 30, weight: .black)
-        sliderView.gradientHeightFactor = 0.8
-        sliderView.pageIndicatorPosition = .bottom
-        sliderView.interval = 5
+            slide!.captionFont = UIFont.systemFont(ofSize: 16, weight: .light)
+            slide!.titleFont = UIFont.systemFont(ofSize: 30, weight: .black)
+            slide!.gradientHeightFactor = 0.8
+            slide!.pageIndicatorPosition = .bottom
+            slide!.interval = 5
+        }
+        
+        
     }
     
-    @IBAction func nathanLinkdinAction(_ sender: Any) {
+    @IBAction func nathanLinkdinAction(_ sender: UIButton) {
+        if sender.tag == 1 {
+            openUrl(string: "https://www.linkedin.com/in/pro-mujahid/")
+        }else {
         openUrl(string: "https://www.linkedin.com/in/nathan-baller-586573189")
+        }
     }
-    @IBAction func nathanTwitterAction(_ sender: Any) {
+    
+    @IBAction func nathanTwitterAction(_ sender: UIButton) {
+        if sender.tag == 1 {
+            openUrl(string: "https://github.com/mkhan9047")
+        }else {
         openUrl(string: "https://twitter.com/nathankouamou1")
+        }
     }
+    
     @IBAction func nathanInstaAction(_ sender: Any) {
         openUrl(string: "https://instagram.com/nathanballer_?igshid=YmMyMTA2M2Y=")
     }
     
     func openUrl(string:String) {
+        
         guard let url = URL(string: string) else {
-          return //be safe
+            return //be safe
         }
-
+        
         if #available(iOS 10.0, *) {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         } else {
             UIApplication.shared.openURL(url)
         }
+        
+    }
+    
+    @objc func goVideoDetailsMuja() {
+        goDetailsVc(url: "https://baller-ac.s3.amazonaws.com/mujahid_noise_cancel.mp4")
+    }
+    
+    @objc func goVideoDetailsMuja2() {
+        goDetailsVc(url: "https://baller-ac.s3.amazonaws.com/mk_easy.mp4")
+    }
+    
+    @objc func goVideoDetailsMuja3() {
+        goDetailsVc(url: "https://baller-ac.s3.amazonaws.com/message_alarm.mp4")
     }
     
     @objc func goVideoDetails() {
-        
-       goDetailsVc(url: "https://baller-ac.s3.amazonaws.com/baller_unicef.mp4")
+        goDetailsVc(url: "https://baller-ac.s3.amazonaws.com/baller_unicef.mp4")
     }
+    
     @objc func goVideoDetails2() {
-        
         goDetailsVc(url: "https://baller-ac.s3.amazonaws.com/baller_highlights.mp4")
     }
+    
     @objc func goVideoDetails3() {
         goDetailsVc(url: "https://baller-ac.s3.amazonaws.com/baller_city_of_houston.mp4")
-        
     }
+    
     @objc func goVideoDetails4() {
         goDetailsVc(url: "https://baller-ac.s3.amazonaws.com/baller_walmart.mp4")
-        
     }
+    
     func goDetailsVc(url: String) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "VideoViewController") as? VideoViewController
         vc?.videoUrl = URL(string: url)
         self.navigationController?.pushViewController(vc!, animated: true)
     }
+    
     override func viewWillAppear(_ animated: Bool) {
+        
         self.navigationController?.navigationBar.isHidden = false
         self.navigationController?.navigationBar.tintColor = .white
         setNavigation()
+        
     }
+    
     func setNavigation() {
+        
         self.navigationController?.navigationBar.tintColor = .white
         self.navigationController?.navigationBar.isTranslucent = true
-
-
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-
         self.navigationController?.navigationBar.shadowImage = UIImage()
-
+        
     }
-
-
+    
+    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-
+        
         var offset = scrollView.contentOffset.y / 1500
-
-
         if offset >= 1 {
             offset = 1
             self.navigationController?.navigationBar.backgroundColor = UIColor.white.withAlphaComponent(offset)
-          //  self.navigationController?.navigationBar.alpha = offset
-          //  print(offset - 0.399)
         } else {
             self.navigationController?.navigationBar.backgroundColor = UIColor.white.withAlphaComponent(offset)
         }
+        
     }
+    
     @IBAction func mujahidCollapseAction(_ sender: Any) {
+        
         if shouldCollapseMujahid {
-              animateMujahidView(isCollapse: false,
-              buttonText: buttonMujahidTitle,
-              heighConstraint: 0)
-           } else {
-               animateMujahidView(isCollapse: true,
-               buttonText: buttonMujahidTitle,
-               heighConstraint: 338)
-           }
+            animateMujahidView(isCollapse: false,
+                               buttonText: buttonMujahidTitle,
+                               heighConstraint: 0)
+        } else {
+            animateMujahidView(isCollapse: true,
+                               buttonText: buttonMujahidTitle,
+                               heighConstraint: mujahidViewHeight)
+        }
+        
     }
     
     @IBAction func lourenCollapseAction(_ sender: Any) {
+        
         if shouldCollapseLouren {
-              animateLourenView(isCollapse: false,
-              buttonText: buttonLourenTitle,
-              heighConstraint: 0)
-           } else {
-               animateLourenView(isCollapse: true,
-               buttonText: buttonLourenTitle,
-               heighConstraint: 338)
-           }
+            animateLourenView(isCollapse: false,
+                              buttonText: buttonLourenTitle,
+                              heighConstraint: 0)
+        } else {
+            animateLourenView(isCollapse: true,
+                              buttonText: buttonLourenTitle,
+                              heighConstraint: 338)
+        }
+        
     }
     
     @IBAction func NathanCollapseAction(_ sender: Any) {
+        
         if shouldCollapse {
-              animateView(isCollapse: false,
-              buttonText: buttonTitle,
-              heighConstraint: 0)
-           } else {
-               animateView(isCollapse: true,
-               buttonText: buttonTitle,
-               heighConstraint: nathanViewHeight)
-           }
+            animateView(isCollapse: false,
+                        buttonText: buttonTitle,
+                        heighConstraint: 0)
+        } else {
+            animateView(isCollapse: true,
+                        buttonText: buttonTitle,
+                        heighConstraint: nathanViewHeight)
+        }
+        
     }
     
     private func animateView(isCollapse: Bool,
-    buttonText: String,
-    heighConstraint: Double) {
+                             buttonText: String,
+                             heighConstraint: Double) {
+        
         if !isCollapse == true {
             nathanArrow.image = UIImage(named: "Left")
             showHideView(view: nathanView, isHide: true)
         }else {
             animateLourenView(isCollapse: false,
-            buttonText: buttonLourenTitle,
-            heighConstraint: 0)
+                              buttonText: buttonLourenTitle,
+                              heighConstraint: 0)
             animateMujahidView(isCollapse: false,
-            buttonText: buttonMujahidTitle,
-            heighConstraint: 0)
+                               buttonText: buttonMujahidTitle,
+                               heighConstraint: 0)
             nathanArrow.image = UIImage(named: "down")
             showHideView(view: nathanView, isHide: false)
         }
-         shouldCollapse = isCollapse
+        shouldCollapse = isCollapse
         nathanHeight.constant = CGFloat(heighConstraint)
         UIView.animate(withDuration: 0.7) {
-              self.view.layoutIfNeeded()
-         }
+            self.view.layoutIfNeeded()
+        }
+        
     }
     
     private func animateLourenView(isCollapse: Bool,
-    buttonText: String,
-    heighConstraint: Double) {
+                                   buttonText: String,
+                                   heighConstraint: Double) {
         if !isCollapse == true {
             louremArrow.image = UIImage(named: "Left")
             showHideView(view: louremView, isHide: true)
         }else {
             animateMujahidView(isCollapse: false,
-            buttonText: buttonMujahidTitle,
-            heighConstraint: 0)
+                               buttonText: buttonMujahidTitle,
+                               heighConstraint: 0)
             animateView(isCollapse: false,
-            buttonText: buttonTitle,
-            heighConstraint: 0)
+                        buttonText: buttonTitle,
+                        heighConstraint: 0)
             louremArrow.image = UIImage(named: "down")
             showHideView(view: louremView, isHide: false)
         }
-         shouldCollapseLouren = isCollapse
-         lourenHeight.constant = CGFloat(heighConstraint)
+        shouldCollapseLouren = isCollapse
+        lourenHeight.constant = CGFloat(heighConstraint)
         UIView.animate(withDuration: 0.7) {
-              self.view.layoutIfNeeded()
-         }
+            self.view.layoutIfNeeded()
+        }
     }
     
-    private func animateMujahidView(isCollapse: Bool,
-    buttonText: String,
-    heighConstraint: Double) {
+    private func animateMujahidView(isCollapse: Bool, buttonText: String, heighConstraint: Double) {
         if !isCollapse == true {
             mujaArrow.image = UIImage(named: "Left")
             showHideView(view: mujahidView, isHide: true)
         }else {
             animateView(isCollapse: false,
-            buttonText: buttonTitle,
-            heighConstraint: 0)
+                        buttonText: buttonTitle,
+                        heighConstraint: 0)
             animateLourenView(isCollapse: false,
-            buttonText: buttonLourenTitle,
-            heighConstraint: 0)
+                              buttonText: buttonLourenTitle,
+                              heighConstraint: 0)
             mujaArrow.image = UIImage(named: "down")
             showHideView(view: mujahidView, isHide: false)
         }
-         shouldCollapseMujahid = isCollapse
-         mujahidHeight.constant = CGFloat(heighConstraint)
+        shouldCollapseMujahid = isCollapse
+        mujahidHeight.constant = CGFloat(heighConstraint)
         UIView.animate(withDuration: 0.7) {
-              self.view.layoutIfNeeded()
-         }
+            self.view.layoutIfNeeded()
+        }
     }
     
     func showHideView(view: UIView, isHide:Bool) {
         DispatchQueue.main.async {
             view.isHidden = isHide
         }
-        
     }
-
 }
 
 extension ProfileViewController : GlideshowProtocol {
