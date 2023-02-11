@@ -16,6 +16,7 @@ import Network
 class HomeViewViewController: UIViewController{
     @IBOutlet weak var techTopCons: NSLayoutConstraint!
     
+    @IBOutlet weak var introductionLbl: UILabel!
     @IBOutlet weak var techHeight: NSLayoutConstraint!
     
     @IBOutlet weak var viewDeckBtn: TransitionButton!
@@ -30,6 +31,7 @@ class HomeViewViewController: UIViewController{
     @IBOutlet weak var prototypeImg: UIImageView!
     @IBOutlet weak var videoImg: UIImageView!
     
+    @IBOutlet weak var techView: UIView!
     @IBOutlet weak var meetTeamView: UIView!
     @IBOutlet weak var pdfBackView: UIView!
     @IBOutlet weak var prototypeView: UIView!
@@ -38,13 +40,15 @@ class HomeViewViewController: UIViewController{
     
     let reachability = try! Reachability()
     var isNetworkAvailable = false
+    let rootView = Bundle.main.loadNibNamed("AlertView", owner: self, options: nil)?[0] as? AlertView
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         techShowHide()
         let shadowViews = [backShadowView, backShadowView2, backShadowView3, backShadowView4,backShadowView5]
             let shadowImages = [pdfImg, prototypeImg, videoImg, meetTeamImg,technicalImg]
-            let cornerRadius: CGFloat = 8
+            let cornerRadius: CGFloat = 4
             let shadowRadius: CGFloat = 2
             let shadowOffset = CGSize(width: 1, height: 2)
             let shadowColor = UIColor.black.cgColor
@@ -76,11 +80,13 @@ class HomeViewViewController: UIViewController{
     func techPdfShowHide(isShow: Bool) {
         DispatchQueue.main.async {
             if isShow {
+                self.techView.isHidden = false
                 self.techTopCons.constant = 15
                 self.techHeight.constant = 300
             }else {
                 self.techTopCons.constant = 0
                 self.techHeight.constant = 0
+                self.techView.isHidden = true
             }
         }
         
@@ -154,33 +160,79 @@ class HomeViewViewController: UIViewController{
         goPrototype(data: constant.OtpRespose)
     }
     
+    var prototypeText = ""
     func openAlert(isPrototype: String) {
-        
-        let alertController = UIAlertController (title: "Hello there!", message: "Please enter the code that you have got from Baller Academy", preferredStyle: .alert)
-        alertController.addTextField { (textField : UITextField!) -> Void in
-        }
-        alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: { _ in
-            let firstTextField = alertController.textFields![0] as UITextField
-    
-            guard let code = firstTextField.text, !code.isEmpty else {
-                self.showToast(message: "Insert 6-digit code")
-                return
-            }
-            guard firstTextField.text?.count == 6 else {
-                self.showToast(message: "Insert 6-digit code")
-                return
-            }
-            if self.checkNetwork() {
-                self.apiCall(isPrototype: isPrototype, otpText: code)
-            }else {
-                self.showToast(message: "Connection: error.")
-            }
+        prototypeText = isPrototype
+        rootView?.dissmissBtn.addTarget(self, action: #selector(dismissSupView), for: .touchUpInside)
+        rootView?.submitAction.addTarget(self, action: #selector(submitAction), for: .touchUpInside)
+        if let aView = rootView {
+            aView.tag = 100
+            self.navigationController?.view.addSubview(aView)
+            guard let navView = self.navigationController?.view else {return}
+            navView.addSubview(aView)
+            aView.translatesAutoresizingMaskIntoConstraints = false
+            aView.topAnchor.constraint(equalTo: navView.topAnchor, constant: 0).isActive = true
+            aView.bottomAnchor.constraint(equalTo: navView.bottomAnchor, constant: 0).isActive = true
+            aView.leadingAnchor.constraint(equalTo: navView.leadingAnchor, constant: 0).isActive = true
+            aView.trailingAnchor.constraint(equalTo: navView.trailingAnchor, constant: 0).isActive = true
             
-        }))
-        let cancelAction = UIAlertAction(title: "Cancel", style: .default, handler: nil)
-        alertController.addAction(cancelAction)
+        }
         
-        present(alertController, animated: true, completion: nil)
+//        let alertController = UIAlertController (title: "Hello there!", message: "Please enter the code that you have got from Baller Academy", preferredStyle: .alert)
+//        alertController.addTextField { (textField : UITextField!) -> Void in
+//        }
+//        alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: { _ in
+//            let firstTextField = alertController.textFields![0] as UITextField
+//
+//            guard let code = firstTextField.text, !code.isEmpty else {
+//                self.showToast(message: "Insert 6-digit code")
+//                return
+//            }
+//            guard firstTextField.text?.count == 6 else {
+//                self.showToast(message: "Insert 6-digit code")
+//                return
+//            }
+//            if self.checkNetwork() {
+//                self.apiCall(isPrototype: isPrototype, otpText: code)
+//            }else {
+//                self.showToast(message: "Connection: error.")
+//            }
+//
+//        }))
+//        let cancelAction = UIAlertAction(title: "Cancel", style: .default, handler: nil)
+//        alertController.addAction(cancelAction)
+//
+//        present(alertController, animated: true, completion: nil)
+        
+    }
+    
+    @objc func submitAction() {
+        guard let code = rootView?.textFld.text, !code.isEmpty else {
+                        self.showToast(message: "Insert 6-digit code")
+                        return
+                    }
+        guard rootView?.textFld.text?.count == 6 else {
+                        self.showToast(message: "Insert 6-digit code")
+                        return
+                    }
+                    if self.checkNetwork() {
+                        self.apiCall(isPrototype: prototypeText, otpText: code)
+                    }else {
+                        self.showToast(message: "Connection: error.")
+                    }
+    }
+    
+    @objc func dismissSupView() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0) {
+            
+            for subview in (self.navigationController?.view.subviews)! {
+                if (subview.tag == 100) {
+
+                    subview.removeFromSuperview()
+                }
+            }
+        }
+        
         
     }
     
@@ -262,6 +314,7 @@ class HomeViewViewController: UIViewController{
             do {
                 let products = try JSONDecoder().decode(otpVerModel.self, from: data)
                 if products.success {
+                    self.dismissSupView()
                     self.showToastSuccess(message: "Thanks for verifying, You can now see everything")
                     constant.isVerify = true
                     var responseArray = [String]()

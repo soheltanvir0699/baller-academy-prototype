@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		371236FD298A248800AB006F /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371236FC298A248800AB006F /* VideoViewController.swift */; };
 		371236FF298A2E4F00AB006F /* VGCustomPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371236FE298A2E4F00AB006F /* VGCustomPlayerView.swift */; };
+		372023912997EB6000ACC0BD /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372023902997EB6000ACC0BD /* UITextField+Extension.swift */; };
+		372023932997EC2B00ACC0BD /* AlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 372023922997EC2B00ACC0BD /* AlertView.xib */; };
+		372023952997EC5000ACC0BD /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372023942997EC5000ACC0BD /* AlertView.swift */; };
 		374BA1DA296D3EBF00E7677E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374BA1D9296D3EBF00E7677E /* AppDelegate.swift */; };
 		374BA1DC296D3EBF00E7677E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374BA1DB296D3EBF00E7677E /* SceneDelegate.swift */; };
 		374BA1DE296D3EBF00E7677E /* Prototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374BA1DD296D3EBF00E7677E /* Prototype.swift */; };
@@ -36,6 +39,9 @@
 		1CAA8D26E6B17C6337A2EBCE /* Pods-FigmaPrototypeTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FigmaPrototypeTest.release.xcconfig"; path = "Target Support Files/Pods-FigmaPrototypeTest/Pods-FigmaPrototypeTest.release.xcconfig"; sourceTree = "<group>"; };
 		371236FC298A248800AB006F /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		371236FE298A2E4F00AB006F /* VGCustomPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VGCustomPlayerView.swift; sourceTree = "<group>"; };
+		372023902997EB6000ACC0BD /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		372023922997EC2B00ACC0BD /* AlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertView.xib; sourceTree = "<group>"; };
+		372023942997EC5000ACC0BD /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		374BA1D6296D3EBE00E7677E /* FigmaPrototypeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FigmaPrototypeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		374BA1D9296D3EBF00E7677E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		374BA1DB296D3EBF00E7677E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +102,7 @@
 			children = (
 				37E294C7297E9C7900899620 /* FigmaPrototypeTest.entitlements */,
 				374BA1D9296D3EBF00E7677E /* AppDelegate.swift */,
+				37C7F5022997C5A3002BA00E /* Custom-Font */,
 				374BA1DB296D3EBF00E7677E /* SceneDelegate.swift */,
 				371236FE298A2E4F00AB006F /* VGCustomPlayerView.swift */,
 				374BA1DD296D3EBF00E7677E /* Prototype.swift */,
@@ -103,6 +110,9 @@
 				37927A2B299115000074204B /* NetworkConnectionChecker.swift */,
 				37AF6BFE299221C0007A4454 /* UIView+Extension.swift */,
 				37F7104F29891D7A00D26919 /* HomeViewViewController.swift */,
+				372023942997EC5000ACC0BD /* AlertView.swift */,
+				372023922997EC2B00ACC0BD /* AlertView.xib */,
+				372023902997EB6000ACC0BD /* UITextField+Extension.swift */,
 				37DDA77629976E7C0087992E /* UIDevice+Extension.swift */,
 				3764308E2990249700E52D1D /* Constant.swift */,
 				37DE1D60298BE8C40055921E /* SwiftyTrans.swift */,
@@ -118,6 +128,13 @@
 				374BA1E7296D3EC100E7677E /* Info.plist */,
 			);
 			path = FigmaPrototypeTest;
+			sourceTree = "<group>";
+		};
+		37C7F5022997C5A3002BA00E /* Custom-Font */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Custom-Font";
 			sourceTree = "<group>";
 		};
 		D17E793EAEA34095BE04CA08 /* Frameworks */ = {
@@ -204,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				374BA1E6296D3EC100E7677E /* LaunchScreen.storyboard in Resources */,
+				372023932997EC2B00ACC0BD /* AlertView.xib in Resources */,
 				374BA1E3296D3EC100E7677E /* Assets.xcassets in Resources */,
 				374BA1E1296D3EBF00E7677E /* Main.storyboard in Resources */,
 			);
@@ -259,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37F7105229891DB600D26919 /* PDFViewController.swift in Sources */,
+				372023952997EC5000ACC0BD /* AlertView.swift in Sources */,
 				374BA1DE296D3EBF00E7677E /* Prototype.swift in Sources */,
 				37DE1D61298BE8C40055921E /* SwiftyTrans.swift in Sources */,
 				371236FF298A2E4F00AB006F /* VGCustomPlayerView.swift in Sources */,
@@ -267,6 +286,7 @@
 				374BA1DA296D3EBF00E7677E /* AppDelegate.swift in Sources */,
 				3764308F2990249700E52D1D /* Constant.swift in Sources */,
 				37DDA77729976E7C0087992E /* UIDevice+Extension.swift in Sources */,
+				372023912997EB6000ACC0BD /* UITextField+Extension.swift in Sources */,
 				37CF371F298CDF3200D493EB /* SniperLayer.swift in Sources */,
 				37F7105029891D7A00D26919 /* HomeViewViewController.swift in Sources */,
 				37CF371D298CDF0F00D493EB /* Transbutton.swift in Sources */,
