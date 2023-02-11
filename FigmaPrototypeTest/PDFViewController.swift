@@ -9,16 +9,22 @@ import UIKit
 import PDFKit
 import ANLoader
 class PDFViewController: UIViewController {
+    @IBOutlet weak var rightCons: NSLayoutConstraint!
     
+    @IBOutlet weak var btnLeftCons: NSLayoutConstraint!
+    @IBOutlet weak var backBtn: UIButton!
+    @IBOutlet weak var lefCons: NSLayoutConstraint!
     private var pdfView = PDFView()
     @IBOutlet weak var pdfVieww: UIView!
+    var deckLink = constant.defaultDeckLink
+    var loadingText = "Deck Loading..."
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         pdfView.backgroundColor = .clear
         DispatchQueue.main.asyncAfter(deadline: .now()+0.2) {
-            ANLoader.showLoading("Deck Loading...", disableUI: false)
+            ANLoader.showLoading(self.loadingText, disableUI: false)
         }
         
         DispatchQueue.main.asyncAfter(deadline: .now()+0.6) {
@@ -33,7 +39,7 @@ class PDFViewController: UIViewController {
             self.pdfView.leadingAnchor.constraint(equalTo: self.pdfVieww.leadingAnchor).isActive = true
             self.pdfView.trailingAnchor.constraint(equalTo: self.pdfVieww.trailingAnchor).isActive = true
             
-            let sampleDocumentURL = URL(string: "https://baller-ac.s3.amazonaws.com/deck.pdf")
+            let sampleDocumentURL = URL(string: self.deckLink)
             let sampleDocument = PDFDocument(url: sampleDocumentURL!)
             
             self.pdfView.document = sampleDocument
@@ -45,8 +51,16 @@ class PDFViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        let value = UIInterfaceOrientation.landscapeRight.rawValue
-        UIDevice.current.setValue(value, forKey: "orientation")
+        if loadingText != "Document Loading..." {
+            let value = UIInterfaceOrientation.landscapeRight.rawValue
+            UIDevice.current.setValue(value, forKey: "orientation")
+        }else {
+            lefCons.constant = 0
+            rightCons.constant = 0
+            btnLeftCons.constant = 0
+            backBtn.tintColor = .black
+        }
+        
     }
     
     @IBAction func backAction(_ sender: Any) {

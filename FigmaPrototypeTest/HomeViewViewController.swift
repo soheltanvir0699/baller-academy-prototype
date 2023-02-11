@@ -14,13 +14,16 @@ import Reachability
 import Network
 
 class HomeViewViewController: UIViewController{
+    @IBOutlet weak var techTopCons: NSLayoutConstraint!
     
+    @IBOutlet weak var techHeight: NSLayoutConstraint!
     
     @IBOutlet weak var viewDeckBtn: TransitionButton!
     @IBOutlet weak var backShadowView4: UIView!
     @IBOutlet weak var backShadowView3: UIView!
     @IBOutlet weak var backShadowView2: UIView!
     @IBOutlet weak var backShadowView: UIView!
+    @IBOutlet weak var backShadowView5: UIView!
     
     @IBOutlet weak var meetTeamImg: UIImageView!
     @IBOutlet weak var pdfImg: UIImageView!
@@ -31,15 +34,16 @@ class HomeViewViewController: UIViewController{
     @IBOutlet weak var pdfBackView: UIView!
     @IBOutlet weak var prototypeView: UIView!
     @IBOutlet weak var videoView: UIView!
+    @IBOutlet weak var technicalImg: UIImageView!
     
     let reachability = try! Reachability()
     var isNetworkAvailable = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let shadowViews = [backShadowView, backShadowView2, backShadowView3, backShadowView4]
-            let shadowImages = [pdfImg, prototypeImg, videoImg, meetTeamImg]
+        techShowHide()
+        let shadowViews = [backShadowView, backShadowView2, backShadowView3, backShadowView4,backShadowView5]
+            let shadowImages = [pdfImg, prototypeImg, videoImg, meetTeamImg,technicalImg]
             let cornerRadius: CGFloat = 8
             let shadowRadius: CGFloat = 2
             let shadowOffset = CGSize(width: 1, height: 2)
@@ -59,6 +63,27 @@ class HomeViewViewController: UIViewController{
             }
         
         startReachability()
+    }
+    
+    func techShowHide() {
+        if constant.tester_name == "Alexis Sr." {
+            techPdfShowHide(isShow: true)
+        }else {
+            techPdfShowHide(isShow: false)
+        }
+    }
+    
+    func techPdfShowHide(isShow: Bool) {
+        DispatchQueue.main.async {
+            if isShow {
+                self.techTopCons.constant = 15
+                self.techHeight.constant = 300
+            }else {
+                self.techTopCons.constant = 0
+                self.techHeight.constant = 0
+            }
+        }
+        
     }
     
     func startReachability() {
@@ -99,31 +124,22 @@ class HomeViewViewController: UIViewController{
     }
     
     func checkNetwork() -> Bool {
-        //        if #available(iOS 12.0, *) {
-        //            let networkCheck = NetworkCheck.sharedInstance()
-        //            if networkCheck.currentStatus == .satisfied{
-        //                            //Do something
-        ////                return true
-        //                        }else{
-        //                            //Show no network alert
-        ////                            return false
-        //                        }
-        //            networkCheck.addObserver(observer: self)
-        //        } else {
-        //            // Fallback on earlier versions
-        //            return false
-        //        }
-        
         return isNetworkAvailable
     }
     
-    fileprivate func goPrototype() {
+    fileprivate func goPrototype(data: [String]?) {
         if checkNetwork() {
-            DispatchQueue.main.async {
+            DispatchQueue.main.asyncAfter(deadline: .now()+0.5, execute: {
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as? ViewController
+                if data != nil && data!.count >= 1{
+                    if data![0] != "" {
+                        vc?.prototypeLink = data![0]
+                        print(data)
+                    }
+                }
                 self.navigationController?.navigationBar.isHidden = false
-                let vc = self.storyboard?.instantiateViewController(withIdentifier: "ViewController")
                 self.navigationController?.pushViewController(vc!, animated: true)
-            }
+            })
         } else {
             showToast(message: "No internet connection.")
         }
@@ -135,7 +151,7 @@ class HomeViewViewController: UIViewController{
             openAlert(isPrototype: "Prototype")
             return
         }
-        goPrototype()
+        goPrototype(data: constant.OtpRespose)
     }
     
     func openAlert(isPrototype: String) {
@@ -168,10 +184,10 @@ class HomeViewViewController: UIViewController{
         
     }
     
-    fileprivate func handleDeck() {
+    fileprivate func handleDeck(data: [String]?) {
         
         do {
-            try self.goDeckVC()
+            try self.goDeckVC(data: data)
         } catch _ {
             self.showToast(message: "Something went wrong. Please try again")
         }
@@ -248,11 +264,21 @@ class HomeViewViewController: UIViewController{
                 if products.success {
                     self.showToastSuccess(message: "Thanks for verifying, You can now see everything")
                     constant.isVerify = true
+                    var responseArray = [String]()
+                    if products.prototype_url != nil {
+                        responseArray.append(products.prototype_url!)
+                    }
+                    if products.deck_url != nil {
+                        responseArray.append(products.deck_url!)
+                    }
+                    constant.tester_name = products.tester_name!
+                    self.techShowHide()
+                    constant.OtpRespose = responseArray
                     switch isPrototype {
                     case "Prototype":
-                        self.goPrototype()
+                        self.goPrototype(data: constant.OtpRespose)
                     case "Deck":
-                        self.handleDeck()
+                        self.handleDeck(data: constant.OtpRespose)
                     case "meetTeam":
                         self.goMeetTheTeamVC()
                     default:
@@ -324,10 +350,15 @@ class HomeViewViewController: UIViewController{
         UIDevice.current.setValue(value, forKey: "orientation")
     }
     
-    fileprivate func goDeckVC() throws {
-        
+    fileprivate func goDeckVC(data: [String]?) throws {
         DispatchQueue.main.async {
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "PDFViewController") as? PDFViewController
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "PDFViewController") as? PDFViewController
+        if data != nil && data!.count >= 2 {
+            if data![1] != "" {
+                vc?.deckLink = data![1]
+                print(data)
+        }
+        }
             self.navigationController?.pushViewController(vc!, animated: true)
         }
         
@@ -336,11 +367,20 @@ class HomeViewViewController: UIViewController{
     @IBAction func seePdfAction(_ sender: Any) {
         
         if constant.isVerify {
-            self.handleDeck()
+            self.handleDeck(data: constant.OtpRespose)
         }else {
             openAlert(isPrototype: "Deck")
         }
         
+    }
+    
+    @IBAction func technicalPdfAction(_ sender: Any) {
+        DispatchQueue.main.async {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "PDFViewController") as? PDFViewController
+            vc?.deckLink = "https://baller-ac.s3.amazonaws.com/tech_doc.pdf"
+            vc?.loadingText = "Document Loading..."
+            self.navigationController?.pushViewController(vc!, animated: true)
+        }
     }
     
     @IBAction func seeScheduleAction(_ sender: Any) {
@@ -377,8 +417,10 @@ extension UIImageView {
 }
 
 struct otpVerModel: Codable {
-    
     let success : Bool
-    
+    let message: String?
+    let tester_name: String?
+    let prototype_url: String?
+    let deck_url: String?
 }
 

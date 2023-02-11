@@ -74,7 +74,7 @@
                                 <rect key="frame" x="0.0" y="153" width="414" height="709"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="20f-No-9JU">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1431"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1732.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NWI-mh-NoH">
                                                 <rect key="frame" x="10" y="20" width="394" height="300"/>
@@ -87,16 +87,16 @@
                                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.44734676942130586" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INTRODUCTION VIDEO" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hoN-0f-fFX">
-                                                        <rect key="frame" x="10" y="173" width="374" height="22"/>
-                                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                                                        <rect key="frame" x="10" y="173" width="374" height="22.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                         <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <size key="shadowOffset" width="1" height="1"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get a brief introduction to our app, see its functioning, hear our WHYs and our goal to reach 50m users by 2026." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VmW-f6-BVJ">
-                                                        <rect key="frame" x="10" y="205" width="374" height="30"/>
-                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
+                                                        <rect key="frame" x="10" y="205.5" width="374" height="29.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12.5"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -107,7 +107,7 @@
                                                             <constraint firstAttribute="height" constant="35" id="1Ih-yI-SoI"/>
                                                             <constraint firstAttribute="width" constant="180" id="y6s-kD-AhZ"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="COMING SOON">
@@ -155,18 +155,18 @@
                                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.44734676940000001" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smart platform that uses the latest Algorithms of AI and its subsets to help communities grow, and businesses thrive." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LgE-a3-WBQ">
-                                                        <rect key="frame" x="10" y="205" width="374" height="30"/>
-                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
+                                                        <rect key="frame" x="10" y="205.5" width="374" height="29.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12.5"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APP PROTOTYPE" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5QP-Lc-tMu">
-                                                        <rect key="frame" x="10" y="173" width="374" height="22"/>
-                                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                                                        <rect key="frame" x="10" y="173.5" width="374" height="22"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                         <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <size key="shadowOffset" width="1" height="1"/>
+                                                        <size key="shadowOffset" width="0.5" height="0.5"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v24-6q-bUi" customClass="TransitionButton" customModule="FigmaPrototypeTest" customModuleProvider="target">
                                                         <rect key="frame" x="10" y="245" width="180" height="35"/>
@@ -175,7 +175,7 @@
                                                             <constraint firstAttribute="width" constant="180" id="ZlP-xb-DNR"/>
                                                             <constraint firstAttribute="height" constant="35" id="qpG-si-J9t"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="OPEN PROTOTYPE">
@@ -183,7 +183,7 @@
                                                         </state>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="5"/>
+                                                                <real key="value" value="3"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
@@ -223,16 +223,16 @@
                                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.44734676940000001" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INVESTOR DECK" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPK-y3-srS">
-                                                        <rect key="frame" x="10" y="173" width="374" height="22"/>
-                                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                                                        <rect key="frame" x="10" y="173.5" width="374" height="22"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                         <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <size key="shadowOffset" width="1" height="1"/>
+                                                        <size key="shadowOffset" width="0.5" height="0.5"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join our pre-seed funding round and be a part of our mission to bring together community building and innovation." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGP-9a-ddA">
-                                                        <rect key="frame" x="10" y="205" width="374" height="30"/>
-                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
+                                                        <rect key="frame" x="10" y="205.5" width="374" height="29.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12.5"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -243,7 +243,7 @@
                                                             <constraint firstAttribute="height" constant="35" id="bZu-wy-ZsC"/>
                                                             <constraint firstAttribute="width" constant="180" id="o9r-so-k2M"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="VIEW DECK">
@@ -251,7 +251,7 @@
                                                         </state>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="5"/>
+                                                                <real key="value" value="3"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
@@ -281,7 +281,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bFT-gu-QxL">
-                                                <rect key="frame" x="10" y="965" width="394" height="300"/>
+                                                <rect key="frame" x="10" y="1280" width="394" height="300"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leadership" translatesAutoresizingMaskIntoConstraints="NO" id="gLi-h4-I5z">
                                                         <rect key="frame" x="0.0" y="0.0" width="394" height="300"/>
@@ -290,17 +290,17 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="394" height="300"/>
                                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.44734676940000001" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </view>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="World Class Leadership Team " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDO-XO-pI9">
-                                                        <rect key="frame" x="10" y="173" width="374" height="22"/>
-                                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WORLD CLASS LEADERSHIP TEAM " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDO-XO-pI9">
+                                                        <rect key="frame" x="10" y="173.5" width="374" height="22"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="highlightedColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <size key="shadowOffset" width="1" height="1"/>
+                                                        <size key="shadowOffset" width="0.5" height="0.5"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meet our world class leadership team with over 22 years merging community building, technology, and innovation." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRb-90-VjC">
-                                                        <rect key="frame" x="10" y="205" width="374" height="30"/>
-                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
+                                                        <rect key="frame" x="10" y="205.5" width="374" height="29.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12.5"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -311,7 +311,7 @@
                                                             <constraint firstAttribute="width" constant="180" id="5Rb-YQ-oru"/>
                                                             <constraint firstAttribute="height" constant="35" id="U1x-BS-tTS"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="MEET THE TEAM">
@@ -319,7 +319,7 @@
                                                         </state>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="5"/>
+                                                                <real key="value" value="3"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
@@ -349,48 +349,120 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for your interest in teaming up with us to help make people better. We look forward to talking with you." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMe-4c-F4L">
-                                                <rect key="frame" x="29" y="1285" width="356" height="61"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <rect key="frame" x="29" y="1600" width="356" height="52.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqQ-xi-dnH" customClass="TransitionButton" customModule="FigmaPrototypeTest" customModuleProvider="target">
-                                                <rect key="frame" x="92" y="1366" width="230" height="45"/>
+                                                <rect key="frame" x="92" y="1672.5" width="230" height="40"/>
                                                 <color key="backgroundColor" red="0.92362123730000001" green="0.25996106860000001" blue="0.20830270649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="230" id="P2J-F0-W0N"/>
-                                                    <constraint firstAttribute="height" constant="45" id="pOv-VP-lbw"/>
+                                                    <constraint firstAttribute="height" constant="40" id="pOv-VP-lbw"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
-                                                <state key="normal" title="SCHEDULE A MEETING" image="cal"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="10" maxX="20" maxY="10"/>
+                                                <state key="normal" title="SCHEDULE A MEETING" image="calendar" catalog="system"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="2"/>
+                                                        <real key="value" value="3"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="seeScheduleAction:" destination="4Fz-zD-ST9" eventType="touchUpInside" id="GRk-26-j4p"/>
                                                 </connections>
                                             </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oKe-hx-pLO">
+                                                <rect key="frame" x="10" y="965" width="394" height="300"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="passion" translatesAutoresizingMaskIntoConstraints="NO" id="ItW-Ny-CT7">
+                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="300"/>
+                                                    </imageView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LmX-bA-wBN">
+                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="300"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.44734676940000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TECHNICAL DOCUMENT" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bI-Et-qkj">
+                                                        <rect key="frame" x="10" y="173.5" width="374" height="22"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <size key="shadowOffset" width="0.5" height="0.5"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join our pre-seed funding round and be a part of our mission to bring together community building and innovation." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q6A-vG-QeB">
+                                                        <rect key="frame" x="10" y="205.5" width="374" height="29.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12.5"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2t-J6-O0V" customClass="TransitionButton" customModule="FigmaPrototypeTest" customModuleProvider="target">
+                                                        <rect key="frame" x="10" y="245" width="180" height="35"/>
+                                                        <color key="backgroundColor" red="0.92362123730000001" green="0.25996106860000001" blue="0.20830270649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="35" id="R3b-jy-NkC"/>
+                                                            <constraint firstAttribute="width" constant="180" id="aww-5b-4gV"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="VIEW DOCUMENT">
+                                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="technicalPdfAction:" destination="4Fz-zD-ST9" eventType="touchUpInside" id="JsS-if-Kfg"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.1328490973" green="0.1488522887" blue="0.16141036149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="LmX-bA-wBN" secondAttribute="bottom" id="0mG-hI-Vn9"/>
+                                                    <constraint firstAttribute="trailing" secondItem="5bI-Et-qkj" secondAttribute="trailing" constant="10" id="671-52-CYP"/>
+                                                    <constraint firstAttribute="bottom" secondItem="ItW-Ny-CT7" secondAttribute="bottom" id="9s8-PV-g76"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ItW-Ny-CT7" secondAttribute="trailing" id="AJy-t6-D29"/>
+                                                    <constraint firstItem="q6A-vG-QeB" firstAttribute="top" secondItem="5bI-Et-qkj" secondAttribute="bottom" constant="10" id="Ew9-Fi-1z7"/>
+                                                    <constraint firstAttribute="trailing" secondItem="LmX-bA-wBN" secondAttribute="trailing" id="H8U-47-WT7"/>
+                                                    <constraint firstAttribute="bottom" secondItem="R2t-J6-O0V" secondAttribute="bottom" constant="20" id="HNP-Z5-eUt"/>
+                                                    <constraint firstItem="LmX-bA-wBN" firstAttribute="top" secondItem="oKe-hx-pLO" secondAttribute="top" id="P3a-vy-umi"/>
+                                                    <constraint firstItem="5bI-Et-qkj" firstAttribute="leading" secondItem="oKe-hx-pLO" secondAttribute="leading" constant="10" id="Ukl-19-Og7"/>
+                                                    <constraint firstItem="ItW-Ny-CT7" firstAttribute="top" secondItem="oKe-hx-pLO" secondAttribute="top" id="ajy-YP-7er"/>
+                                                    <constraint firstItem="ItW-Ny-CT7" firstAttribute="leading" secondItem="oKe-hx-pLO" secondAttribute="leading" id="cR3-V4-set"/>
+                                                    <constraint firstItem="R2t-J6-O0V" firstAttribute="top" secondItem="q6A-vG-QeB" secondAttribute="bottom" constant="10" id="dKb-4a-atp"/>
+                                                    <constraint firstAttribute="trailing" secondItem="q6A-vG-QeB" secondAttribute="trailing" constant="10" id="dad-Xj-HMl"/>
+                                                    <constraint firstItem="R2t-J6-O0V" firstAttribute="leading" secondItem="oKe-hx-pLO" secondAttribute="leading" constant="10" id="eHJ-JA-qb3"/>
+                                                    <constraint firstItem="LmX-bA-wBN" firstAttribute="leading" secondItem="oKe-hx-pLO" secondAttribute="leading" id="ph4-yl-p1H"/>
+                                                    <constraint firstAttribute="height" constant="300" id="rcf-aL-gIl"/>
+                                                    <constraint firstItem="q6A-vG-QeB" firstAttribute="leading" secondItem="oKe-hx-pLO" secondAttribute="leading" constant="10" id="sUU-eo-tcE"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="NWI-mh-NoH" secondAttribute="trailing" constant="10" id="19D-sp-nEU"/>
                                             <constraint firstAttribute="trailing" secondItem="Abu-Tf-wqU" secondAttribute="trailing" constant="10" id="43j-Rz-uPO"/>
+                                            <constraint firstItem="oKe-hx-pLO" firstAttribute="leading" secondItem="20f-No-9JU" secondAttribute="leading" constant="10" id="5mI-BZ-wab"/>
                                             <constraint firstAttribute="trailing" secondItem="qMe-4c-F4L" secondAttribute="trailing" constant="29" id="Cgd-c2-Say"/>
                                             <constraint firstItem="wqQ-xi-dnH" firstAttribute="top" secondItem="qMe-4c-F4L" secondAttribute="bottom" constant="20" id="Fe2-tJ-KnQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="oKe-hx-pLO" secondAttribute="trailing" constant="10" id="LfT-k0-b9V"/>
                                             <constraint firstItem="NWI-mh-NoH" firstAttribute="top" secondItem="20f-No-9JU" secondAttribute="top" constant="20" id="LvF-GG-Gvh"/>
                                             <constraint firstItem="wqQ-xi-dnH" firstAttribute="centerX" secondItem="20f-No-9JU" secondAttribute="centerX" id="MJC-Lk-eLm"/>
                                             <constraint firstItem="Abu-Tf-wqU" firstAttribute="top" secondItem="NWI-mh-NoH" secondAttribute="bottom" constant="15" id="OSN-up-eGv"/>
                                             <constraint firstAttribute="trailing" secondItem="EwQ-xB-oi4" secondAttribute="trailing" constant="10" id="QvU-2H-zH3"/>
                                             <constraint firstItem="bFT-gu-QxL" firstAttribute="leading" secondItem="20f-No-9JU" secondAttribute="leading" constant="10" id="UT0-dk-Snn"/>
                                             <constraint firstItem="NWI-mh-NoH" firstAttribute="leading" secondItem="20f-No-9JU" secondAttribute="leading" constant="10" id="XfZ-Ry-gZG"/>
-                                            <constraint firstItem="bFT-gu-QxL" firstAttribute="top" secondItem="EwQ-xB-oi4" secondAttribute="bottom" constant="15" id="dy4-Xa-SC2"/>
                                             <constraint firstAttribute="bottom" secondItem="wqQ-xi-dnH" secondAttribute="bottom" constant="20" id="fqV-IK-lZs"/>
                                             <constraint firstAttribute="trailing" secondItem="bFT-gu-QxL" secondAttribute="trailing" constant="10" id="imW-ta-xMG"/>
+                                            <constraint firstItem="oKe-hx-pLO" firstAttribute="top" secondItem="EwQ-xB-oi4" secondAttribute="bottom" constant="15" id="lO6-sI-f60"/>
                                             <constraint firstItem="EwQ-xB-oi4" firstAttribute="top" secondItem="Abu-Tf-wqU" secondAttribute="bottom" constant="15" id="r3Y-69-TyK"/>
                                             <constraint firstItem="Abu-Tf-wqU" firstAttribute="leading" secondItem="20f-No-9JU" secondAttribute="leading" constant="10" id="sd6-lN-YsA"/>
+                                            <constraint firstItem="bFT-gu-QxL" firstAttribute="top" secondItem="oKe-hx-pLO" secondAttribute="bottom" constant="15" id="wYw-YL-Zpm"/>
                                             <constraint firstItem="qMe-4c-F4L" firstAttribute="top" secondItem="bFT-gu-QxL" secondAttribute="bottom" constant="20" id="wcC-19-PRQ"/>
                                             <constraint firstItem="qMe-4c-F4L" firstAttribute="leading" secondItem="20f-No-9JU" secondAttribute="leading" constant="29" id="zbW-uA-93Q"/>
                                             <constraint firstItem="EwQ-xB-oi4" firstAttribute="leading" secondItem="20f-No-9JU" secondAttribute="leading" constant="10" id="zfj-Rf-23p"/>
@@ -433,12 +505,16 @@
                         <outlet property="backShadowView2" destination="gQb-EM-D92" id="4jj-Wo-w1p"/>
                         <outlet property="backShadowView3" destination="cJG-qW-Bhj" id="dOG-1h-GxW"/>
                         <outlet property="backShadowView4" destination="0Eg-1y-y6Z" id="iIJ-1w-md9"/>
+                        <outlet property="backShadowView5" destination="LmX-bA-wBN" id="J2m-3O-s6f"/>
                         <outlet property="meetTeamImg" destination="gLi-h4-I5z" id="dim-nf-MPk"/>
                         <outlet property="meetTeamView" destination="bFT-gu-QxL" id="lvq-hm-jWo"/>
                         <outlet property="pdfBackView" destination="Abu-Tf-wqU" id="bmr-e8-rM1"/>
                         <outlet property="pdfImg" destination="ZeO-XQ-g0S" id="2qd-Bh-w85"/>
                         <outlet property="prototypeImg" destination="Lvy-Cs-mBT" id="pM5-b1-l9H"/>
                         <outlet property="prototypeView" destination="NWI-mh-NoH" id="pbw-2z-rtq"/>
+                        <outlet property="techHeight" destination="rcf-aL-gIl" id="4Oc-di-sJg"/>
+                        <outlet property="techTopCons" destination="lO6-sI-f60" id="GGk-XP-G2a"/>
+                        <outlet property="technicalImg" destination="ItW-Ny-CT7" id="hAa-0f-ovL"/>
                         <outlet property="videoImg" destination="mvO-95-Obi" id="sQo-6Z-rcl"/>
                         <outlet property="videoView" destination="EwQ-xB-oi4" id="1db-ba-mOT"/>
                         <outlet property="viewDeckBtn" destination="d2v-91-xNm" id="dr7-Ly-Nir"/>
@@ -1609,9 +1685,9 @@ Nathan was selected as the only player to join the team in 2012, following a suc
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpg-iy-VBH">
                                                                         <rect key="frame" x="0.0" y="0.0" width="374" height="290"/>
-                                                                        <mutableString key="text">Born in Khulna, Bangladesh, Mujahid hails from a family of a government land officer father and a housewife mother. From a young age, Mujahid displayed a natural curiosity and a love for exploring the inner workings of technology. At 11 years old, he discovered his passion for computers and electronics. He taught himself website design using HTML and CSS and later, programming, by reading complex engineering books and writing his first software program at 15.
+                                                                        <string key="text">Born in Khulna, Bangladesh, Mujahid hails from a family of a government land officer father and a housewife mother. From a young age, Mujahid displayed a natural curiosity and a love for exploring the inner workings of technology. At 11 years old, he discovered his passion for computers and electronics. He taught himself website design using HTML and CSS and later, programming, by reading complex engineering books and writing his first software program at 15.
 
-Mujahid has a track record of success, including being awarded for his software program at the "State Science Fair" of Khulna and winning the technical skills competition three times at Satkhira Polytechnic Institute. By 18, he had formed a team of developers by teaching programming to his classmates and was ready to start his own startup. Mujahid is highly regarded for his leadership and ability to make complex ideas accessible to others.</mutableString>
+Mujahid has a track record of success, including being awarded for his software program at the "State Science Fair" of Khulna and winning the technical skills competition three times at Satkhira Polytechnic Institute. By 18, he had formed a team of developers by teaching programming to his classmates and was ready to start his own startup. Mujahid is highly regarded for his leadership and ability to make complex ideas accessible to others.</string>
                                                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
@@ -2735,17 +2811,24 @@ Colombia, Losdebuho, Colombia</string>
                                 <rect key="frame" x="20" y="0.0" width="374" height="896"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jl-Ga-PPy">
-                                <rect key="frame" x="0.0" y="54" width="20" height="20"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jl-Ga-PPy" customClass="TransitionButton" customModule="FigmaPrototypeTest" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="54" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.92362123730000001" green="0.25996106860000001" blue="0.20830270649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="8WC-PO-FPf"/>
-                                    <constraint firstAttribute="height" constant="20" id="iu2-iX-bed"/>
+                                    <constraint firstAttribute="width" constant="30" id="8WC-PO-FPf"/>
+                                    <constraint firstAttribute="height" constant="30" id="iu2-iX-bed"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="6" minY="8" maxX="8" maxY="8"/>
                                 <state key="normal" image="left-arrow">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="backAction:" destination="jeb-Zu-VBK" eventType="touchUpInside" id="t32-Dy-CqG"/>
                                 </connections>
@@ -2763,7 +2846,11 @@ Colombia, Losdebuho, Colombia</string>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backBtn" destination="8jl-Ga-PPy" id="YGH-27-LHo"/>
+                        <outlet property="btnLeftCons" destination="XJA-JI-8en" id="iFV-DS-JeT"/>
+                        <outlet property="lefCons" destination="Ppb-x5-RHt" id="VrL-0z-uJ1"/>
                         <outlet property="pdfVieww" destination="EyD-15-jqq" id="xJx-Ta-uOe"/>
+                        <outlet property="rightCons" destination="P6f-bC-wHq" id="QLm-Dx-IJP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vq7-yj-xNM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2793,25 +2880,28 @@ Colombia, Losdebuho, Colombia</string>
     </scenes>
     <designables>
         <designable name="NPj-Ld-jz7">
-            <size key="intrinsicContentSize" width="115" height="29"/>
+            <size key="intrinsicContentSize" width="116" height="29"/>
+        </designable>
+        <designable name="R2t-J6-O0V">
+            <size key="intrinsicContentSize" width="122" height="29"/>
         </designable>
         <designable name="d2v-91-xNm">
             <size key="intrinsicContentSize" width="80" height="29"/>
         </designable>
         <designable name="oTf-za-oKj">
-            <size key="intrinsicContentSize" width="103" height="29"/>
+            <size key="intrinsicContentSize" width="105" height="29"/>
         </designable>
         <designable name="v24-6q-bUi">
             <size key="intrinsicContentSize" width="130" height="29"/>
         </designable>
         <designable name="wqQ-xi-dnH">
-            <size key="intrinsicContentSize" width="188" height="30"/>
+            <size key="intrinsicContentSize" width="180" height="18.5"/>
         </designable>
     </designables>
     <resources>
         <image name="Group 10" width="1220" height="700"/>
         <image name="Left" width="100" height="100"/>
-        <image name="cal" width="30" height="30"/>
+        <image name="calendar" catalog="system" width="128" height="106"/>
         <image name="circle.fill" catalog="system" width="128" height="121"/>
         <image name="code" width="853" height="637"/>
         <image name="deck" width="2000" height="1200"/>
@@ -2827,6 +2917,7 @@ Colombia, Losdebuho, Colombia</string>
         <image name="linkedin" width="128" height="128"/>
         <image name="message_alarm" width="512" height="512"/>
         <image name="noise_cancel" width="1200" height="680"/>
+        <image name="passion" width="1920" height="1282"/>
         <image name="play" width="128" height="128"/>
         <image name="twitter" width="128" height="128"/>
         <image name="unicef" width="2000" height="1238"/>

@@ -16,15 +16,13 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate, UIGe
     
     @IBOutlet weak var backImg: UIImageView!
     @IBOutlet weak var webView: WKWebView!
+    var prototypeLink = constant.defaultProtypeLink
     private var audioLevel : Float = 0.0
     private var tapCout = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = true
-        //        userAutorization()
-        
-        // Do any additional setup after loading the view.
-        let link = URL(string:"https://www.figma.com/proto/9af6kpJB18dEZGcRmcX18G/Prototype-Test?node-id=2309%3A20362&scaling=min-zoom&page-id=22%3A5297&starting-point-node-id=618%3A12289")!
+        let link = URL(string:prototypeLink)!
         let request = URLRequest(url: link)
         DispatchQueue.main.async {
             
@@ -50,7 +48,10 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate, UIGe
     
     
     func listenVolumeButton(){
-        showToast(message: "Press volume down button to exit prototype")
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
+            self.showToast(message: "Press volume down button to exit prototype")
+        }
+        
         let audioSession = AVAudioSession.sharedInstance()
         
             do {
@@ -67,6 +68,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate, UIGe
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         if keyPath == "outputVolume"{
             backAction()
+            UIDevice.vibrate()
         }
     }
     

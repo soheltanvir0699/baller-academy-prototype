@@ -24,6 +24,7 @@
 		37AF6BFF299221C0007A4454 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AF6BFE299221C0007A4454 /* UIView+Extension.swift */; };
 		37CF371D298CDF0F00D493EB /* Transbutton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CF371C298CDF0F00D493EB /* Transbutton.swift */; };
 		37CF371F298CDF3200D493EB /* SniperLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CF371E298CDF3200D493EB /* SniperLayer.swift */; };
+		37DDA77729976E7C0087992E /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DDA77629976E7C0087992E /* UIDevice+Extension.swift */; };
 		37DE1D61298BE8C40055921E /* SwiftyTrans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DE1D60298BE8C40055921E /* SwiftyTrans.swift */; };
 		37F7105029891D7A00D26919 /* HomeViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7104F29891D7A00D26919 /* HomeViewViewController.swift */; };
 		37F7105229891DB600D26919 /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7105129891DB500D26919 /* PDFViewController.swift */; };
@@ -51,6 +52,7 @@
 		37AF6BFE299221C0007A4454 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		37CF371C298CDF0F00D493EB /* Transbutton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transbutton.swift; sourceTree = "<group>"; };
 		37CF371E298CDF3200D493EB /* SniperLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SniperLayer.swift; sourceTree = "<group>"; };
+		37DDA77629976E7C0087992E /* UIDevice+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
 		37DE1D60298BE8C40055921E /* SwiftyTrans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyTrans.swift; sourceTree = "<group>"; };
 		37E294C7297E9C7900899620 /* FigmaPrototypeTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FigmaPrototypeTest.entitlements; sourceTree = "<group>"; };
 		37F7104F29891D7A00D26919 /* HomeViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				37927A2B299115000074204B /* NetworkConnectionChecker.swift */,
 				37AF6BFE299221C0007A4454 /* UIView+Extension.swift */,
 				37F7104F29891D7A00D26919 /* HomeViewViewController.swift */,
+				37DDA77629976E7C0087992E /* UIDevice+Extension.swift */,
 				3764308E2990249700E52D1D /* Constant.swift */,
 				37DE1D60298BE8C40055921E /* SwiftyTrans.swift */,
 				37CF371C298CDF0F00D493EB /* Transbutton.swift */,
@@ -263,6 +266,7 @@
 				371236FD298A248800AB006F /* VideoViewController.swift in Sources */,
 				374BA1DA296D3EBF00E7677E /* AppDelegate.swift in Sources */,
 				3764308F2990249700E52D1D /* Constant.swift in Sources */,
+				37DDA77729976E7C0087992E /* UIDevice+Extension.swift in Sources */,
 				37CF371F298CDF3200D493EB /* SniperLayer.swift in Sources */,
 				37F7105029891D7A00D26919 /* HomeViewViewController.swift in Sources */,
 				37CF371D298CDF0F00D493EB /* Transbutton.swift in Sources */,
