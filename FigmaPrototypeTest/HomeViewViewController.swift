@@ -45,7 +45,7 @@ class HomeViewViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        techShowHide()
+        
         let shadowViews = [backShadowView, backShadowView2, backShadowView3, backShadowView4,backShadowView5]
             let shadowImages = [pdfImg, prototypeImg, videoImg, meetTeamImg,technicalImg]
             let cornerRadius: CGFloat = 4
@@ -216,6 +216,9 @@ class HomeViewViewController: UIViewController{
                         return
                     }
                     if self.checkNetwork() {
+                        DispatchQueue.main.async {
+                            self.rootView?.submitAction.startAnimation()
+                        }
                         self.apiCall(isPrototype: prototypeText, otpText: code)
                     }else {
                         self.showToast(message: "Connection: error.")
@@ -299,6 +302,9 @@ class HomeViewViewController: UIViewController{
         
         let session = URLSession.shared
         session.dataTask(with: request) { (data, response, error) in
+            DispatchQueue.main.async {
+                self.rootView?.submitAction.stopAnimation()
+            }
             if let error = error {
                 self.showToast(message: "Connection error: \(error.localizedDescription)")
                 return
@@ -397,7 +403,7 @@ class HomeViewViewController: UIViewController{
         
     }
     override func viewWillAppear(_ animated: Bool) {
-        
+        self.techShowHide()
         self.navigationController?.navigationBar.isHidden = true
         let value = UIInterfaceOrientation.portrait.rawValue
         UIDevice.current.setValue(value, forKey: "orientation")

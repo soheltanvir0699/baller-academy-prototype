@@ -10,7 +10,8 @@ import UIKit
 
 class AlertView: UIView {
     
-    @IBOutlet weak var submitAction: UIButton!
+    @IBOutlet weak var submitAction: TransitionButton!
+    
     @IBOutlet weak var textFld: UITextField!
     @IBOutlet weak var dissmissBtn: UIButton!
     override func awakeFromNib() {

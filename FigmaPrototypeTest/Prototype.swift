@@ -45,12 +45,21 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate, UIGe
         _ = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.update), userInfo: nil, repeats: true)
         listenVolumeButton()
     }
-    
+    @objc func volumeChanged(_ notification: NSNotification) {
+     if let volume = notification.userInfo!["AVSystemController_AudioVolumeNotificationParameter"] as? Float {
+         print("volume: \(volume)")
+         backAction()
+     }
+    }
+
     
     func listenVolumeButton(){
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
             self.showToast(message: "Press volume down button to exit prototype")
         }
+        let volumeView = MPVolumeView(frame: CGRect(x: -CGFloat.greatestFiniteMagnitude, y: 0.0, width: 0.0, height: 0.0))
+        self.view.addSubview(volumeView)
+        NotificationCenter.default.addObserver(self, selector: #selector(volumeChanged(_:)), name: NSNotification.Name(rawValue: "AVSystemController_SystemVolumeDidChangeNotification"), object: nil)
         
         let audioSession = AVAudioSession.sharedInstance()
         

@@ -70,8 +70,11 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var careerSecondLbl: UILabel!
     
     func setText(label:UILabel, textRegular:String, textBold: String) {
-        let regularFont = UIFont(name: "Helvetica", size: 14)
-        let boldFont = UIFont(name: "Helvetica-Bold", size: 14)
+//        let regularFont = UIFont(name: "Helvetica Neue -Condensed Bold", size: 14)
+//        let boldFont = UIFont(name: "Helvetica Neue -Condensed Black", size: 15)
+        let regularFont = careerThreeLbl.font
+        let boldFont = careerOneLbl.font
+        print(careerOneLbl.font)
 
         let regularAttributes = [NSAttributedString.Key.font: regularFont]
         let boldAttributes = [NSAttributedString.Key.font: boldFont]

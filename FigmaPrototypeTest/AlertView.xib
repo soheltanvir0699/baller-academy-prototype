@@ -55,7 +55,7 @@
                             <color key="textColor" white="0.3996977513937181" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6s-vm-7Yg">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6s-vm-7Yg" customClass="TransitionButton" customModule="FigmaPrototypeTest" customModuleProvider="target">
                             <rect key="frame" x="99.5" y="188.5" width="95" height="30"/>
                             <color key="backgroundColor" red="0.93099814650000001" green="0.33461067080000001" blue="0.39389520880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
@@ -69,7 +69,7 @@
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusCustom">
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                     <real key="value" value="5"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
@@ -113,12 +113,17 @@
             </constraints>
             <connections>
                 <outlet property="dissmissBtn" destination="rIY-ba-3Lo" id="Qwg-Lu-QVf"/>
-                <outlet property="submitAction" destination="n6s-vm-7Yg" id="ywk-w0-SJH"/>
+                <outlet property="submitAction" destination="n6s-vm-7Yg" id="gLt-y2-aj5"/>
                 <outlet property="textFld" destination="N4o-CK-OYn" id="pKK-xN-QrH"/>
             </connections>
             <point key="canvasLocation" x="362.31884057971018" y="-387.05357142857139"/>
         </view>
     </objects>
+    <designables>
+        <designable name="n6s-vm-7Yg">
+            <size key="intrinsicContentSize" width="47" height="30"/>
+        </designable>
+    </designables>
     <resources>
         <image name="cross" width="64" height="64"/>
         <image name="id" width="256" height="256"/>

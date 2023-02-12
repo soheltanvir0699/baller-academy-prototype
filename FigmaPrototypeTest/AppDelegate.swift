@@ -7,6 +7,7 @@
 
 import UIKit
 import UXCam
+import IQKeyboardManagerSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,9 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        UIApplication.shared.isStatusBarHidden = true
+//        UIApplication.shared.isStatusBarHidden = true
         let configuration = UXCamConfiguration(appKey: "qae4p7q49gpet2w")
-
+        IQKeyboardManager.shared.enable = true
         //Example
         configuration.enableAutomaticScreenNameTagging = false // default is set to true
         configuration.enableAdvancedGestureRecognition = false // default is set to true
