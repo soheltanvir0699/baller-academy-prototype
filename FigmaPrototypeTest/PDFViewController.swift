@@ -67,8 +67,24 @@ class PDFViewController: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     
+    override open var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        if loadingText != "Document Loading..." {
+            return .landscapeLeft
+        }else {
+            return .portrait
+        }
+        }
+
+        override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
+            if loadingText != "Document Loading..." {
+                return .landscapeLeft
+            }else {
+                return .portrait
+            }
+        }
+    
     override var shouldAutorotate: Bool {
-        return true
+        return false
     }
     
     

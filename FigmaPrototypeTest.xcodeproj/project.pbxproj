@@ -12,6 +12,8 @@
 		372023912997EB6000ACC0BD /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372023902997EB6000ACC0BD /* UITextField+Extension.swift */; };
 		372023932997EC2B00ACC0BD /* AlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 372023922997EC2B00ACC0BD /* AlertView.xib */; };
 		372023952997EC5000ACC0BD /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372023942997EC5000ACC0BD /* AlertView.swift */; };
+		3726E17A299A551B00D3AAAB /* DisclaimerAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3726E179299A551B00D3AAAB /* DisclaimerAlert.xib */; };
+		3726E17C299A554300D3AAAB /* DisclaimerAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3726E17B299A554300D3AAAB /* DisclaimerAlert.swift */; };
 		374BA1DA296D3EBF00E7677E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374BA1D9296D3EBF00E7677E /* AppDelegate.swift */; };
 		374BA1DC296D3EBF00E7677E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374BA1DB296D3EBF00E7677E /* SceneDelegate.swift */; };
 		374BA1DE296D3EBF00E7677E /* Prototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374BA1DD296D3EBF00E7677E /* Prototype.swift */; };
@@ -42,6 +44,8 @@
 		372023902997EB6000ACC0BD /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		372023922997EC2B00ACC0BD /* AlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertView.xib; sourceTree = "<group>"; };
 		372023942997EC5000ACC0BD /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		3726E179299A551B00D3AAAB /* DisclaimerAlert.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DisclaimerAlert.xib; sourceTree = "<group>"; };
+		3726E17B299A554300D3AAAB /* DisclaimerAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclaimerAlert.swift; sourceTree = "<group>"; };
 		374BA1D6296D3EBE00E7677E /* FigmaPrototypeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FigmaPrototypeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		374BA1D9296D3EBF00E7677E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		374BA1DB296D3EBF00E7677E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +118,8 @@
 				372023922997EC2B00ACC0BD /* AlertView.xib */,
 				372023902997EB6000ACC0BD /* UITextField+Extension.swift */,
 				37DDA77629976E7C0087992E /* UIDevice+Extension.swift */,
+				3726E17B299A554300D3AAAB /* DisclaimerAlert.swift */,
+				3726E179299A551B00D3AAAB /* DisclaimerAlert.xib */,
 				3764308E2990249700E52D1D /* Constant.swift */,
 				37DE1D60298BE8C40055921E /* SwiftyTrans.swift */,
 				37CF371C298CDF0F00D493EB /* Transbutton.swift */,
@@ -223,6 +229,7 @@
 				374BA1E6296D3EC100E7677E /* LaunchScreen.storyboard in Resources */,
 				372023932997EC2B00ACC0BD /* AlertView.xib in Resources */,
 				374BA1E3296D3EC100E7677E /* Assets.xcassets in Resources */,
+				3726E17A299A551B00D3AAAB /* DisclaimerAlert.xib in Resources */,
 				374BA1E1296D3EBF00E7677E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37F7105229891DB600D26919 /* PDFViewController.swift in Sources */,
+				3726E17C299A554300D3AAAB /* DisclaimerAlert.swift in Sources */,
 				372023952997EC5000ACC0BD /* AlertView.swift in Sources */,
 				374BA1DE296D3EBF00E7677E /* Prototype.swift in Sources */,
 				37DE1D61298BE8C40055921E /* SwiftyTrans.swift in Sources */,
@@ -453,6 +461,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -488,6 +497,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;

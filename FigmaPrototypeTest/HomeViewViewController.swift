@@ -41,7 +41,8 @@ class HomeViewViewController: UIViewController{
     let reachability = try! Reachability()
     var isNetworkAvailable = false
     let rootView = Bundle.main.loadNibNamed("AlertView", owner: self, options: nil)?[0] as? AlertView
-
+    let disclaimerView = Bundle.main.loadNibNamed("DisclaimerAlert", owner: self, options: nil)?[0] as? DisclaimerAlert
+    var vcPushString = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -178,34 +179,46 @@ class HomeViewViewController: UIViewController{
             
         }
         
-//        let alertController = UIAlertController (title: "Hello there!", message: "Please enter the code that you have got from Baller Academy", preferredStyle: .alert)
-//        alertController.addTextField { (textField : UITextField!) -> Void in
-//        }
-//        alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: { _ in
-//            let firstTextField = alertController.textFields![0] as UITextField
-//
-//            guard let code = firstTextField.text, !code.isEmpty else {
-//                self.showToast(message: "Insert 6-digit code")
-//                return
-//            }
-//            guard firstTextField.text?.count == 6 else {
-//                self.showToast(message: "Insert 6-digit code")
-//                return
-//            }
-//            if self.checkNetwork() {
-//                self.apiCall(isPrototype: isPrototype, otpText: code)
-//            }else {
-//                self.showToast(message: "Connection: error.")
-//            }
-//
-//        }))
-//        let cancelAction = UIAlertAction(title: "Cancel", style: .default, handler: nil)
-//        alertController.addAction(cancelAction)
-//
-//        present(alertController, animated: true, completion: nil)
-        
     }
     
+    func showDisclaimer() {
+        disclaimerView?.submitAction.addTarget(self, action: #selector(dismissSupViewDisclaimer), for: .touchUpInside)
+        if let aView = disclaimerView {
+            aView.tag = 105
+            self.navigationController?.view.addSubview(aView)
+            guard let navView = self.navigationController?.view else {return}
+            navView.addSubview(aView)
+            aView.translatesAutoresizingMaskIntoConstraints = false
+            aView.topAnchor.constraint(equalTo: navView.topAnchor, constant: 0).isActive = true
+            aView.bottomAnchor.constraint(equalTo: navView.bottomAnchor, constant: 0).isActive = true
+            aView.leadingAnchor.constraint(equalTo: navView.leadingAnchor, constant: 0).isActive = true
+            aView.trailingAnchor.constraint(equalTo: navView.trailingAnchor, constant: 0).isActive = true
+            
+        }
+    }
+    @objc func dismissSupViewDisclaimer() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0) {
+            self.showToastSuccess(message: "Thanks for verifying, You can now see everything")
+            for subview in (self.navigationController?.view.subviews)! {
+                if (subview.tag == 105) {
+
+                    subview.removeFromSuperview()
+                }
+            }
+            switch self.vcPushString {
+            case "Prototype":
+                self.goPrototype(data: constant.OtpRespose)
+            case "Deck":
+                self.handleDeck(data: constant.OtpRespose)
+            case "meetTeam":
+                self.goMeetTheTeamVC()
+            default:
+                self.goScheduleVC()
+            }
+        }
+        
+        
+    }
     @objc func submitAction() {
         guard let code = rootView?.textFld.text, !code.isEmpty else {
                         self.showToast(message: "Insert 6-digit code")
@@ -321,7 +334,6 @@ class HomeViewViewController: UIViewController{
                 let products = try JSONDecoder().decode(otpVerModel.self, from: data)
                 if products.success {
                     self.dismissSupView()
-                    self.showToastSuccess(message: "Thanks for verifying, You can now see everything")
                     constant.isVerify = true
                     var responseArray = [String]()
                     if products.prototype_url != nil {
@@ -333,15 +345,9 @@ class HomeViewViewController: UIViewController{
                     constant.tester_name = products.tester_name!
                     self.techShowHide()
                     constant.OtpRespose = responseArray
-                    switch isPrototype {
-                    case "Prototype":
-                        self.goPrototype(data: constant.OtpRespose)
-                    case "Deck":
-                        self.handleDeck(data: constant.OtpRespose)
-                    case "meetTeam":
-                        self.goMeetTheTeamVC()
-                    default:
-                        self.goScheduleVC()
+                    self.vcPushString = isPrototype
+                    DispatchQueue.main.asyncAfter(deadline: .now()+0.4) {
+                    self.showDisclaimer()
                     }
                 } else {
                     self.showToast(message: "This code is either invalid or expired or already used!")
