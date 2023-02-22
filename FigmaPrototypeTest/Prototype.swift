@@ -11,6 +11,7 @@ import NotificationToast
 import Speech
 import MediaPlayer
 import AVFoundation
+import Mute
 
 class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate, UIGestureRecognizerDelegate,SFSpeechRecognizerDelegate {
     
@@ -19,8 +20,12 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate, UIGe
     var prototypeLink = constant.defaultProtypeLink
     private var audioLevel : Float = 0.0
     private var tapCout = 0
+    var current = false
+    var isFirst = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setNeedsStatusBarAppearanceUpdate()
         self.navigationController?.navigationBar.isHidden = true
         let link = URL(string:prototypeLink)!
         let request = URLRequest(url: link)
@@ -45,40 +50,86 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate, UIGe
         _ = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.update), userInfo: nil, repeats: true)
         listenVolumeButton()
     }
-    @objc func volumeChanged(_ notification: NSNotification) {
-     if let volume = notification.userInfo!["AVSystemController_AudioVolumeNotificationParameter"] as? Float {
-         print("volume: \(volume)")
-         backAction()
-     }
-    }
-
     
-    func listenVolumeButton(){
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        UIApplication.shared.isStatusBarHidden = true
+    }
+    
+    
+    func listenVolumeButton() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
-            self.showToast(message: "Press volume down button to exit prototype")
+            self.showToast(message: "Toggle silent button to exit prototype")
         }
         let volumeView = MPVolumeView(frame: CGRect(x: -CGFloat.greatestFiniteMagnitude, y: 0.0, width: 0.0, height: 0.0))
         self.view.addSubview(volumeView)
-        NotificationCenter.default.addObserver(self, selector: #selector(volumeChanged(_:)), name: NSNotification.Name(rawValue: "AVSystemController_SystemVolumeDidChangeNotification"), object: nil)
         
-        let audioSession = AVAudioSession.sharedInstance()
+//        NotificationCenter.default.addObserver(forName: AVAudioSession.silenceSecondaryAudioHintNotification, object: nil, queue: nil) { notification in
+//            let isSilent = AVAudioSession.sharedInstance().secondaryAudioShouldBeSilencedHint
+//            self.apiCallFuncTest(TestString: "local call")
+//            self.backAction()
+//        }
         
-            do {
-                try audioSession.setActive(true, options: [])
-            } catch {
-                print("Error setting audio session active: \(error)")
-                return
+        // Notify every 2 seconds
+        Mute.shared.checkInterval = 1.5
+
+        // Always notify on interval
+        Mute.shared.alwaysNotify = true
+
+        // Update label when notification received
+        Mute.shared.notify = { [weak self] m in
+            print(m)
+            if self!.isFirst == false {
+                self!.current = m
+                self!.isFirst = true
+            }else {
+            if self!.current != m {
+                self!.current = m
+                DispatchQueue.main.async {
+                    Mute.shared.isPaused = true
+                }
+//                self!.apiCallFuncTest(TestString: "Library call")
+                self!.backAction()
             }
-            
-        audioSession.addObserver(self, forKeyPath: "outputVolume", options: NSKeyValueObservingOptions.new, context: nil)
-        audioLevel = audioSession.outputVolume
+            }
+            print(m)
+        }
+
+//         Stop after 5 seconds
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+            Mute.shared.isPaused = true
+        }
+
+        // Re-start after 10 seconds
+        DispatchQueue.main.asyncAfter(deadline: .now() + 7.0) {
+            Mute.shared.isPaused = false
+        }
     }
     
-    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-        if keyPath == "outputVolume"{
-            backAction()
-            UIDevice.vibrate()
+    func apiCallFuncTest(TestString: String) {
+        
+        let urlString = "https://messagealarm.app/api/test_func/"
+        guard let url = URL(string: urlString) else { return }
+        
+        let parameters = [
+            "count": TestString
+        ]
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("Application/json", forHTTPHeaderField: "Content-Type")
+        request.timeoutInterval = 20
+        
+        do {
+            request.httpBody = try JSONSerialization.data(withJSONObject: parameters, options: [])
+        } catch {
+            return
         }
+        
+        let session = URLSession.shared
+        session.dataTask(with: request) { (data, response, error) in
+           
+        }.resume()
     }
     
     func showToast(message: String) {
@@ -110,11 +161,18 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate, UIGe
     }
     
     @objc func backAction() {
-        self.navigationController?.popViewController(animated: true)
+        DispatchQueue.main.async {
+            self.navigationController?.popViewController(animated: true)
+        }
+        
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         showToast(message: "Thanks for your visit!")
+        DispatchQueue.main.async {
+            Mute.shared.isPaused = true
+        }
+        UIApplication.shared.isStatusBarHidden = false
         self.navigationController?.navigationBar.isHidden = false
     }
     
@@ -148,16 +206,10 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate, UIGe
         })
     }
     
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        if #available(iOS 13, *) {
-            return .lightContent
-        } else {
-            return .default
-        }
-    }
     override var prefersStatusBarHidden: Bool {
-        return true
-    }
+        print("status bar")
+            return true
+        }
     
     
     func userAutorization(){

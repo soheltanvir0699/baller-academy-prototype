@@ -21,13 +21,13 @@ class PDFViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         pdfView.backgroundColor = .clear
-        DispatchQueue.main.asyncAfter(deadline: .now()+0.2) {
+        DispatchQueue.main.asyncAfter(deadline: .now()+0.7) {
             ANLoader.showLoading(self.loadingText, disableUI: false)
         }
-        
-        DispatchQueue.main.asyncAfter(deadline: .now()+0.6) {
+//        NotificationCenter.default.addObserver(self, selector: #selector(appCameToForeground), name: UIApplication.willEnterForegroundNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(appCameToForeground), name: UIApplication.didBecomeActiveNotification, object: nil)
+        DispatchQueue.main.asyncAfter(deadline: .now()+1.1) {
             
             self.pdfView.translatesAutoresizingMaskIntoConstraints = false
             self.pdfVieww.addSubview(self.pdfView)
@@ -44,50 +44,73 @@ class PDFViewController: UIViewController {
             
             self.pdfView.document = sampleDocument
             ANLoader.hide()
-            
+            self.appCameToForegroundNotification()
         }
-        
-        // Do any additional setup after loading the view.
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        if loadingText != "Document Loading..." {
+    @objc func appCameToForeground() {
+        print("active to foreground")
+        DispatchQueue.main.asyncAfter(deadline: .now()+0.4) {
+            if constant.rotationType != "Document Loading..." {
+                print(self.loadingText)
+                let value = UIInterfaceOrientation.landscapeRight.rawValue
+                UIDevice.current.setValue(value, forKey: "orientation")
+            }else {
+                self.lefCons.constant = 0
+                self.rightCons.constant = 0
+                self.btnLeftCons.constant = 0
+                self.backBtn.tintColor = .black
+                let value = UIInterfaceOrientation.portrait.rawValue
+                UIDevice.current.setValue(value, forKey: "orientation")
+            }
+        }
+    }
+    
+    @objc func appCameToForegroundNotification() {
+        print("active to foreground")
+        DispatchQueue.main.asyncAfter(deadline: .now()+0.1) {
+            if constant.rotationType != "Document Loading..." {
+                print(self.loadingText)
             let value = UIInterfaceOrientation.landscapeRight.rawValue
             UIDevice.current.setValue(value, forKey: "orientation")
         }else {
-            lefCons.constant = 0
-            rightCons.constant = 0
-            btnLeftCons.constant = 0
-            backBtn.tintColor = .black
+            self.lefCons.constant = 0
+            self.rightCons.constant = 0
+            self.btnLeftCons.constant = 0
+            self.backBtn.tintColor = .black
+            let value = UIInterfaceOrientation.portrait.rawValue
+            UIDevice.current.setValue(value, forKey: "orientation")
         }
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         
+        if constant.rotationType != "Document Loading..." {
+            print(self.loadingText)
+        let value = UIInterfaceOrientation.landscapeRight.rawValue
+        UIDevice.current.setValue(value, forKey: "orientation")
+    }else {
+        self.lefCons.constant = 0
+        self.rightCons.constant = 0
+        self.btnLeftCons.constant = 0
+        self.backBtn.tintColor = .black
+        let value = UIInterfaceOrientation.portrait.rawValue
+        UIDevice.current.setValue(value, forKey: "orientation")
+    }
     }
     
     @IBAction func backAction(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
     
-    override open var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        if loadingText != "Document Loading..." {
-            return .landscapeLeft
-        }else {
-            return .portrait
-        }
-        }
-
-        override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
-            if loadingText != "Document Loading..." {
-                return .landscapeLeft
-            }else {
-                return .portrait
-            }
-        }
-    
     override var shouldAutorotate: Bool {
         return false
     }
     
-    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        appCameToForeground()
+    }
     /*
      // MARK: - Navigation
      

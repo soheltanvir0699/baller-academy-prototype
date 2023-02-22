@@ -290,6 +290,7 @@ class HomeViewViewController: UIViewController{
         }
         
     }
+   
     
     
     func apiCall(isPrototype: String, otpText: String) {
@@ -346,9 +347,8 @@ class HomeViewViewController: UIViewController{
                     self.techShowHide()
                     constant.OtpRespose = responseArray
                     self.vcPushString = isPrototype
-                    DispatchQueue.main.asyncAfter(deadline: .now()+0.4) {
-                    self.showDisclaimer()
-                    }
+                    self.showDis(vcIdentifier: isPrototype)
+                    
                 } else {
                     self.showToast(message: "This code is either invalid or expired or already used!")
                 }
@@ -358,6 +358,26 @@ class HomeViewViewController: UIViewController{
         }.resume()
     }
 
+    func showDis(vcIdentifier: String) {
+        if constant.tester_name == "Alexis Sr." {
+            
+            DispatchQueue.main.asyncAfter(deadline: .now()+0.4) {
+            self.showDisclaimer()
+            }
+        }else {
+            self.showToastSuccess(message: "Thanks for verifying, You can now see everything")
+            switch vcIdentifier {
+            case "Prototype":
+                self.goPrototype(data: constant.OtpRespose)
+            case "Deck":
+                self.handleDeck(data: constant.OtpRespose)
+            case "meetTeam":
+                self.goMeetTheTeamVC()
+            default:
+                self.goScheduleVC()
+            }
+        }
+    }
     
     func showToast(message: String) {
         
@@ -412,6 +432,7 @@ class HomeViewViewController: UIViewController{
         self.techShowHide()
         self.navigationController?.navigationBar.isHidden = true
         let value = UIInterfaceOrientation.portrait.rawValue
+        UIApplication.shared.isStatusBarHidden = false
         UIDevice.current.setValue(value, forKey: "orientation")
     }
     
@@ -421,10 +442,14 @@ class HomeViewViewController: UIViewController{
         if data != nil && data!.count >= 2 {
             if data![1] != "" {
                 vc?.deckLink = data![1]
+                vc?.loadingText = "Deck Loading..."
+                constant.rotationType = "Deck Loading..."
                 print(data)
         }
         }
+            DispatchQueue.main.asyncAfter(deadline: .now()+0.1) {
             self.navigationController?.pushViewController(vc!, animated: true)
+            }
         }
         
     }
@@ -444,7 +469,10 @@ class HomeViewViewController: UIViewController{
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "PDFViewController") as? PDFViewController
             vc?.deckLink = "https://baller-ac.s3.amazonaws.com/tech_doc.pdf"
             vc?.loadingText = "Document Loading..."
+            constant.rotationType = "Document Loading..."
+            DispatchQueue.main.asyncAfter(deadline: .now()+0.1) {
             self.navigationController?.pushViewController(vc!, animated: true)
+            }
         }
     }
     

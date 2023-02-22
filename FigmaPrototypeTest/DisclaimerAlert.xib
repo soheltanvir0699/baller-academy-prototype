@@ -15,7 +15,7 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JI7-1S-Q9y">
-                    <rect key="frame" x="30" y="343.5" width="354" height="209"/>
+                    <rect key="frame" x="30" y="315.5" width="354" height="265"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info" translatesAutoresizingMaskIntoConstraints="NO" id="Kuy-cB-diu">
                             <rect key="frame" x="152" y="-22" width="50" height="50"/>
@@ -31,20 +31,22 @@
                             </userDefinedRuntimeAttributes>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0S-P5-xxZ">
-                            <rect key="frame" x="177" y="33" width="0.0" height="0.0"/>
+                            <rect key="frame" x="177" y="38" width="0.0" height="0.0"/>
                             <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="18"/>
                             <color key="textColor" red="0.17785829486268945" green="0.17785829486268945" blue="0.17785829486268945" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygh-kh-ILs">
-                            <rect key="frame" x="20" y="52.5" width="314" height="106.5"/>
-                            <string key="text">Thank you for your interest in teaming up with us. We xxxx. We have used photos and information that we found online from the internet in order to help profile you with a better viewing experience. This presentation is only available to you and no one else. Thank you for your support</string>
-                            <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="15"/>
+                            <rect key="frame" x="20" y="57.5" width="314" height="132.5"/>
+                            <string key="text">Thank you for your interest in teaming up with us. We utilized your pictures and information found on the internet to create a personalized presentation specifically for you. Please note that this presentation is only intended for your personal viewing and is not to be distributed or used publicly.
+
+Thank you for your support,</string>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="14"/>
                             <color key="textColor" white="0.39969775140000002" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MKH-Ey-aRe" customClass="TransitionButton" customModule="FigmaPrototypeTest" customModuleProvider="target">
-                            <rect key="frame" x="137" y="169" width="80" height="30"/>
+                            <rect key="frame" x="137" y="225" width="80" height="30"/>
                             <color key="backgroundColor" red="0.94301939010000002" green="0.32750254870000001" blue="0.3297895193" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="QOB-7N-k3J"/>
@@ -53,7 +55,7 @@
                             <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="14"/>
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                            <state key="normal" title="I AGREE">
+                            <state key="normal" title="CONTINUE">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
                             <userDefinedRuntimeAttributes>
@@ -63,26 +65,35 @@
                             </userDefinedRuntimeAttributes>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dear Alexis," textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpm-Lj-irC">
-                            <rect key="frame" x="138" y="33" width="78" height="19.5"/>
+                            <rect key="frame" x="138" y="38" width="78" height="19.5"/>
                             <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="16"/>
                             <color key="textColor" white="0.30737678369999999" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Baller Academy Team" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXh-bQ-ESu">
+                            <rect key="frame" x="20" y="192" width="314" height="18"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="15"/>
+                            <color key="textColor" white="0.39969775140000002" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstItem="g0S-P5-xxZ" firstAttribute="top" secondItem="Kuy-cB-diu" secondAttribute="bottom" constant="5" id="10F-zB-QQE"/>
+                        <constraint firstItem="g0S-P5-xxZ" firstAttribute="top" secondItem="Kuy-cB-diu" secondAttribute="bottom" constant="10" id="10F-zB-QQE"/>
+                        <constraint firstAttribute="trailing" secondItem="KXh-bQ-ESu" secondAttribute="trailing" constant="20" id="5uD-g6-VaJ"/>
                         <constraint firstItem="g0S-P5-xxZ" firstAttribute="centerX" secondItem="JI7-1S-Q9y" secondAttribute="centerX" id="CSf-xE-gML"/>
                         <constraint firstAttribute="trailing" secondItem="ygh-kh-ILs" secondAttribute="trailing" constant="20" id="DW0-Ao-PsK"/>
+                        <constraint firstItem="KXh-bQ-ESu" firstAttribute="top" secondItem="ygh-kh-ILs" secondAttribute="bottom" constant="2" id="Gmn-Oz-SqT"/>
                         <constraint firstItem="ygh-kh-ILs" firstAttribute="leading" secondItem="JI7-1S-Q9y" secondAttribute="leading" constant="20" id="LwP-Ma-3kK"/>
                         <constraint firstItem="ygh-kh-ILs" firstAttribute="top" secondItem="hpm-Lj-irC" secondAttribute="bottom" id="Mm7-DP-AdX"/>
                         <constraint firstAttribute="bottom" secondItem="MKH-Ey-aRe" secondAttribute="bottom" constant="10" id="PK7-TC-vKD"/>
                         <constraint firstItem="hpm-Lj-irC" firstAttribute="centerX" secondItem="JI7-1S-Q9y" secondAttribute="centerX" id="Vrd-35-bc7"/>
                         <constraint firstItem="Kuy-cB-diu" firstAttribute="top" secondItem="JI7-1S-Q9y" secondAttribute="top" constant="-22" id="ZoP-o0-Nvm"/>
-                        <constraint firstItem="MKH-Ey-aRe" firstAttribute="top" secondItem="ygh-kh-ILs" secondAttribute="bottom" constant="10" id="dEr-RH-m0S"/>
+                        <constraint firstItem="KXh-bQ-ESu" firstAttribute="leading" secondItem="JI7-1S-Q9y" secondAttribute="leading" constant="20" id="fhi-fy-Cpd"/>
                         <constraint firstItem="Kuy-cB-diu" firstAttribute="centerX" secondItem="JI7-1S-Q9y" secondAttribute="centerX" id="kLA-y8-Kzv"/>
                         <constraint firstItem="MKH-Ey-aRe" firstAttribute="centerX" secondItem="JI7-1S-Q9y" secondAttribute="centerX" id="l6P-iE-nz4"/>
                         <constraint firstItem="hpm-Lj-irC" firstAttribute="top" secondItem="g0S-P5-xxZ" secondAttribute="bottom" id="mJm-hP-tjW"/>
+                        <constraint firstItem="MKH-Ey-aRe" firstAttribute="top" secondItem="KXh-bQ-ESu" secondAttribute="bottom" constant="15" id="v30-xD-Mfp"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
@@ -111,7 +122,7 @@
     </objects>
     <designables>
         <designable name="MKH-Ey-aRe">
-            <size key="intrinsicContentSize" width="44" height="29"/>
+            <size key="intrinsicContentSize" width="56" height="29"/>
         </designable>
     </designables>
     <resources>

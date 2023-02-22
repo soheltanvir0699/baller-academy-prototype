@@ -74,20 +74,20 @@
                                 <rect key="frame" x="0.0" y="143" width="414" height="719"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="20f-No-9JU">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1734"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1414"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NWI-mh-NoH">
-                                                <rect key="frame" x="10" y="20" width="394" height="300"/>
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NWI-mh-NoH">
+                                                <rect key="frame" x="10" y="0.0" width="394" height="0.0"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro" translatesAutoresizingMaskIntoConstraints="NO" id="mvO-95-Obi">
-                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="300"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="0.0"/>
                                                     </imageView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gQb-EM-D92">
-                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="300"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="0.0"/>
                                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.44734676942130586" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INTRODUCTION VIDEO" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hoN-0f-fFX">
-                                                        <rect key="frame" x="10" y="169" width="374" height="26.5"/>
+                                                        <rect key="frame" x="10" y="-131" width="374" height="26.5"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="21"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -95,13 +95,13 @@
                                                         <size key="shadowOffset" width="1" height="1"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get a brief introduction to our app, see its functioning, hear our WHYs and our goal to reach 50m users by 2026." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VmW-f6-BVJ">
-                                                        <rect key="frame" x="10" y="200.5" width="374" height="34.5"/>
+                                                        <rect key="frame" x="10" y="-99.5" width="374" height="34.5"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="14.5"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTf-za-oKj" customClass="TransitionButton" customModule="FigmaPrototypeTest" customModuleProvider="target">
-                                                        <rect key="frame" x="10" y="245" width="180" height="35"/>
+                                                        <rect key="frame" x="10" y="-55" width="180" height="35"/>
                                                         <color key="backgroundColor" red="0.92362123730000001" green="0.25996106860000001" blue="0.20830270649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="35" id="1Ih-yI-SoI"/>
@@ -128,7 +128,7 @@
                                                     <constraint firstItem="hoN-0f-fFX" firstAttribute="leading" secondItem="NWI-mh-NoH" secondAttribute="leading" constant="10" id="4S1-UM-Lw9"/>
                                                     <constraint firstAttribute="bottom" secondItem="gQb-EM-D92" secondAttribute="bottom" id="8GP-q0-P4h"/>
                                                     <constraint firstAttribute="trailing" secondItem="mvO-95-Obi" secondAttribute="trailing" id="8MN-qo-akl"/>
-                                                    <constraint firstAttribute="height" constant="300" id="AGC-9M-lvf"/>
+                                                    <constraint firstAttribute="height" id="AGC-9M-lvf"/>
                                                     <constraint firstAttribute="trailing" secondItem="gQb-EM-D92" secondAttribute="trailing" id="Bbr-8B-Ri4"/>
                                                     <constraint firstAttribute="trailing" secondItem="VmW-f6-BVJ" secondAttribute="trailing" constant="10" id="Eha-QI-pkc"/>
                                                     <constraint firstItem="mvO-95-Obi" firstAttribute="top" secondItem="NWI-mh-NoH" secondAttribute="top" id="G5e-vm-R3c"/>
@@ -145,7 +145,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Abu-Tf-wqU">
-                                                <rect key="frame" x="10" y="335" width="394" height="300"/>
+                                                <rect key="frame" x="10" y="15" width="394" height="300"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 10" translatesAutoresizingMaskIntoConstraints="NO" id="Lvy-Cs-mBT">
                                                         <rect key="frame" x="0.0" y="0.0" width="394" height="300"/>
@@ -213,7 +213,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EwQ-xB-oi4">
-                                                <rect key="frame" x="10" y="650" width="394" height="300"/>
+                                                <rect key="frame" x="10" y="330" width="394" height="300"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="deck" translatesAutoresizingMaskIntoConstraints="NO" id="ZeO-XQ-g0S">
                                                         <rect key="frame" x="0.0" y="0.0" width="394" height="300"/>
@@ -281,7 +281,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bFT-gu-QxL">
-                                                <rect key="frame" x="10" y="1280" width="394" height="300"/>
+                                                <rect key="frame" x="10" y="960" width="394" height="300"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leadership" translatesAutoresizingMaskIntoConstraints="NO" id="gLi-h4-I5z">
                                                         <rect key="frame" x="0.0" y="0.0" width="394" height="300"/>
@@ -349,13 +349,13 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for your interest in teaming up with us to help make people better. We look forward to talking with you." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMe-4c-F4L">
-                                                <rect key="frame" x="29" y="1600" width="356" height="54"/>
+                                                <rect key="frame" x="29" y="1280" width="356" height="54"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqQ-xi-dnH" customClass="TransitionButton" customModule="FigmaPrototypeTest" customModuleProvider="target">
-                                                <rect key="frame" x="92" y="1674" width="230" height="40"/>
+                                                <rect key="frame" x="92" y="1354" width="230" height="40"/>
                                                 <color key="backgroundColor" red="0.92362123730000001" green="0.25996106860000001" blue="0.20830270649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="230" id="P2J-F0-W0N"/>
@@ -375,7 +375,7 @@
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oKe-hx-pLO">
-                                                <rect key="frame" x="10" y="965" width="394" height="300"/>
+                                                <rect key="frame" x="10" y="645" width="394" height="300"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tech" translatesAutoresizingMaskIntoConstraints="NO" id="ItW-Ny-CT7">
                                                         <rect key="frame" x="0.0" y="0.0" width="394" height="300"/>
@@ -457,7 +457,7 @@ our smart devices</string>
                                             <constraint firstAttribute="trailing" secondItem="qMe-4c-F4L" secondAttribute="trailing" constant="29" id="Cgd-c2-Say"/>
                                             <constraint firstItem="wqQ-xi-dnH" firstAttribute="top" secondItem="qMe-4c-F4L" secondAttribute="bottom" constant="20" id="Fe2-tJ-KnQ"/>
                                             <constraint firstAttribute="trailing" secondItem="oKe-hx-pLO" secondAttribute="trailing" constant="10" id="LfT-k0-b9V"/>
-                                            <constraint firstItem="NWI-mh-NoH" firstAttribute="top" secondItem="20f-No-9JU" secondAttribute="top" constant="20" id="LvF-GG-Gvh"/>
+                                            <constraint firstItem="NWI-mh-NoH" firstAttribute="top" secondItem="20f-No-9JU" secondAttribute="top" id="LvF-GG-Gvh"/>
                                             <constraint firstItem="wqQ-xi-dnH" firstAttribute="centerX" secondItem="20f-No-9JU" secondAttribute="centerX" id="MJC-Lk-eLm"/>
                                             <constraint firstItem="Abu-Tf-wqU" firstAttribute="top" secondItem="NWI-mh-NoH" secondAttribute="bottom" constant="15" id="OSN-up-eGv"/>
                                             <constraint firstAttribute="trailing" secondItem="EwQ-xB-oi4" secondAttribute="trailing" constant="10" id="QvU-2H-zH3"/>
@@ -1580,7 +1580,7 @@ Nathan was selected as the only player to join the team in 2012, following a suc
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="20"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="Chief Excutive Officer"/>
+                                                <state key="normal" title="Founder &amp; Chief Executive Officer"/>
                                                 <connections>
                                                     <action selector="NathanCollapseAction:" destination="OT0-fQ-wHF" eventType="touchUpInside" id="yUc-RV-vt0"/>
                                                 </connections>

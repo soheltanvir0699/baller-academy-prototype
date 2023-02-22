@@ -13,6 +13,7 @@ target 'FigmaPrototypeTest' do
   pod 'Glideshow'
   pod 'ANLoader', :git => 'https://github.com/ANSCoder/ANLoader.git'
   pod 'ReachabilitySwift'
+  pod 'Mute'
   # Pods for FigmaPrototypeTest
   
 end

@@ -86,7 +86,7 @@ class ProfileViewController: UIViewController {
         label.attributedText = attributedText
     }
     let boldArray = ["Chief Technology Officer","Lead Software Engineer","Chief Technology Officer & Co - Founder","Senior Software Engineer","Executive Software Engineer","Android Development - Trainer","Freelance Android & Web developer"]
-    let regularArray = ["Baller Academy, United States (Feb 2023 - Current)","Baller Academy, United States (Jan 2022 - Jan 2023)","Mk7Lab, Khulna (Dec 2021 -  Jan 2022)","Ruhof Corporation , New York (Jan 2019 - Dec 2021)","ItechSoftSolution, Khulna (Dec 2017 -  Jan 2019)","Digicon Technologies, Dhaka (Jan 2016 -  Dec 2017)","Upwork &amp; Fiverr (Jan 2013 -  Dec 2015)"]
+    let regularArray = ["Baller Academy, United States (Feb 2023 - Current)","Baller Academy, United States (Oct 2021 - Jan 2022)","Mk7Lab, Khulna (Dec 2021 -  Jan 2022)","Ruhof Corporation , New York (Jan 2019 - Dec 2021)","ItechSoftSolution, Khulna (Dec 2017 -  Jan 2019)","Digicon Technologies, Dhaka (Jan 2016 -  Dec 2017)","Upwork &amp; Fiverr (Jan 2013 -  Dec 2015)"]
     override func viewDidLoad() {
         super.viewDidLoad()
         let labels = [self.careerOneLbl, self.careerSecondLbl, self.careerTwoLbl, self.careerThreeLbl, self.careerFourLbl,self.careerFiveLbl,self.careerSixLbl]
