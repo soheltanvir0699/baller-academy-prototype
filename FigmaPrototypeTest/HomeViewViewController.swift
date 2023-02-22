@@ -75,29 +75,11 @@ class HomeViewViewController: UIViewController{
     func isGen() {
         if constant.isGeneric {
             DispatchQueue.main.async {
-                self.viewDeckBtn.isUserInteractionEnabled = false
-                self.viewDocumentBtn.isUserInteractionEnabled = false
-                self.meetTheTeamBtn.isUserInteractionEnabled = false
-                self.schAMeetingBtn.isUserInteractionEnabled = false
-                
-                self.viewDeckBtn.alpha = 0.7
-                self.viewDocumentBtn.alpha = 0.7
-                self.meetTheTeamBtn.alpha = 0.7
-                self.schAMeetingBtn.alpha = 0.7
+                self.disableBtn()
             }
-            
             
         }else {
-            DispatchQueue.main.async {
-            self.viewDeckBtn.isUserInteractionEnabled = true
-            self.viewDocumentBtn.isUserInteractionEnabled = true
-            self.meetTheTeamBtn.isUserInteractionEnabled = true
-            self.schAMeetingBtn.isUserInteractionEnabled = true
-            self.viewDeckBtn.alpha = 1
-            self.viewDocumentBtn.alpha = 1
-            self.meetTheTeamBtn.alpha = 1
-            self.schAMeetingBtn.alpha = 1
-            }
+            self.enableBtn()
         }
     }
     func techShowHide() {
@@ -228,7 +210,7 @@ class HomeViewViewController: UIViewController{
     }
     @objc func dismissSupViewDisclaimer() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0) {
-            self.showToastSuccess(message: "Thanks for verifying, You can now see everything")
+//            self.showToastSuccess(message: "Thanks for verifying, You can now see everything")
             for subview in (self.navigationController?.view.subviews)! {
                 if (subview.tag == 105) {
 
@@ -323,6 +305,42 @@ class HomeViewViewController: UIViewController{
    
     
     
+    fileprivate func disableBtn() {
+        self.viewDeckBtn.isUserInteractionEnabled = false
+        self.viewDocumentBtn.isUserInteractionEnabled = false
+        self.meetTheTeamBtn.isUserInteractionEnabled = false
+        self.schAMeetingBtn.isUserInteractionEnabled = false
+        
+        
+        self.viewDeckBtn.alpha = 0.7
+        self.viewDocumentBtn.alpha = 0.7
+        self.meetTheTeamBtn.alpha = 0.7
+        self.schAMeetingBtn.alpha = 0.7
+        
+        self.viewDeckBtn.backgroundColor = .gray
+        self.viewDocumentBtn.backgroundColor = .gray
+        self.meetTheTeamBtn.backgroundColor = .gray
+        self.schAMeetingBtn.backgroundColor = .gray
+    }
+    
+    fileprivate func enableBtn() {
+        DispatchQueue.main.async {
+            self.viewDeckBtn.isUserInteractionEnabled = true
+            self.viewDocumentBtn.isUserInteractionEnabled = true
+            self.meetTheTeamBtn.isUserInteractionEnabled = true
+            self.schAMeetingBtn.isUserInteractionEnabled = true
+            self.viewDeckBtn.alpha = 1
+            self.viewDocumentBtn.alpha = 1
+            self.meetTheTeamBtn.alpha = 1
+            self.schAMeetingBtn.alpha = 1
+            let backColor = UIColor(red: 236/256, green: 66/256, blue: 53/256, alpha: 1)
+            self.viewDeckBtn.backgroundColor = backColor
+            self.viewDocumentBtn.backgroundColor = backColor
+            self.meetTheTeamBtn.backgroundColor = backColor
+            self.schAMeetingBtn.backgroundColor = backColor
+        }
+    }
+    
     func apiCall(isPrototype: String, otpText: String) {
         
         let urlString = "https://messagealarm.app/api/otp_check/"
@@ -378,32 +396,19 @@ class HomeViewViewController: UIViewController{
                     constant.OtpRespose = responseArray
                     self.vcPushString = isPrototype
                     constant.isGeneric = products.is_generic!
-                    if products.is_generic! {
-                        DispatchQueue.main.async {
-                            self.viewDeckBtn.isUserInteractionEnabled = false
-                            self.viewDocumentBtn.isUserInteractionEnabled = false
-                            self.meetTheTeamBtn.isUserInteractionEnabled = false
-                            self.schAMeetingBtn.isUserInteractionEnabled = false
-                            
-                            self.viewDeckBtn.alpha = 0.7
-                            self.viewDocumentBtn.alpha = 0.7
-                            self.meetTheTeamBtn.alpha = 0.7
-                            self.schAMeetingBtn.alpha = 0.7
-                        }
-                        
-                        
-                    }else {
-                        DispatchQueue.main.async {
-                        self.viewDeckBtn.isUserInteractionEnabled = true
-                        self.viewDocumentBtn.isUserInteractionEnabled = true
-                        self.meetTheTeamBtn.isUserInteractionEnabled = true
-                        self.schAMeetingBtn.isUserInteractionEnabled = true
-                        self.viewDeckBtn.alpha = 1
-                        self.viewDocumentBtn.alpha = 1
-                        self.meetTheTeamBtn.alpha = 1
-                        self.schAMeetingBtn.alpha = 1
-                        }
+                    if constant.tester_name == "Alexis Sr." {
+                        self.enableBtn()
                         self.showDis(vcIdentifier: isPrototype)
+                    }else {
+                        if products.is_generic! {
+                            DispatchQueue.main.async {
+                                self.showToastSuccess(message: "Thanks for verifying, You can now see Prototype")
+                                self.disableBtn()
+                            }
+                        }else {
+                            self.enableBtn()
+                            self.showDis(vcIdentifier: isPrototype)
+                        }
                     }
                     
                     
@@ -423,7 +428,12 @@ class HomeViewViewController: UIViewController{
             self.showDisclaimer()
             }
         }else {
-            self.showToastSuccess(message: "Thanks for verifying, You can now see everything")
+            if constant.isGeneric {
+                self.showToastSuccess(message: "Thanks for verifying, You can now see Prototype")
+            }else {
+                self.showToastSuccess(message: "Thanks for verifying, You can now see everything")
+            }
+            
             switch vcIdentifier {
             case "Prototype":
                 self.goPrototype(data: constant.OtpRespose)
