@@ -18,7 +18,9 @@ class HomeViewViewController: UIViewController{
     
     @IBOutlet weak var introductionLbl: UILabel!
     @IBOutlet weak var techHeight: NSLayoutConstraint!
-    
+    @IBOutlet weak var schAMeetingBtn: TransitionButton!
+    @IBOutlet weak var meetTheTeamBtn: TransitionButton!
+    @IBOutlet weak var viewDocumentBtn: TransitionButton!
     @IBOutlet weak var viewDeckBtn: TransitionButton!
     @IBOutlet weak var backShadowView4: UIView!
     @IBOutlet weak var backShadowView3: UIView!
@@ -68,8 +70,36 @@ class HomeViewViewController: UIViewController{
             }
         
         startReachability()
+        isGen()
     }
-    
+    func isGen() {
+        if constant.isGeneric {
+            DispatchQueue.main.async {
+                self.viewDeckBtn.isUserInteractionEnabled = false
+                self.viewDocumentBtn.isUserInteractionEnabled = false
+                self.meetTheTeamBtn.isUserInteractionEnabled = false
+                self.schAMeetingBtn.isUserInteractionEnabled = false
+                
+                self.viewDeckBtn.alpha = 0.7
+                self.viewDocumentBtn.alpha = 0.7
+                self.meetTheTeamBtn.alpha = 0.7
+                self.schAMeetingBtn.alpha = 0.7
+            }
+            
+            
+        }else {
+            DispatchQueue.main.async {
+            self.viewDeckBtn.isUserInteractionEnabled = true
+            self.viewDocumentBtn.isUserInteractionEnabled = true
+            self.meetTheTeamBtn.isUserInteractionEnabled = true
+            self.schAMeetingBtn.isUserInteractionEnabled = true
+            self.viewDeckBtn.alpha = 1
+            self.viewDocumentBtn.alpha = 1
+            self.meetTheTeamBtn.alpha = 1
+            self.schAMeetingBtn.alpha = 1
+            }
+        }
+    }
     func techShowHide() {
         if constant.tester_name == "Alexis Sr." {
             techPdfShowHide(isShow: true)
@@ -347,7 +377,35 @@ class HomeViewViewController: UIViewController{
                     self.techShowHide()
                     constant.OtpRespose = responseArray
                     self.vcPushString = isPrototype
-                    self.showDis(vcIdentifier: isPrototype)
+                    constant.isGeneric = products.is_generic!
+                    if products.is_generic! {
+                        DispatchQueue.main.async {
+                            self.viewDeckBtn.isUserInteractionEnabled = false
+                            self.viewDocumentBtn.isUserInteractionEnabled = false
+                            self.meetTheTeamBtn.isUserInteractionEnabled = false
+                            self.schAMeetingBtn.isUserInteractionEnabled = false
+                            
+                            self.viewDeckBtn.alpha = 0.7
+                            self.viewDocumentBtn.alpha = 0.7
+                            self.meetTheTeamBtn.alpha = 0.7
+                            self.schAMeetingBtn.alpha = 0.7
+                        }
+                        
+                        
+                    }else {
+                        DispatchQueue.main.async {
+                        self.viewDeckBtn.isUserInteractionEnabled = true
+                        self.viewDocumentBtn.isUserInteractionEnabled = true
+                        self.meetTheTeamBtn.isUserInteractionEnabled = true
+                        self.schAMeetingBtn.isUserInteractionEnabled = true
+                        self.viewDeckBtn.alpha = 1
+                        self.viewDocumentBtn.alpha = 1
+                        self.meetTheTeamBtn.alpha = 1
+                        self.schAMeetingBtn.alpha = 1
+                        }
+                        self.showDis(vcIdentifier: isPrototype)
+                    }
+                    
                     
                 } else {
                     self.showToast(message: "This code is either invalid or expired or already used!")
@@ -515,5 +573,6 @@ struct otpVerModel: Codable {
     let tester_name: String?
     let prototype_url: String?
     let deck_url: String?
+    let is_generic: Bool?
 }
 

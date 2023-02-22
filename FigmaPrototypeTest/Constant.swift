@@ -22,6 +22,18 @@ class constant {
         }
     }
     
+    static var isGeneric: Bool {
+        set {
+            UserDefaults.standard.set(newValue, forKey: "isGeneric")
+        } get {
+            var user_value = false
+            if UserDefaults.standard.value(forKey: "isGeneric") != nil {
+                user_value = UserDefaults.standard.value(forKey: "isGeneric") as! Bool
+            }
+            return user_value
+        }
+    }
+    
     static var OtpRespose: [String] {
         set {
             UserDefaults.standard.set(newValue, forKey: "OtpRespose")

@@ -515,10 +515,12 @@ our smart devices</string>
                         <outlet property="introductionLbl" destination="hoN-0f-fFX" id="QkD-cK-VDj"/>
                         <outlet property="meetTeamImg" destination="gLi-h4-I5z" id="dim-nf-MPk"/>
                         <outlet property="meetTeamView" destination="bFT-gu-QxL" id="lvq-hm-jWo"/>
+                        <outlet property="meetTheTeamBtn" destination="NPj-Ld-jz7" id="9SU-bB-uYo"/>
                         <outlet property="pdfBackView" destination="Abu-Tf-wqU" id="bmr-e8-rM1"/>
                         <outlet property="pdfImg" destination="ZeO-XQ-g0S" id="2qd-Bh-w85"/>
                         <outlet property="prototypeImg" destination="Lvy-Cs-mBT" id="pM5-b1-l9H"/>
                         <outlet property="prototypeView" destination="NWI-mh-NoH" id="pbw-2z-rtq"/>
+                        <outlet property="schAMeetingBtn" destination="wqQ-xi-dnH" id="Oi2-hr-7lI"/>
                         <outlet property="techHeight" destination="rcf-aL-gIl" id="4Oc-di-sJg"/>
                         <outlet property="techTopCons" destination="lO6-sI-f60" id="GGk-XP-G2a"/>
                         <outlet property="techView" destination="oKe-hx-pLO" id="cve-CJ-hm1"/>
@@ -526,6 +528,7 @@ our smart devices</string>
                         <outlet property="videoImg" destination="mvO-95-Obi" id="sQo-6Z-rcl"/>
                         <outlet property="videoView" destination="EwQ-xB-oi4" id="1db-ba-mOT"/>
                         <outlet property="viewDeckBtn" destination="d2v-91-xNm" id="dr7-Ly-Nir"/>
+                        <outlet property="viewDocumentBtn" destination="R2t-J6-O0V" id="rSj-7U-Gwg"/>
                     </connections>
                 </viewController>
                 <view contentMode="scaleToFill" id="YsK-WJ-PCt">
